@@ -1,0 +1,7 @@
+Null Hypothesis:,Chi-sq,Prob.
+GDP growth rate does not Granger Cause,25.23335,0.0000
+Unemployment rate Inflation rate does not Granger Cause Unemployment,42.28839,0.0000
+rate FDI does not Granger Cause Unemployment rate,1.143511,0.7666
+Unemployment rate does not Granger Cause GDP,3.650182,0.3018
+growth rate Unemployment rate does not Granger Cause Inflation,5.347785,0.1480
+rate Unemployment rate does not Granger Cause FDI,0.954303,0.8123
