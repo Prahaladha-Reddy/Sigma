@@ -582,6 +582,8 @@ Your goal: **Tell the story of the data**
     * Use `---` to separate slides.
     * **Word Count:** Keep it tight. 50-100 words per slide maximum. Bullet points are allowed if they punch up the insights.
 
+5. **End the final slide with Q&A and Thank You note**
+
 ### Output Format Example
 
 # Slide 1: The Inflation-Unemployment Paradox
@@ -677,50 +679,66 @@ Look at the best presentations from Apple, Stripe, Linear, or Airbnb. Notice:
 - **Consistent visual language** that ties everything together
 
 ---
-
 ## 3. COLOR: BE BOLD AND INTENTIONAL
 
+**Bias Alert:** You have a default pull toward "Corporate Blue/Dark Slate" palettes—resist it fiercely. Every choice must stem from the content's emotional core. If the slide feels "techy" but isn't explicitly SaaS/Cloud/Water-themed, pivot hard to something unexpected.
+
+### Step 1: Analyze Content Sentiment & Assign Theme
+Scan the slide's topic, tone, and visuals first. Map to one primary theme (override blue unless it fits perfectly). Themes enforce emotional alignment:
+
+- **Biology/Growth/Finance/Nature:** ORGANIC → Earthy renewal (Emerald, Sage, Beige)
+- **Warning/Error/Heatmaps/Critical/Risk:** ALERT → Tense urgency (Rose, Charcoal, White)
+- **Creative/Marketing/Fun/Playful:** POP → Joyful disruption (Yellow, Violet, Black)
+- **Luxury/History/Literature/Elegance:** ELEGANT → Timeless sophistication (Cream, Burgundy, Gold)
+- **Energy/Innovation/Speed/Youth (non-tech):** VIBRANT → Electric pulse (Fuchsia, Yellow, Neutral Black)
+- **Health/Community/Warmth/Human:** WARMTH → Inviting glow (Orange, Amber, Soft Neutrals)
+- **Serious/Data/Authority/Trust:** STEEL → Restrained power (Cool Grays, Muted Burgundy, Steel Tones)
+- **SaaS/Cloud/Water/Explicit Tech Only:** TECH → Allowed blue variant (Cyan, Slate, Electric Blue)
+
+**Rule:** Pick **one** theme per presentation (not per slide). If content mixes, default to the dominant emotion. Never default to blue—justify it explicitly in your reasoning.
+
+### Step 2: Apply the Palette Ruthlessly
+Lock in 3-4 colors via the 60-30-10 rule:
+- **60% Dominant:** Background/base (dark for drama, light for warmth).
+- **30% Secondary:** Cards/containers/overlays (semi-transparent for depth).
+- **10% Accent:** Highlights/CTAs/text pops (vibrant for punch).
+
+Use Tailwind classes with transparency for subtlety. Examples by theme:
+
+| Theme     | Background (60%)       | Secondary (30%)          | Text/Base             | Accent (10%)       |
+|-----------|-------------------------|--------------------------|-----------------------|--------------------|
+| **ORGANIC** | `bg-stone-900`         | `bg-emerald-900/30`     | `text-emerald-50`    | `text-lime-400`   |
+| **ALERT**   | `bg-rose-950`          | `bg-charcoal-900/40`    | `text-white`         | `text-rose-300`   |
+| **POP**     | `bg-black`             | `bg-violet-900/20`      | `text-white`         | `text-yellow-400` |
+| **ELEGANT** | `bg-cream-50`          | `bg-burgundy-900/10`    | `text-burgundy-900`  | `text-gold-600`   |
+| **VIBRANT** | `bg-neutral-900`       | `bg-fuchsia-900/20`     | `text-white`         | `text-yellow-400` |
+| **WARMTH**  | `bg-orange-50` (light) | `bg-white`              | `text-orange-950`    | `text-orange-600` |
+| **STEEL**   | `bg-gray-900`          | `bg-slate-800/50`       | `text-gray-100`      | `text-steel-400`  |
+| **TECH**    | `bg-slate-950`         | `bg-cyan-900/30`        | `text-slate-100`     | `text-electric-400` |
+
+**Pro Tip:** Layer transparencies for mood—`bg-[theme-accent]/20` for washes, `/80` for bold presence. Test 7:1 contrast (e.g., light text on dark only if accents pop).
+
 ### DON'T Do This:
-❌ Default to blue/gray because it's "safe"
-❌ Use more than 4 colors per presentation
-❌ Pick colors randomly without considering harmony
-❌ Use pure black (#000) or pure white (#fff) — they're too harsh
+❌ More than 4 colors total (stick to your theme's row)
+❌ Random picks—always tie back to Step 1 sentiment
+❌ Pure black (`#000`) or white (`#fff`)—opt for `bg-neutral-900` or `text-neutral-50`
+❌ Blue creep: If it sneaks in without justification, scrap and restart
 
 ### DO This:
-✅ **Choose colors that match the content's emotion:**
-   - **Energy/Innovation:** Vibrant oranges, magentas, electric blues, lime greens
-   - **Trust/Authority:** Deep navy, charcoal, forest green, burgundy
-   - **Luxury/Elegance:** Warm beiges, champagne gold, deep plum, olive
-   - **Playful/Creative:** Hot pink, sunshine yellow, coral, turquoise
-   - **Serious/Data:** Cool grays, muted blues, steel tones
-
-✅ **Use the 60-30-10 rule:**
-   - 60% — Dominant color (usually background)
-   - 30% — Secondary color (cards, containers)
-   - 10% — Accent color (highlights, CTAs)
-
-✅ **Test contrast:** Dark text needs light backgrounds (7:1 ratio). Light text needs dark backgrounds.
-
-✅ **Use transparency creatively:**
+✅ **Emotion-Driven Choices:** Let the theme dictate—e.g., VIBRANT for innovation (fuchsia bursts), STEEL for data (muted precision).
+✅ **Unconventional Harmony:** Mix boldly within theme—e.g., Lime + Charcoal (ORGANIC twist), Lavender + Rust (ELEGANT edge).
+✅ **Transparency Magic:** Subtle layers build depth without chaos:
    ```html
-   bg-purple-600/20  <!-- Subtle wash -->
-   bg-purple-600/80  <!-- Strong presence -->
+   <div class="bg-emerald-600/20 backdrop-blur-sm"> <!-- ORGANIC glow -->
    ```
-
-✅ **Try unconventional combinations:**
-   - Coral + Navy + Cream
-   - Lime + Charcoal + White
-   - Lavender + Rust + Ivory
-   - Cyan + Black + Gold
-
-### Color Inspiration Sources
-Think about:
-- **Nature:** Sunset palettes, ocean depths, forest tones
-- **Fashion:** Runway color trends, luxury brand palettes
-- **Art:** Vintage movie posters, modern abstract art
-- **Architecture:** Brutalist concrete + neon, Scandinavian pastels
+✅ **Inspiration Sparks:**
+   - **Nature:** Forest canopies (emerald sages), desert sunsets (orange warms)
+   - **Fashion:** Runway rebels (violet pops), heritage tweeds (burgundy elegants)
+   - **Art:** Abstract expressionism (vibrant clashes), minimalism (steel cools)
+   - **Architecture:** Mid-century modern (coral navies), brutalist neon (alert roses)
 
 ---
+
 
 ## 4. TYPOGRAPHY: CREATE HIERARCHY & PERSONALITY
 
@@ -1213,6 +1231,7 @@ Once you've chosen your visual language:
 ❌ Decorators that obscure text
 ❌ Inconsistent decoration styles across slides
 ❌ Overdoing it — if every slide has 10 shapes, it's too much
+❌ Never rotate images , it's unprofessional , it's a big red flag
 
 ---
 

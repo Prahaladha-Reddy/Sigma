@@ -51,7 +51,6 @@ def normalize_plotly_spec(obj):
         obj = dict(obj)
 
     if isinstance(obj, dict):
-        # detect binary array
         if set(obj.keys()) == {"bdata", "dtype"}:
             return decode_binary_array(obj).tolist()
 

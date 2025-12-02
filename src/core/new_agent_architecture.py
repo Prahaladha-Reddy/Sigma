@@ -3,9 +3,10 @@ from pathlib import Path
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import HumanMessage, SystemMessage
 from core.new_architecture_prompt import Agent_1,Agent_3_prompt,Agent_4_prompt,Agent_2_with_Dataset ,Agent_2_with_search
-from core.convert_html_pdf import html_to_pdf
+from core.convert_html_pdf import pass_html_get_pdf
 from core.tools import process_notebook_tool,process_pdf_document_tool,data_analyst_tool
 from typing import Optional
+from core.convert_image_base64 import embed_images_as_base64
 import asyncio
 from typing import List
 from dotenv import load_dotenv
@@ -134,7 +135,7 @@ def agent_2_with_search(content: str, model: str = "gemini-2.5-pro", output_dir:
 
 
 def agent_3(content: str,Agent_3_prompt=Agent_3_prompt, model: str = "gemini-2.5-pro", output_dir: str = "./data") -> Optional[str]:
-
+    print("agent 3 is in action")
     llm = ChatGoogleGenerativeAI(model=model)
     
     try:
@@ -171,7 +172,7 @@ def agent_4(
     model: str = "gemini-3-pro-preview",
     output_dir: str = "./data",
 ) -> Optional[str]:
-
+    print("agent 4 is in action")
     llm = ChatGoogleGenerativeAI(model=model)
 
     try:
@@ -201,7 +202,7 @@ def agent_4(
 
         output_path = Path(output_dir) / "Final_slides.html"
         output_path.parent.mkdir(parents=True, exist_ok=True)
-
+        presentation=embed_images_as_base64(presentation)
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(presentation)
 
@@ -242,9 +243,8 @@ async def run_tool(file_name: str):
         return await process_notebook_tool.ainvoke(file_path)
 
 
-
 async def the_runner(user_query:str,num_slides:int=12):
-   docs= has_documents()
+   """docs= has_documents()
    print(len(docs))
    datasets=has_datasets()
    markdown=""
@@ -269,8 +269,10 @@ async def the_runner(user_query:str,num_slides:int=12):
    agent_3(content=f"{user_query} \n\n\n"+final_presentation,Agent_3_prompt=Agent_3_prompt.replace("NUM_SLIDES",str(num_slides)))
    with open("./data/Final_story.md") as f:
        final_slides=f.read()
-   agent_4(f"{user_query} \n\n\n"+final_slides)
+   agent_4(f"{user_query} \n\n\n"+final_slides)"""
 
+   await pass_html_get_pdf("data/Final_slides.html", "final_presentation.pdf")
+   
 
 
 

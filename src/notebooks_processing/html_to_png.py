@@ -10,7 +10,6 @@ except ImportError:
     PLAYWRIGHT_AVAILABLE = False
     sync_playwright = None
 
-# Keep plotly import for fallback method
 try:
     import plotly.graph_objects as go
     PLOTLY_AVAILABLE = True
@@ -30,8 +29,7 @@ def extract_plotly_json_from_html(html_path: Path) -> Optional[dict]:
     """
     html_content = html_path.read_text(encoding="utf-8")
     
-    # Look for Plotly.newPlot or Plotly.plot call with JSON data
-    # Pattern: Plotly.newPlot(element, data, layout, config)
+
     pattern = r"Plotly\.(?:newPlot|plot)\([^,]+,\s*(\{.*?\})\s*,\s*(\{.*?\})\s*(?:,\s*(\{.*?\}))?\)"
     match = re.search(pattern, html_content, re.DOTALL)
     
@@ -50,15 +48,12 @@ def extract_plotly_json_from_html(html_path: Path) -> Optional[dict]:
             print(f"  ⚠️  Failed to parse JSON in {html_path.name}: {e}")
             return None
     
-    # Alternative: Look for window.PLOTLYENV with figure data
     pattern2 = r"window\.PLOTLYENV\s*=\s*({.*?});"
     match2 = re.search(pattern2, html_content, re.DOTALL)
     
     if match2:
-        # This approach is trickier, let's try a different method
         pass
     
-    # Try finding the figure in a script tag with id="plotly-data"
     pattern3 = r'<script[^>]*id=["\']plotly-data["\'][^>]*>(.*?)</script>'
     match3 = re.search(pattern3, html_content, re.DOTALL)
     
@@ -68,13 +63,10 @@ def extract_plotly_json_from_html(html_path: Path) -> Optional[dict]:
             return figure_json
         except json.JSONDecodeError:
             pass
-    
-    # Last resort: try to extract from Plotly JSON structure embedded in HTML
-    # Look for data in window.PlotlyData or similar
+
     json_pattern = r'<script[^>]*>(.*?Plotly.*?)</script>'
     for script_match in re.finditer(json_pattern, html_content, re.DOTALL):
         script_content = script_match.group(1)
-        # Try to find JSON object
         json_obj_pattern = r'(\{[^{}]*"data"\s*:\s*\[.*?\])'
         json_match = re.search(json_obj_pattern, script_content, re.DOTALL)
         if json_match:
@@ -98,29 +90,20 @@ def extract_figure_from_html(html_path: Path) -> Optional[go.Figure]:
         Plotly figure object or None if extraction failed
     """
     html_content = html_path.read_text(encoding="utf-8")
-    
-    # Plotly HTML files have the structure:
-    # Plotly.newPlot("div_id", data_array, layout_dict, config_dict)
-    # We need to extract all arguments after the div_id
-    
-    # Method 1: Extract using balanced bracket matching for nested JSON
-    # Find the Plotly.newPlot call
+
     plotly_match = re.search(r'Plotly\.(?:newPlot|react)\s*\(', html_content)
     if not plotly_match:
         print("    ⚠️  No Plotly.newPlot or Plotly.react call found")
         return None
     
-    # Find the starting position after the div_id
     start_pos = plotly_match.end()
     
-    # Skip the div ID (quoted string)
     div_id_match = re.match(r'\s*["\'][^"\']+["\']\s*,', html_content[start_pos:])
     if not div_id_match:
         return None
     
     data_start = start_pos + div_id_match.end()
     
-    # Now extract data array - need to handle nested brackets
     def extract_json_string(content: str, start: int) -> tuple:
         """Extract a JSON string (array or object) with balanced brackets."""
         if start >= len(content):
@@ -169,29 +152,24 @@ def extract_figure_from_html(html_path: Path) -> Optional[go.Figure]:
             return content[start:end_pos], end_pos
         return None, start
     
-    # Extract data array
     data_str, data_end = extract_json_string(html_content, data_start)
     if not data_str:
         print("    ⚠️  Failed to extract data array")
         return None
     
-    # Skip comma and whitespace
     layout_start = data_end
     while layout_start < len(html_content) and html_content[layout_start] in ',\n\r\t ':
         layout_start += 1
     
-    # Extract layout dict
     layout_str, layout_end = extract_json_string(html_content, layout_start)
     if not layout_str:
-        print("    ⚠️  Failed to extract layout dict")
+        print(" Failed to extract layout dict")
         return None
     
     try:
-        # Parse the JSON strings
         data = json.loads(data_str)
         layout = json.loads(layout_str)
         
-        # Create figure from extracted data
         fig = go.Figure(data=data, layout=layout)
         return fig
     except json.JSONDecodeError as e:
@@ -217,7 +195,6 @@ def html_to_png_playwright(html_path: Path, output_dir: Optional[Path] = None, w
         print("    ⚠️  Playwright is not installed. Install it with: pip install playwright && playwright install")
         return None
     
-    # Determine output path
     if output_dir is None:
         output_dir = html_path.parent
     
@@ -226,7 +203,6 @@ def html_to_png_playwright(html_path: Path, output_dir: Optional[Path] = None, w
     try:
         print(f"    Loading {html_path.name} in browser...")
         
-        # Convert to absolute path for file:// URL
         abs_html_path = html_path.resolve()
         file_url = f"file:///{abs_html_path.as_posix()}"
         
