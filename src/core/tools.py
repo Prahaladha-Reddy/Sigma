@@ -8,7 +8,7 @@ from typing import Any, Dict
 from pydantic import BaseModel, Field
 from data_analyst.data_analyst_agent import data_analyst
 from notebooks_processing.notebook_processing import convert_notebook
-from deep_researcher.agents import deep_researcher_run
+from unused_deep_researcher.agents import deep_researcher_run
 from document_processing.document_understanding import process_pdf_pipeline
 import os
 current_file_path = Path(__file__).resolve()

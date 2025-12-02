@@ -2,15 +2,15 @@ from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 from deepagents import create_deep_agent
 import asyncio
-from core.prompt import CORE_PROMPT, Agent_layer2_prompt, The_STORY_TELLER, Theme_Picker
+from core.unusedprompt import CORE_PROMPT, Agent_layer2_prompt, The_STORY_TELLER, Theme_Picker
 from datetime import datetime
 from langchain_core.messages import HumanMessage, SystemMessage
 from langgraph.graph import StateGraph, END
 from typing import TypedDict, Annotated
 import operator
 from core.tools import data_analyst_tool, file_system_tools, ls
-from deep_researcher.research.tools import tavily_search, save_to_local_file
-from deep_researcher.research.check_tool import tavily_quick_search
+from unused_deep_researcher.research.tools import tavily_search, save_to_local_file
+from unused_deep_researcher.research.check_tool import tavily_quick_search
 load_dotenv()
 
 # Configuration

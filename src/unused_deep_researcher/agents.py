@@ -6,13 +6,13 @@ from pathlib import Path
 from langchain_google_genai import ChatGoogleGenerativeAI
 from deepagents import create_deep_agent
 from langchain_core.messages import AIMessage
-from deep_researcher.utils import format_messages
-from deep_researcher.research.prompts import (
+from unused_deep_researcher.utils import format_messages
+from unused_deep_researcher.research.prompts import (
     RESEARCHER_INSTRUCTIONS,
     RESEARCH_WORKFLOW_INSTRUCTIONS,
     SUBAGENT_DELEGATION_INSTRUCTIONS,
 )
-from deep_researcher.research.tools import tavily_search, think_tool,save_to_local_file
+from unused_deep_researcher.research.tools import tavily_search, think_tool,save_to_local_file
 
 max_concurrent_research_units = 3
 max_researcher_iterations = 3
