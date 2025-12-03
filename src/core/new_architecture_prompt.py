@@ -604,6 +604,18 @@ Before examining correlations, we must understand the shape of the data.
 
 ---
 
+
+# ASSET EMBEDDING
+
+Reuse image markdown blocks directly:
+
+- For PDF figures: Paths like `Process/<process_id>/data/documents/<PDFName>/images/<filename>.png`
+- For notebook figures: Paths like `Process/<process_id>/data/notebook/<NotebookName>/images/<NotebookName>_cellX_outY.png`
+- For tables: Embed as full Markdown tables (copied or lightly reflowed from source)
+
+If an expected asset is referenced but seems problematic:
+- NEVER fabricate an image or table
+
 ### Task
 Transform the provided report into a NUM_SLIDES slide deck. Keep the tone analytical, the insights sharp, and the narrative logical.
 """
