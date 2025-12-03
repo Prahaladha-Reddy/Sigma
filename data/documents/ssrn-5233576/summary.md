@@ -1,282 +1,285 @@
 ## 1. Document Overview
 
--   **Document type:** Research article.
--   **Main purpose or goal of the document:** To analyze the dynamic relationships between unemployment, economic growth (GDP growth), inflation (CPI growth), and Foreign Direct Investment (FDI) in 11 Central and Eastern European (CEE) member countries of the European Union. The study aims to provide panel VAR evidence for these relationships.
--   **Approximate scope:**
-    -   Number of pages: 16.
-    -   High-level topics covered: Macroeconomic dynamics in CEE countries, transition economies, the impact of economic crises (2008 global crisis, COVID-19), panel Vector Autoregression (VAR) methodology, unit root tests, Granger causality, impulse response functions, variance decomposition, and model stability.
--   **One paragraph high-level summary:** This research article investigates the interconnections between unemployment, economic growth, inflation, and FDI in 11 CEE EU countries from 2000 to 2020 using a panel VAR approach. The study finds a unidirectional causality from GDP growth and inflation to unemployment. Specifically, unemployment responds negatively to GDP growth shocks over a two-year period and positively to inflation shocks throughout the analyzed period. A notable finding is the statistically insignificant influence of FDI on the unemployment rate in these CEE economies. The paper uses impulse response functions and variance decomposition to detail these dynamic relationships and their magnitudes.
+- Document type: Research article.
+- Main purpose or goal of the document: To analyze the relationship between unemployment, economic growth (GDP growth rate), inflation (CPI growth rate), and Foreign Direct Investment (FDI) in 11 Central and Eastern European Union (CEE) countries.
+- Approximate scope:
+  - Number of pages: 16 (including references).
+  - High-level topics covered: Macroeconomic variables, CEE economies, panel VAR methodology, impulse response functions, variance decomposition, Granger causality.
+- One paragraph high-level summary capturing what this document is fundamentally about: This research article investigates the dynamic interrelationships among unemployment, economic growth, inflation, and foreign direct investment in 11 CEE member countries of the European Union, using annual data from 2000 to 2020. Employing a panel Vector Autoregression (VAR) approach, the study estimates impulse response functions and conducts variance decomposition analysis to understand how shocks in one variable affect others. The findings indicate a negative influence of GDP growth on unemployment and a positive response of unemployment to inflation, while FDI is found to have a statistically insignificant impact on unemployment rates in these countries.
 
 ## 2. Detailed Section-by-Section Summary
 
--   **Title and Authorship** (Page 1)
-    -   **Page range:** 1
-    -   **Summary:** The document is titled "Unemployment, Economic Growth, Inflation and FDI. Panel VAR evidence for Central and Eastern European Union countries." It lists three authors: Nicoleta PANAITE, Carmen PINTILESCU, and Nicoleta PROHOZESCU (IFTIMI), all affiliated with Alexandru Ioan Cuza University of Iasi, Romania, or its Doctoral School. Their email addresses are provided.
+- **Abstract**
+  - Page range: Page 1
+  - The abstract outlines the paper's objective: analyzing the relationship between unemployment, economic growth, inflation, and FDI for 11 CEE EU member countries using annual data from 2000 to 2020. The methodology involves a panel VAR approach to estimate impulse response functions and conduct variance decomposition analysis. Key findings include a negative influence of GDP growth shock on the unemployment rate over two years, a positive response of unemployment to inflation throughout the period, and a statistically insignificant influence of FDI on the unemployment rate in CEE countries.
 
--   **Abstract** (Page 1)
-    -   **Page range:** 1
-    -   **Summary:** The abstract outlines the paper's objective: to analyze the relationship between unemployment, economic growth, inflation, and FDI for 11 CEE EU member countries using annual data from 2000 to 2020. The methodology involves a panel VAR approach, including impulse response functions and variance decomposition analysis. Key findings indicate a negative influence of the unemployment rate over a two-year period in response to a GDP growth shock, and a positive response of unemployment to inflation throughout the period. Crucially, FDI is found to have no statistically significant influence on the unemployment rate in these countries. The section also lists keywords (unemployment, economic growth, FDI, panel VAR, CEEs economies) and J.E.L. Classification codes (J61, F40, C33).
+- **1. Introduction**
+  - Page range: Page 1-2
+  - This section sets the historical context, describing the 1990s as a period of major structural change for CEE countries transitioning to market economies, which led to high unemployment and inflation. It highlights the crucial role of FDI in stimulating growth, employment, and competitiveness. The global economic crisis of 2008 further impacted these economies, making the analysis of labor market conditions and macroeconomic interactions vital. The paper specifies the 11 CEE countries studied and the data period (2000-2020). It positions its contribution within the existing literature by using a panel VAR approach to address endogeneity and estimate impulse response functions, investigating the interaction between unemployment, economic growth, inflation, and FDI.
 
--   **1. Introduction** (Page 1-2)
-    -   **Page range:** 1-2
-    -   **Summary:** This section sets the historical and economic context for the study. It describes the 1990s as a period of significant structural change for CEE countries transitioning to market economies, leading to high unemployment and inflation. FDI was considered vital for growth, employment, and EU integration. These economies experienced considerable FDI inflows after the 1990s. The 2008 global economic crisis significantly impacted these countries, particularly their labor markets. The paper focuses on 11 CEE EU members (Poland, Romania, Bulgaria, Hungary, Latvia, Lithuania, Estonia, Croatia, Czech Republic, Slovenia, and Slovakia) from 2000-2020. It highlights the unique economic journey of these states, marked by post-communist transition and vulnerability to global recessions. The study contributes to existing literature by using a panel VAR approach to address endogeneity and estimate impulse response functions for unemployment, economic growth, inflation, and FDI. The section concludes by outlining the paper's structure.
+- **2. Literature review**
+  - Page range: Page 2-4
+  - The literature review discusses previous studies on the influence of FDI on economic growth and employment. It notes mixed results regarding FDI's impact on GDP growth, with some studies finding positive effects (e.g., Li and Liu, 2005) and others finding weak or insignificant ones (e.g., Carkovic and Levine, 2005). The section also covers mixed empirical evidence on FDI's impact on employment, citing studies that found positive relationships (e.g., Craigwell, 2006; Ajaga and Nunnenkamp, 2008) and others that found no reduction in unemployment (e.g., Aktar and Oztuk, 2009). The review extends to the role of trade openness, with some studies suggesting it reduces unemployment (e.g., Matusz, 1996) and others indicating it leads to higher long-term unemployment (e.g., Egger and Kreickemeier, 2009). Specifically for CEE countries, the review notes FDI as an important restructuring mechanism, with studies finding positive effects on economic growth (Campos and Kinoshita, 2002) and a short-term decrease in unemployment (Balcerzak and Zurek, 2011). Strat et al. (2015) found mixed causality relations between FDI and unemployment in EU member states. Estrin (2017) observed variable FDI inflows associated with higher GDP and lower unemployment, influenced by EU membership and domestic policies.
 
--   **2. Literature review** (Page 2-4)
-    -   **Page range:** 2-4
-    -   **Summary:** This section reviews prior empirical studies on the relationship between FDI, economic growth, and employment. It notes that evidence on FDI's impact on GDP growth is mixed, with some studies finding positive influence (e.g., Li and Liu, 2005) while others find it weak or insignificant (e.g., Carkovic and Levine, 2005). More recent work (Baiashvili and Gattini, 2020) suggests an inverted-U shaped relationship, with larger FDI impacts for low-to-middle income countries. Similarly, the impact of FDI on employment shows mixed results: some studies report a positive relationship (Craigwell, 2006; Ajaga and Nunnenkamp, 2008; Habib and Sarwar, 2013), while others find no reduction in unemployment (Aktar and Oztuk, 2009). Studies also discuss the role of trade openness, with some linking it to reduced unemployment (Matusz, 1996) and others to increased long-term unemployment (Egger and Kreickemeier, 2009). For CEE countries specifically, FDI was seen as crucial for economic restructuring. Campos and Kinoshita (2002) found a positive effect on economic growth. Balcerzak and Zurek (2011) showed short-term FDI leading to decreased unemployment in Poland. Strat et al. (2015) found mixed causality between FDI and unemployment across 13 EU member states. Estrin (2017) noted substantial but variable FDI inflows in transition economies, linked to higher GDP and lower unemployment, often explained by EU membership and domestic policies.
+- **3. Data and methodology**
+  - Page range: Page 4-5
+  - This section details the dataset and the econometric approach. The study includes 11 CEE countries (Poland, Romania, Bulgaria, Hungary, Latvia, Lithuania, Estonia, Croatia, Czech Republic, Slovenia, and Slovakia) with annual data from 2000 to 2020. Data sources are Eurostat and World Bank. The variables are:
+    - Unemployment rate (%).
+    - GDP growth rate (euro, constant 2010 prices).
+    - Foreign direct investment (% of GDP).
+    - Inflation (growth rate of CPI, constant 2010 prices).
+    - Dummy variables for the 2008 economic crisis and the COVID-19 health crisis.
+  - The core methodology is the panel VAR (PVAR) model, represented by the equation Xit = ai + B(L)Xit + Eit, where Xit is a vector of stationary variables, B(L) is a polynomial matrix with a lag operator L, ai represents country-specific effects, and ɛ is the error term. The analytical steps include:
+    1.  **Stationarity tests**: Using Levin, Lin & Chu (2002) and Im, Pesaran and Shin (2003) tests.
+    2.  **Optimal lag selection**: Using the Hannan-Quinn information criterion.
+    3.  **Impulse response functions (IRFs)**: To describe the effect of a shock in one variable on others over time, using Cholesky decomposition.
+    4.  **Variance decomposition analysis**: To assess the importance of individual shocks in explaining the fluctuation of variables.
 
--   **3. Data and methodology** (Page 4-5)
-    -   **Page range:** 4-5
-    -   **Summary:** This section details the data and econometric approach. The study covers 11 CEE EU countries (listed in the introduction) from 2000 to 2020, using annual data from Eurostat and World Bank. The variables are:
-        -   Unemployment rate (%).
-        -   GDP growth rate (euro, constant 2010 prices).
-        -   Foreign direct investment (% of GDP).
-        -   Inflation (growth rate of consumer price index, constant 2010 prices).
-        -   Two dummy variables for the 2008 economic crisis and the COVID-19 health crisis.
-    The methodology is based on panel VAR (PVAR) models, described by the equation Xit = ai + B(L)Xit + Eit, where Xit is a vector of stationary variables, B(L) is a polynomial matrix with lag operator L, ai are country-specific effects, and ɛ is the error term. The analysis steps include:
-        1.  **Stationarity tests:** Using second-generation panel unit root tests (Levin et al., 2002; Im, Pesaran and Shin, 2003) which relax cross-sectional independence.
-        2.  **Optimal lag selection:** Determined using information criteria, specifically Hannan-Quinn.
-        3.  **Impulse response functions:** Computed using Cholesky decomposition to describe variable responses to shocks.
-        4.  **Variance decomposition analysis:** Performed to assess the importance of changes in one variable in explaining changes in others.
+- **4. Empirical results**
+  - Page range: Page 5
+  - This section introduces the presentation of empirical findings.
 
--   **4. Empirical results** (Page 5)
-    -   **Page range:** 5
-    -   **Summary:** This section introduces the presentation of the empirical findings. It indicates that the following subsections will describe the dataset and then present the results of the panel VAR estimations.
+- **4.1. Dataset Description**
+  - Page range: Page 5-9
+  - This subsection provides a descriptive overview of the variables through graphical representations (Figures 1-4).
+    - **Unemployment (Figure 1)**: Unemployment rates in CEE countries showed an upward trend from 2008 to 2010 (and up to 2013 in some like Bulgaria, Croatia, Poland, Slovenia) due to the global economic crisis. Estonia, Lithuania, and Latvia experienced significant increases. Hungary was the only country where the unemployment rate in 2015 was lower than in 2008. From 2014 to 2019, unemployment generally trended downward. In 2020, Estonia, Lithuania, and the Czech Republic saw the highest growth in unemployment, while Poland remained constant. The lowest rates in 2020 were in Czech Republic (2.6%), Poland (3.2%), and Hungary (4.3%).
+    - **GDP Growth Rate (Figure 2)**: CEE countries entered recession in 2009. Romania, Poland, and Hungary experienced the largest GDP decreases in 2009. Post-2010, economies showed signs of recovery. In 2020, Hungary (-11.7%), Croatia (-9.6%), and Czech Republic (-8.6%) were most affected by significant GDP decreases.
+    - **Inflation (Figure 3)**: Romania recorded the highest inflation levels between 2000-2003 (45.7% in 2000). 2008 saw high inflation rates across all CEE countries, particularly in Latvia (15.4%), Bulgaria (12.3%), Lithuania (10.9%), and Estonia (10.4%). By 2020, Poland, Hungary, and the Czech Republic recorded the highest inflation rates, while Estonia and Slovenia had the lowest.
+    - **FDI (Figure 4)**: FDI levels fluctuated between 2000 and 2020. High FDI values were observed in Bulgaria, Croatia, Latvia, Poland, and Romania during 2006-2007. The COVID-19 pandemic in 2020 led to declining FDI in most countries, except Hungary, where it increased significantly due to the Hungarian Investment Promotion Agency (HIPA).
 
--   **4.1. Dataset Description** (Page 5-8)
-    -   **Page range:** 5-8
-    -   **Summary:** This subsection provides a descriptive overview of the variables through graphical representations for each of the 11 CEE countries.
-        -   **Unemployment Rate (Figure 1, Page 6):** Shows an upward trend from 2008 to 2010 (or 2013 for some, like Bulgaria, Croatia, Poland, Slovenia) due to the global economic crisis. Estonia, Lithuania, and Latvia experienced significant increases. Hungary was the only country where the 2015 unemployment rate was lower than in 2008. Post-2014, rates generally declined until 2019, but rose again in 2020 due to COVID-19, with Estonia, Lithuania, and Czech Republic seeing the highest increases. Czech Republic (2.6%) and Poland (3.2%) recorded the lowest rates in 2020.
-        -   **GDP Growth Rate (Figure 2, Page 7):** Indicates a recessionary period starting in 2009 post-2008 crisis, with Romania, Poland, and Hungary most affected. Post-2010 saw recovery, with fluctuating growth until 2019. In 2020, significant decreases were observed, particularly in Hungary (-11.7%), Croatia (-9.6%), and Czech Republic (-8.6%) due to COVID-19.
-        -   **Inflation (Figure 3, Page 8):** Characterized by high rates in 2008 across all CEE countries, especially Latvia (15.4%), Bulgaria (12.3%), Lithuania (10.9%), and Estonia (10.4%). Romania had the highest inflation early in the period (45.7% in 2000). Between 2009 and 2019, moderate levels prevailed. In 2020, Poland, Hungary, and Czech Republic recorded the highest inflation rates.
-        -   **FDI (Figure 4, Page 9):** FDI levels fluctuated between 2000 and 2020, with high values in 2006-2007 in Bulgaria, Croatia, Latvia, Poland, and Romania. COVID-19 led to declining FDI in most countries in 2020, except Hungary which saw a significant increase due to investment promotion efforts.
+- **4.2. Panel VAR models**
+  - Page range: Page 9
+  - This subsection begins the detailed presentation of the VAR model estimation results.
 
--   **4.2. Panel VAR models** (Page 9)
-    -   **Page range:** 9
-    -   **Summary:** This subsection outlines the steps taken for the Panel VAR model estimation, including stationarity tests, optimal lag selection, Granger causality tests, impulse response functions, and variance decomposition analysis.
+- **4.2.1 Panel unit root tests**
+  - Page range: Page 10
+  - The results of panel unit root tests (Levin, Lin & Chu and Im, Pesaran and Shin) are presented in Table 1. At conventional significance levels, all variables (Unemployment rate, GDP growth rate, CPI growth rate, and FDI) are found to be stationary in levels, both with "Constant" and "Constant and trend" specifications. This is a crucial precondition for PVAR analysis.
 
--   **4.2.1 Panel unit root tests** (Page 10)
-    -   **Page range:** 10
-    -   **Summary:** The initial step involved testing the stationarity of all variables using Levin, Lin & Chu (LLC) and Im, Pesaran and Shin (IPS) panel unit root tests. Table 1 (Page 10) presents the results, showing that all variables (Unemployment rate, GDP growth rate, CPI growth rate, FDI) are stationary in levels at conventional significance levels (p<0.01, p<0.05, p<0.1), both with constant and constant and trend specifications. This justifies proceeding with the PVAR model in levels. The optimal number of lags for the VAR model was then determined using informational criteria. Table 2 (Page 10) indicates that Schwarz criterion suggests VAR(2), Hannan-Quinn suggests VAR(3), and Akaike suggests VAR(6). The study chose to proceed with a VAR(3) model for the analysis of the relationships.
+- **Lag length criteria**
+  - Page range: Page 10
+  - Table 2 displays the AIC, SC, and HQ criteria for different lag lengths (0 to 6). The Schwarz criterion (SC) suggests a VAR(2) model, the Hannan-Quinn criterion (HQ) suggests a VAR(3) model, and the Akaike criterion (AIC) suggests a VAR(6) model. Based on these mixed results, the paper decides to use a **VAR(3) model** for the analysis.
 
--   **4.2.2. Causality relationship between variables (Granger test)** (Page 11)
-    -   **Page range:** 11
-    -   **Summary:** The Granger causality test was applied to investigate the causal relationships between GDP growth rate, FDI, inflation, and unemployment. Table 3 (Page 11) shows the results:
-        -   GDP growth rate Granger causes unemployment (Chi-sq 25.23335, Prob. 0.0000).
-        -   Inflation rate Granger causes unemployment (Chi-sq 42.28839, Prob. 0.0000).
-        -   FDI does not Granger cause unemployment rate (Prob. 0.7666).
-        -   Unemployment rate does not Granger cause GDP (Prob. 0.3018), inflation (Prob. 0.1480), or FDI (Prob. 0.8123).
-    These results indicate a unidirectional relationship from GDP growth and inflation to unemployment. Foreign direct investment does not have a statistically significant impact on unemployment.
+- **4.2.2. Causality relationship between variables (Granger test)**
+  - Page range: Page 11
+  - Table 3 presents the Granger causality test results.
+    - GDP growth rate **does** Granger Cause unemployment rate (Prob. = 0.0000).
+    - Inflation rate **does** Granger Cause unemployment rate (Prob. = 0.0000).
+    - FDI **does not** Granger Cause unemployment rate (Prob. = 0.7666, statistically insignificant).
+    - Unemployment rate **does not** Granger Cause GDP growth (Prob. = 0.3018).
+    - Unemployment rate **does not** Granger Cause Inflation (Prob. = 0.1480).
+    - Unemployment rate **does not** Granger Cause FDI (Prob. = 0.8123).
+  - These results indicate a unidirectional relationship from GDP growth to unemployment and from inflation to unemployment. FDI does not have a statistically significant causal impact on unemployment in these 11 countries, nor does unemployment Granger cause FDI.
 
--   **4.2.3. Impulse response function** (Page 11-12)
-    -   **Page range:** 11-12
-    -   **Summary:** The impulse response functions (Figure 5, Page 11) illustrate the dynamic effect of shocks.
-        -   **Unemployment to GDP Growth Shock:** The unemployment rate responds negatively to a one standard deviation shock in GDP growth for approximately 2 years, with a maximum decrease of 0.2% in the second year. After this, it registers a slight upward trend, stabilizing over time.
-        -   **Unemployment to FDI Shock:** A one standard deviation shock on foreign direct investment leads to a decrease in unemployment for about 4 years, but this decrease is statistically insignificant. From the 5th period onwards, the unemployment rate slightly rises and stabilizes.
-        -   **Unemployment to Inflation Shock:** An increase in inflation generates a positive response on the unemployment rate, reaching a maximum increase of 0.8% after 3 years. The positive relationship persists throughout the analyzed period, although a downward trend is observed from the 4th year.
+- **4.2.3. Impulse response function**
+  - Page range: Page 11-12
+  - Figure 5 illustrates the impulse response functions.
+    - **Response of Unemployment to GDP_GROWTH**: A shock in GDP growth rate leads to a negative response in the unemployment rate for about 2 years, decreasing by a maximum of 0.2% in the second year. After that, it follows an upward trend and stabilizes.
+    - **Response of Unemployment to FDI**: A shock in FDI leads to a decrease in unemployment for about 4 years, but this decrease is described as statistically insignificant. After the 5th period, the unemployment rate rises slightly, stabilizing at a constant level.
+    - **Response of Unemployment to INFLATION**: An increase in inflation generates a positive response on the unemployment rate, reaching a maximum increase of 0.8% after 3 years. The relationship remains positive throughout the analyzed period, but registers a downward trend from the 4th year.
 
--   **4.2.4. Variance decomposition** (Page 12)
-    -   **Page range:** 12
-    -   **Summary:** The variance decomposition analysis (Table 4, Page 12) quantifies the proportion of the forecast error variance of unemployment explained by shocks in GDP growth, inflation, and FDI.
-        -   In the 2nd year, inflation shocks account for 6.43% of unemployment volatility, while GDP growth shocks account for 1.03%. FDI shocks contribute only 0.15%, confirming its statistically insignificant impact.
-        -   After 10 periods, inflation accounts for 23.39% of unemployment variation, GDP growth for 5.4%, and FDI shocks for a minor 1.63%. The largest portion of unemployment variation is still explained by its own past shocks, diminishing over time from 100% in period 1 to 69.58% in period 10.
+- **4.2.4. Variance decomposition**
+  - Page range: Page 12
+  - Table 4 presents the forecast error variance decomposition of unemployment.
+    - In the 2nd year, inflation rate shocks account for 6.43% of unemployment volatility, and GDP growth shocks account for 1.03%. FDI shocks account for a negligible 0.15%.
+    - After 10 periods, the variation of the unemployment rate is attributed significantly to inflation (23.39%) and to GDP growth (5.4%), while FDI shocks explain only 1.63%. This confirms the limited impact of FDI found in the Granger causality and impulse response analyses.
 
--   **4.2.6. Stability testing of the VAR model** (Page 12-13)
-    -   **Page range:** 12-13
-    -   **Summary:** To ensure the reliability of the VAR model, stability tests were performed. Figure 6 (Page 13) shows the inverse roots of the AR characteristic polynomial. All roots are positioned inside the unit circle, indicating that the estimated model is stable and correctly specified. Additionally, the LM test was used to validate the model's errors, confirming their independence.
+- **4.2.6. Stability testing of the VAR model**
+  - Page range: Page 12
+  - Figure 6 (Inverse Roots of AR Characteristic Polynomial) shows that all the values are positioned inside the unit circle, indicating that the estimated VAR model is stable. An LM test also confirmed the independence of modeling errors.
 
--   **5. Conclusions** (Page 13-14)
-    -   **Page range:** 13-14
-    -   **Summary:** This section summarizes the main findings and provides a narrative recap of the economic trends in CEE countries.
-        -   **Unemployment:** Increased significantly post-2008 crisis (2009-2010), peaking between 2011-2014, then trended downwards until 2019. In 2020, Estonia, Lithuania, and Czech Republic saw the highest unemployment growth rates.
-        -   **GDP Growth:** Decreased drastically in 2009 (Romania, Poland, Hungary most affected), with modest growth until 2015, then gained traction until 2019. In 2020, GDP growth reached a turning point with an average decrease of 5.5%, Hungary and Croatia being most affected by COVID-19.
-        -   **Inflation:** Reached new highs in 2008 (Latvia, Bulgaria, Lithuania, Estonia highest). Moderate levels prevailed from 2009-2019. In 2020, Poland, Hungary, and Czech Republic recorded the highest inflation levels.
-        -   **Model Results:** The empirical study confirmed a one-way relationship from inflation and GDP growth rate to unemployment. GDP growth negatively impacts unemployment (maximum decrease of 0.2% in the second year). Inflation positively affects unemployment throughout the period. FDI's influence on unemployment was found to be statistically insignificant based on both Granger causality and impulse response functions.
+- **5. Conclusions**
+  - Page range: Page 13
+  - The conclusions summarize the key findings. Unemployment in CEE countries rose significantly post-2008 global recession, peaking between 2011-2014, then declining until 2019, with Estonia, Lithuania, and Czech Republic showing the highest growth in 2020. GDP growth also decreased drastically post-22008, with Romania, Poland, and Hungary most affected. It recovered post-2015 but decreased again in 2020 due to COVID-19, impacting Hungary and Croatia most. Inflation reached highs in 2008 (Latvia, Bulgaria, Lithuania, Estonia), moderated between 2009-2019, and saw a turning point in 2020 with Poland, Hungary, and Czech Republic recording the highest levels. The empirical study found a one-way relationship from inflation and GDP growth to unemployment. FDI did not show a causal relationship with unemployment. A GDP growth shock negatively impacts unemployment (max 0.2% decrease in year 2), while an inflation shock positively impacts unemployment (max 0.8% increase in year 3). FDI's impact on unemployment was statistically insignificant.
 
--   **References** (Page 14-16)
-    -   **Page range:** 14-16
-    -   **Summary:** This section provides a comprehensive list of academic papers, working papers, and data sources cited throughout the document, including URLs for Eurostat and World Bank data accessed in January 2022.
+- **References**
+  - Page range: Page 14-16
+  - This section lists all the academic sources cited throughout the document, including journal articles, working papers, and data sources (Eurostat, World Bank).
 
 ## 3. Key Ideas, Claims, and Takeaways
 
--   **Key Idea 1 – Unidirectional Causality to Unemployment**
-    The study conclusively demonstrates a unidirectional Granger causality from both GDP growth and inflation to the unemployment rate in CEE countries. This means changes in economic growth and inflation can predict changes in unemployment, but not vice-versa. This is a central finding regarding the macroeconomic relationships in these transition economies.
-    (Page 11, Section 4.2.2. Causality relationship between variables (Granger test); Page 14, Section 5. Conclusions)
-    Evidence: Table 3 (Page 11) shows significant probability values (0.0000) for "GDP growth rate does not Granger Cause Unemployment" and "Inflation rate does not Granger Cause Unemployment" null hypotheses to be rejected, while the reverse is not true.
+- **Key Idea 1 – Unidirectional Causality to Unemployment**
+  - What the idea/claim is: Both GDP growth rate and inflation rate are found to Granger cause the unemployment rate in CEE countries, but unemployment does not Granger cause these variables.
+  - Why it matters in the context of the document: This establishes a clear direction of influence, indicating that economic growth and price stability are drivers of labor market outcomes, rather than the other way around, in the CEE context. This is crucial for policy implications.
+  - Where it appears: Page 11, Section 4.2.2. Causality relationship between variables (Granger test).
+  - Evidence: Table 3 shows "Prob." values of 0.0000 for "GDP growth rate does not Granger Cause" and "Inflation rate does not Granger Cause Unemployment," indicating rejection of the null hypothesis and thus causality.
 
--   **Key Idea 2 – Negative Unemployment Response to GDP Growth Shocks**
-    An impulse (one standard deviation shock) in GDP growth rate leads to a negative response in the unemployment rate. This effect is observed over approximately two years, with a maximum decrease of 0.2% in the second year, before stabilizing. This implies that stronger economic growth helps reduce unemployment in the short to medium term.
-    (Page 11, Section 4.2.3. Impulse response function; Page 14, Section 5. Conclusions)
-    Evidence: Figure 5 (Page 11), panel "Response of UNEMPLOYMENT to GDP_GROWTH", clearly shows the unemployment line dropping below zero for the first two periods after the shock. Variance decomposition (Table 4, Page 12) shows GDP growth contributing 1.03% to unemployment volatility in year 2, and 5.4% over 10 years.
+- **Key Idea 2 – Insignificant Impact of FDI on Unemployment**
+  - What the idea/claim is: Foreign Direct Investment (FDI) does not have a statistically significant causal impact on the unemployment rate in the 11 CEE countries studied.
+  - Why it matters in the context of the document: This challenges a common assumption that FDI automatically leads to job creation and unemployment reduction in transitioning economies. It suggests that, for these CEE countries during the analyzed period, FDI's role in direct job impact is limited or overshadowed by other factors.
+  - Where it appears: Page 11, Section 4.2.2. Causality relationship between variables (Granger test), and Page 12, Section 4.2.4. Variance decomposition, and Page 14, Conclusion.
+  - Evidence: Table 3 shows a "Prob." value of 0.7666 for "FDI does not Granger Cause Unemployment rate." Figure 5 shows the impulse response of unemployment to FDI, which is described as "statistically insignificant." Table 4 indicates that FDI shocks explain only 0.15% of unemployment volatility in year 2 and 1.63% after 10 periods, reinforcing its minimal impact.
 
--   **Key Idea 3 – Positive Unemployment Response to Inflation Shocks**
-    A shock in inflation generates a positive response in the unemployment rate, meaning increased inflation is associated with higher unemployment. This positive relationship persists throughout the analyzed period, peaking at an increase of 0.8% after three years. This challenges the traditional Phillips curve inverse relationship in this context.
-    (Page 12, Section 4.2.3. Impulse response function; Page 14, Section 5. Conclusions)
-    Evidence: Figure 5 (Page 11), panel "Response of UNEMPLOYMENT to INFLATION", shows the unemployment line rising above zero after the inflation shock. Variance decomposition (Table 4, Page 12) shows inflation contributing 6.43% to unemployment volatility in year 2, and 23.39% over 10 years, making it the largest external contributor.
+- **Key Idea 3 – Negative Response of Unemployment to GDP Growth**
+  - What the idea/claim is: A positive shock in GDP growth rate leads to a negative response (decrease) in the unemployment rate, with the maximum decrease occurring around the second year.
+  - Why it matters in the context of the document: This confirms the expected counter-cyclical relationship between economic growth and unemployment (Okun's Law principle) for CEE economies. It highlights that policies promoting GDP growth are effective in reducing unemployment.
+  - Where it appears: Page 11, Section 4.2.3. Impulse response function.
+  - Evidence: Figure 5 ("Response of UNEMPLOYMENT to GDP_GROWTH") visually demonstrates this negative response, with the text stating a maximum decrease of 0.2% in the second year.
 
--   **Key Idea 4 – Insignificant Influence of FDI on Unemployment**
-    Contrary to some expectations, Foreign Direct Investment (FDI) does not have a statistically significant influence on the unemployment rate in the studied CEE countries. Both Granger causality tests and impulse response functions support this finding, indicating that while FDI shocks might initially lead to a slight, temporary decrease in unemployment, this effect is not statistically significant.
-    (Page 11, Section 4.2.2. Causality relationship between variables (Granger test); Page 11-12, Section 4.2.3. Impulse response function; Page 14, Section 5. Conclusions)
-    Evidence: Table 3 (Page 11) shows a high probability (0.7666) for "FDI does not Granger Cause Unemployment rate" null hypothesis, meaning it cannot be rejected. Figure 5 (Page 11), panel "Response of UNEMPLOYMENT to FDI", shows a decrease but is explicitly stated as "statistically insignificant." Variance decomposition (Table 4, Page 12) shows a very minor contribution of FDI to unemployment volatility (0.15% in year 2, 1.63% over 10 years).
+- **Key Idea 4 – Positive Response of Unemployment to Inflation**
+  - What the idea/claim is: An increase (shock) in the inflation rate generates a positive response (increase) in the unemployment rate, reaching a maximum increase after approximately three years.
+  - Why it matters in the context of the document: This finding suggests that higher inflation, rather than reducing unemployment (as per some Phillips curve interpretations), can contribute to higher unemployment in the CEE context, potentially due to economic instability or reduced investment caused by inflation.
+  - Where it appears: Page 12, Section 4.2.3. Impulse response function.
+  - Evidence: Figure 5 ("Response of UNEMPLOYMENT to INFLATION") shows this positive response, with the text indicating a maximum increase of 0.8% after three years.
 
--   **Key Idea 5 – Economic Context of CEE Countries (2000-2020)**
-    The document emphasizes that the period 2000-2020 for the CEE countries was marked by their transition to market economies, susceptibility to global economic crises (2008) and health crises (COVID-19), and varying degrees of recovery and macroeconomic stability. Understanding these unique dynamics is crucial for interpreting the relationships between macroeconomic variables.
-    (Page 1, Section 1. Introduction; Page 5-9, Section 4.1. Dataset Description; Page 13, Section 5. Conclusions)
-    Evidence: The entire "Introduction" section sets this context. Section 4.1, with Figures 1-4, visually illustrates the trends and impacts of these crises on unemployment, GDP growth, inflation, and FDI across the region.
+- **Key Idea 5 – Panel VAR Methodology for Dynamic Relationships**
+  - What the idea/claim is: The study uses a Panel Vector Autoregression (PVAR) model to analyze dynamic relationships between variables, addressing endogeneity and estimating impulse response functions and variance decomposition.
+  - Why it matters in the context of the document: PVAR is a robust econometric approach suitable for panel data, allowing for the simultaneous estimation of interdependencies between multiple variables across different entities (countries) over time. This methodology provides a comprehensive understanding of the dynamic effects and contributions of shocks.
+  - Where it appears: Page 2, Section 1. Introduction; Page 5, Section 3. Data and methodology.
+  - Evidence: The document explicitly describes the PVAR model (Xit = ai + B(L)Xit + Eit), the steps involved (unit root tests, lag selection, IRFs, variance decomposition), and presents the results derived from this model (Tables 1-4, Figures 5-6).
 
 ## 4. Important Tables (with page numbers)
 
--   **Table ID:** Table 1
--   **Page:** 10
--   **Title/Caption:** The results of panel unit root tests
--   **What it shows (content):** This table presents the statistical results for panel unit root tests (Levin, Lin & Chu - LLC, and Im, Pesaran and Shin - IPS) for all four variables: Unemployment rate, GDP growth rate, CPI growth rate, and FDI. For each variable, tests are run with "Constant" and "Constant and trend" specifications. The table shows the "Stat. test" value and the corresponding "Prob." (probability) value. All probability values are very low (mostly 0.000***, 0.001***, 0.014**, 0.051*, 0.011**), indicating strong rejection of the null hypothesis of a unit root at conventional significance levels (1%, 5%, 10%).
--   **Why it is important:** This table is crucial because it establishes that all variables used in the study are stationary in levels. This is a fundamental prerequisite for applying the Panel VAR methodology, as VAR models typically require stationary variables to avoid spurious regression results. It directly supports the methodological choices made in the paper and ensures the validity of subsequent analyses like impulse response functions and variance decomposition. It is linked to **Key Idea 1**.
+- **Table ID:** Table 1
+- **Page:** 10
+- **Title/Caption:** The results of panel unit root tests
+- **What it shows (content):**
+  - This table presents the results of two widely used panel unit root tests: Levin, Lin & Chu (LLC) and Im, Pesaran and Shin (IPS). It tests the stationarity of four variables: Unemployment rate, GDP growth rate, CPI growth rate (inflation), and FDI. For each variable, tests are performed for models with "Constant" and "Constant and trend" specifications. The table provides the "Stat. test" value and the corresponding "Prob." (p-value). All variables consistently show very low p-values (e.g., 0.000*** or 0.014**, 0.051*, 0.011**) across both tests and model specifications, indicating stationarity.
+- **Why it is important:**
+  - This table is crucial because stationarity is a fundamental assumption for time series analysis, especially for VAR models. Its results confirm that all variables are integrated of order zero (stationary in levels), validating the use of the panel VAR methodology and ensuring the reliability of subsequent analyses like Granger causality, impulse response functions, and variance decomposition. It directly supports **Key Idea 5** regarding the methodology.
 
--   **Table ID:** Table 2
--   **Page:** 10
--   **Title/Caption:** Lag length criteria
--   **What it shows (content):** This table displays the values of three information criteria (Akaike Information Criterion - AIC, Schwarz Criterion - SC, and Hannan-Quinn Criterion - HQ) for different lag lengths (0 to 6) of the Panel VAR model. The criteria help determine the optimal number of lags to include in the model. SC suggests a VAR(2) model (lowest value at lag 2), HQ suggests a VAR(3) model (lowest value at lag 3), and AIC suggests a VAR(6) model (lowest value at lag 6). The authors chose a VAR(3) model based on these criteria.
--   **Why it is important:** This table is essential for the proper specification of the Panel VAR model. Choosing the correct lag length is vital for capturing the dynamic relationships between variables accurately without overfitting or underfitting the model. It directly impacts the reliability of the impulse response functions and variance decomposition results. This table supports the methodological choice discussed in Section 3 and 4.2.1.
+- **Table ID:** Table 2
+- **Page:** 10
+- **Title/Caption:** Lag length criteria
+- **What it shows (content):**
+  - This table displays various information criteria (AIC - Akaike Information Criterion, SC - Schwarz Criterion, HQ - Hannan-Quinn Criterion) for different lag lengths (from 0 to 6) for the Panel VAR model. The criteria values are used to determine the optimal number of lags. The Schwarz criterion suggests a lag of 2 (21.68898*), Hannan-Quinn suggests a lag of 3 (21.15823*), and Akaike suggests a lag of 6 (20.55633*).
+- **Why it is important:**
+  - This table is essential for the specification of the PVAR model. Choosing the correct lag length is critical for accurate estimation and inference in VAR models, as it affects the model's ability to capture the dynamic relationships between variables without being over- or under-parameterized. The authors choose a VAR(3) model based on these criteria. It directly supports **Key Idea 5** regarding the methodology.
 
--   **Table ID:** Table 3
--   **Page:** 11
--   **Title/Caption:** Granger causality test
--   **What it shows (content):** This table presents the results of the Granger causality test, examining whether one variable can predict another. It lists several "Null Hypothesis" statements, such as "GDP growth rate does not Granger Cause Unemployment," along with their corresponding Chi-squared ("Chi-sq") statistics and probability ("Prob.") values.
-    -   The null hypotheses that GDP growth and inflation *do not* Granger cause unemployment are rejected (Prob. 0.0000), indicating causality.
-    -   The null hypotheses that FDI *does not* Granger cause unemployment (Prob. 0.7666) are *not* rejected.
-    -   The null hypotheses that unemployment *does not* Granger cause GDP, inflation, or FDI are *not* rejected (Prob. 0.3018, 0.1480, 0.8123 respectively).
--   **Why it is important:** This table provides direct evidence for the causal relationships (or lack thereof) between the key macroeconomic variables. It explicitly supports **Key Idea 1** (unidirectional causality to unemployment) and **Key Idea 4** (insignificant FDI influence on unemployment). These results are foundational for interpreting the impulse response functions and variance decomposition.
+- **Table ID:** Table 3
+- **Page:** 11
+- **Title/Caption:** Granger causality test
+- **What it shows (content):**
+  - This table presents the results of the Granger causality test, examining the causal relationships between GDP growth rate, inflation rate, FDI, and the unemployment rate. For each "Null Hypothesis" (e.g., "GDP growth rate does not Granger Cause Unemployment"), it provides the Chi-sq statistic and the corresponding "Prob." (p-value).
+  - The results show very low p-values (0.0000) for "GDP growth rate does not Granger Cause Unemployment" and "Inflation rate does not Granger Cause Unemployment," indicating that these null hypotheses are rejected. Conversely, the p-values for all other hypotheses (involving unemployment not Granger causing other variables, and FDI not Granger causing unemployment) are high (e.g., 0.7666 for FDI to unemployment), indicating acceptance of the null hypothesis.
+- **Why it is important:**
+  - This table directly addresses the causal links between the key variables, which is a central objective of the study. It provides evidence for **Key Idea 1** (unidirectional causality from GDP growth and inflation to unemployment) and **Key Idea 2** (no significant Granger causality from FDI to unemployment), making it one of the most significant results for understanding the relationships in CEE economies.
 
--   **Table ID:** Table 4
--   **Page:** 12
--   **Title/Caption:** Variance decomposition analysis of unemployment
--   **What it shows (content):** This table breaks down the percentage of the forecast error variance of the unemployment rate that is attributable to shocks from each variable (Unemployment itself, GDP_GROWTH, INFLATION, FDI) over 10 periods. In period 1, unemployment's variance is 100% due to its own shock. By period 2, Inflation accounts for 6.43% and GDP growth for 1.03%, while FDI accounts for 0.15%. Over 10 periods, inflation's contribution rises to 23.39%, GDP growth's to 5.4%, and FDI's to 1.63%. The remaining variance is explained by unemployment's own shock (69.58% in period 10).
--   **Why it is important:** This table quantifies the relative importance of shocks from other variables in explaining fluctuations in unemployment over time. It complements the impulse response functions by providing a clearer picture of how much each variable contributes to the uncertainty of unemployment forecasts. It reinforces **Key Idea 3** (inflation as a significant driver of unemployment variance), **Key Idea 2** (GDP growth's contribution), and especially **Key Idea 4** (the very limited role of FDI in explaining unemployment variance).
+- **Table ID:** Table 4
+- **Page:** 12
+- **Title/Caption:** Variance decomposition analysis of unemployment
+- **What it shows (content):**
+  - This table shows the forecast error variance decomposition for the unemployment rate over a 10-period horizon (annual, presumably). For each period, it indicates the percentage of the variation in unemployment that is explained by shocks to unemployment itself, GDP growth, inflation, and FDI.
+  - In the initial periods (e.g., Period 1), unemployment's variation is entirely self-explained (100%). By Period 2, inflation explains 6.43%, GDP growth 1.03%, and FDI 0.15%. Over time, the contribution of inflation and GDP growth increases (to 23.39% and 5.4% by Period 10, respectively), while FDI's contribution remains very low (1.63% by Period 10).
+- **Why it is important:**
+  - This table quantifies the relative importance of each variable's shocks in explaining future fluctuations in the unemployment rate. It complements the impulse response functions by providing a clearer picture of the magnitude of influence over time. It reinforces the findings related to **Key Idea 1** (inflation and GDP growth influence unemployment) and especially **Key Idea 2** (FDI has minimal importance in explaining unemployment variations).
 
 ## 5. Important Images / Figures (with page numbers)
 
--   **Figure ID:** Figure 1
--   **Page:** 6
--   **Title/Caption:** The evolution of unemployment rate in the CEE countries
--   **What the figure shows:** This figure consists of 11 small line charts, each displaying the annual unemployment rate (%) for one of the CEE countries (Bulgaria, Croatia, Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Romania, Slovakia, Slovenia) from 2000 to 2020. The Y-axis represents the unemployment rate, and the X-axis represents the years. Key visual patterns include a general increase in unemployment around 2008-2010 (global financial crisis), followed by a decline until 2019, and a slight uptick in 2020 (COVID-19). The magnitude of these changes varies significantly across countries, with Estonia, Latvia, and Lithuania showing dramatic peaks post-2008.
--   **Why it is important:** This figure visually describes the historical context of unemployment in the CEE region, highlighting the impact of major economic events (like the 2008 crisis and COVID-19) and the diverse experiences of individual countries. It provides crucial background for understanding the motivation and scope of the study and supports **Key Idea 5**.
+- **Figure ID:** Figure 1
+- **Page:** 6
+- **Title/Caption:** The evolution of unemployment rate in the CEE countries
+- **What the figure shows:**
+  - This figure comprises 11 small line charts, each representing the annual unemployment rate for a specific CEE country (Bulgaria, Croatia, Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Romania, Slovakia, Slovenia) from 2000 to 2020. The Y-axis represents the unemployment rate (%), and the X-axis represents the years.
+  - Key visual patterns include a general increase in unemployment rates around 2008-2010 (global financial crisis), followed by a decline until around 2019, and then some fluctuations or increases in 2020 (COVID-19 pandemic). Estonia, Lithuania, and Latvia show particularly sharp peaks post-2008.
+- **Why it is important:**
+  - This figure provides a visual overview of the dependent variable's (unemployment rate) historical trends across the sample, highlighting the impact of major economic events like the 2008 global crisis and the 2020 COVID-19 pandemic. It grounds the abstract and introduction by showing the actual data behavior that the econometric model aims to explain. It helps to understand the context of the study's findings on unemployment drivers.
 
--   **Figure ID:** Figure 2
--   **Page:** 7
--   **Title/Caption:** The evolution of GDP growth rate in the CEE countries
--   **What the figure shows:** Similar to Figure 1, this figure presents 11 line charts, each illustrating the annual GDP growth rate (%) for the individual CEE countries from 2000 to 2020. The Y-axis represents GDP growth, and the X-axis represents the years. A prominent feature is the sharp drop in GDP growth rates, often into negative territory, around 2008-2009 due to the global financial crisis. This is followed by a period of recovery and fluctuation, with another significant dip observed in 2020 due to the COVID-19 pandemic. The charts show considerable variability in growth rates, with some countries experiencing more severe contractions than others.
--   **Why it is important:** This figure is vital for establishing the economic context and trends in GDP growth for the CEE region, especially concerning crisis periods. It illustrates the economic environment in which unemployment evolves and is a key input variable in the Panel VAR model. It supports **Key Idea 5** by detailing the economic performance over the study period.
+- **Figure ID:** Figure 2
+- **Page:** 7
+- **Title/Caption:** The evolution of GDP growth rate in the CEE countries
+- **What the figure shows:**
+  - This figure consists of 11 line charts, one for each CEE country, illustrating the annual GDP growth rate from 2000 to 2020. The Y-axis shows GDP growth (%), and the X-axis represents the years.
+  - The charts clearly show a significant dip into negative growth rates for most countries around 2009 (post-2008 crisis), followed by recovery and fluctuating positive growth, and another notable dip in 2020 (COVID-19). Hungary, Croatia, and the Czech Republic show large negative growth in 2020.
+- **Why it is important:**
+  - This figure visually presents the evolution of a key independent variable, GDP growth. It demonstrates the volatility and cyclical nature of economic growth in CEE countries, especially in response to global crises. Understanding these trends is crucial for interpreting the model's findings on how GDP growth affects unemployment, supporting the empirical context for **Key Idea 3**.
 
--   **Figure ID:** Figure 3
--   **Page:** 8
--   **Title/Caption:** The evolution of consumer price index growth (inflation) in the CEE countries (reference year 2010=100)
--   **What the figure shows:** This figure displays 11 line charts, each showing the annual inflation rate (consumer price index growth) for the CEE countries from 2000 to 2020. The Y-axis indicates the inflation rate. Many charts show higher and more volatile inflation rates in the early 2000s (especially Romania), with significant spikes around 2008-2009 (global crisis). Post-2009, inflation generally became more moderate and stable for most countries, though some variations and a slight increase in 2020 are visible.
--   **Why it is important:** This figure provides the historical context of inflation, another critical macroeconomic variable in the study. It helps understand the economic environment and the fluctuations in prices that might influence unemployment. It supports **Key Idea 5** by showcasing the inflation trends across the CEE region.
+- **Figure ID:** Figure 3
+- **Page:** 8
+- **Title/Caption:** The evolution of consumer price index growth (inflation) in the CEE countries (reference year 2010=100)
+- **What the figure shows:**
+  - This figure displays 11 line charts, one for each CEE country, showing the annual inflation rate (CPI growth) from 2000 to 2020. The Y-axis indicates the inflation rate (%), and the X-axis represents the years.
+  - Visual patterns include high inflation spikes in some countries in the early 2000s (e.g., Romania), and a general spike around 2008 for most countries. Inflation then generally moderated before some increases in 2020.
+- **Why it is important:**
+  - This figure illustrates the historical trends of another important independent variable, inflation. It highlights periods of significant price instability and subsequent moderation, which are relevant for analyzing inflation's impact on unemployment. This visual context is important for understanding the model's findings related to **Key Idea 4**.
 
--   **Figure ID:** Figure 4
--   **Page:** 9
--   **Title/Caption:** The evolution FDI in the CEE countries
--   **What the figure shows:** This figure presents 11 line charts illustrating the annual Foreign Direct Investment (% of GDP) for each CEE country from 2000 to 2020. The Y-axis indicates FDI as a percentage of GDP, and the X-axis shows the years. The charts reveal significant fluctuations in FDI inflows over time and across countries, with notable peaks in the mid-2000s (e.g., 2006-2007). There are also instances of negative FDI, indicating divestment. The figure highlights the variability and importance of FDI flows in these economies.
--   **Why it is important:** This figure visualizes the trends of FDI, which is a key explanatory variable in the study. It helps to understand the patterns of foreign investment that were hypothesized to influence employment, despite the study's eventual finding of its statistically insignificant impact. It supports **Key Idea 5** and contextualizes **Key Idea 4**.
+- **Figure ID:** Figure 4
+- **Page:** 9
+- **Title/Caption:** The evolution FDI in the CEE countries
+- **What the figure shows:**
+  - This figure presents 11 line charts, one for each CEE country, depicting the annual Foreign Direct Investment (FDI) levels (presumably as % of GDP, based on variable description on page 5) from 2000 to 2020. The Y-axis represents FDI levels, and the X-axis represents the years.
+  - The charts show considerable fluctuations in FDI inflows across countries and over time, with some peaks around 2006-2007 in countries like Bulgaria, Croatia, Latvia, Poland, and Romania. A general decline or fluctuation is visible in 2020 for most, with Hungary being an exception with an increase.
+- **Why it is important:**
+  - This figure provides the visual context for FDI, which is a key independent variable. Its fluctuating nature across countries helps in understanding why its impact on unemployment might be varied or statistically insignificant, as suggested by **Key Idea 2**. It allows readers to grasp the magnitude and patterns of FDI inflows into the CEE region.
 
--   **Figure ID:** Figure 5
--   **Page:** 11
--   **Title/Caption:** Impulse response functions
--   **What the figure shows:** This figure contains three line charts, representing the impulse response functions of "UNEMPLOYMENT" to a one standard deviation shock in "GDP_GROWTH", "INFLATION", and "FDI", respectively, over 10 periods. The Y-axis shows the response of unemployment, and the X-axis shows the periods.
-    -   **Unemployment to GDP_GROWTH:** Shows unemployment decreasing for about 2 periods (negative response), then slightly increasing and stabilizing.
-    -   **Unemployment to INFLATION:** Shows unemployment increasing (positive response) for the entire period, peaking around period 3, then gradually decreasing but remaining positive.
-    -   **Unemployment to FDI:** Shows unemployment slightly decreasing for about 4 periods (negative response), but the confidence bands (dashed lines) indicate this effect is not statistically significant as they often cross zero. After period 4, it slightly increases and stabilizes.
--   **Why it is important:** This figure is central to the empirical results of the paper. It directly illustrates the dynamic interactions and the direction and duration of the impact of shocks from GDP growth, inflation, and FDI on unemployment. It provides visual evidence supporting **Key Idea 2** (negative unemployment response to GDP growth), **Key Idea 3** (positive unemployment response to inflation), and critically, **Key Idea 4** (statistically insignificant FDI impact on unemployment).
+- **Figure ID:** Figure 5
+- **Page:** 11
+- **Title/Caption:** Impulse response functions
+- **What the figure shows:**
+  - This figure contains three impulse response function (IRF) plots, illustrating the response of the unemployment rate to a one-standard-deviation shock in three different variables: GDP growth, inflation, and FDI. Each plot shows the response over 10 periods, with confidence bands.
+  - The "Response of UNEMPLOYMENT to GDP_GROWTH" plot shows an initial negative response (unemployment decreases) for about 2 years.
+  - The "Response of UNEMPLOYMENT to INFLATION" plot shows a positive response (unemployment increases) throughout the period, peaking around year 3.
+  - The "Response of UNEMPLOYMENT to FDI" plot shows a slight negative response (decrease) for about 4 years, but the confidence bands suggest insignificance.
+- **Why it is important:**
+  - This figure is central to the empirical results, as it visually represents the dynamic interactions between unemployment and the other macroeconomic variables. It directly supports **Key Idea 3** (negative unemployment response to GDP growth), **Key Idea 4** (positive unemployment response to inflation), and **Key Idea 2** (insignificant unemployment response to FDI), providing concrete evidence for the study's main claims regarding these relationships.
 
--   **Figure ID:** Figure 6
--   **Page:** 13
--   **Title/Caption:** Testing the stability of the VAR model - Unit circle
--   **What the figure shows:** This figure is a scatter plot on a complex plane, showing the "Inverse Roots of AR Characteristic Polynomial." The plot displays several points (roots) within a unit circle (a circle with radius 1 centered at the origin).
--   **Why it is important:** This figure is crucial for validating the stability of the estimated VAR model. For a VAR model to be stable and correctly specified, all inverse roots of the characteristic polynomial must lie within the unit circle. The figure confirms this condition is met, thereby supporting the reliability and validity of the impulse response functions and variance decomposition derived from the model. This is a key methodological check.
+- **Figure ID:** Figure 6
+- **Page:** 13
+- **Title/Caption:** Testing the stability of the VAR model - Unit circle
+- **What the figure shows:**
+  - This figure displays a unit circle with several dots plotted inside it. These dots represent the inverse roots of the AR (Autoregressive) characteristic polynomial of the estimated VAR model.
+- **Why it is important:**
+  - This figure is crucial for validating the stability of the estimated VAR model. For a VAR model to be stable and correctly specified, all inverse roots of the characteristic polynomial must lie within the unit circle. The figure visually confirms that none of the roots are outside the circle, indicating the model's stability and thus the reliability of the impulse response functions and variance decomposition results. It directly supports **Key Idea 5** by confirming the robustness of the chosen econometric methodology.
 
 ## 6. Concepts, Definitions, and Terminology
 
--   **Term:** Panel VAR (PVAR)
-    -   **Page(s):** 1, 2, 4, 5, 9, 10
-    -   **Explanation:** A Vector Autoregression (VAR) model applied to panel data (data collected over time for multiple cross-sectional units). It's a generalization of simultaneous equations that estimates the interconnections between variables over time, allowing for endogenous interactions and country-specific effects.
-    -   **Role in the document:** It is the central methodological approach used to analyze the dynamic relationships between the macroeconomic variables.
+- **Term:** Panel VAR (PVAR) model
+  - **Page(s):** 2, 5, 9, 10
+  - **Explanation:** A panel Vector Autoregression model is an econometric technique used to analyze dynamic relationships among multiple endogenous variables across a panel of cross-sectional units (e.g., countries) over time. It extends the standard VAR model to panel data, allowing for country-specific effects and addressing issues like endogeneity.
+  - **Role in the document:** It is the central methodological tool used to estimate the dynamic interactions between unemployment, economic growth, inflation, and FDI.
 
--   **Term:** Impulse Response Functions (IRFs)
-    -   **Page(s):** 1, 2, 5, 11, 12
-    -   **Explanation:** A tool used in VAR models to describe the response of an endogenous variable over time to a one-standard-deviation shock in another variable in the system, while holding all other variables constant.
-    -   **Role in the document:** Used to describe the dynamic effects of shocks in GDP growth, inflation, and FDI on the unemployment rate.
+- **Term:** Impulse Response Functions (IRFs)
+  - **Page(s):** 1, 2, 5, 11
+  - **Explanation:** IRFs describe the dynamic response of an endogenous variable over time to a one-standard-deviation shock in another variable within the system, holding all other shocks at zero. They illustrate the path of adjustment to external disturbances.
+  - **Role in the document:** IRFs are used to visualize and interpret the effects of shocks in GDP growth, inflation, and FDI on the unemployment rate, providing key insights into the short- and medium-term dynamics.
 
--   **Term:** Variance Decomposition Analysis
-    -   **Page(s):** 1, 5, 12
-    -   **Explanation:** A technique used in VAR models to assess the importance of changes (shocks) in one variable in explaining the forecast error variance of changes in other variables over time.
-    -   **Role in the document:** Used to quantify how much of the unemployment rate's fluctuation is explained by shocks from GDP growth, inflation, and FDI.
+- **Term:** Variance Decomposition Analysis
+  - **Page(s):** 1, 5, 12
+  - **Explanation:** Variance decomposition quantifies the proportion of the forecast error variance of one endogenous variable that can be attributed to shocks in each of the other variables in the system over different time horizons. It indicates the relative importance of each shock in explaining the fluctuations of a given variable.
+  - **Role in the document:** This analysis is used to assess the importance of changes in GDP growth, inflation, and FDI in explaining the changes (volatility) in the unemployment rate, complementing the IRF analysis.
 
--   **Term:** Stationarity
-    -   **Page(s):** 5, 10
-    -   **Explanation:** A property of a time series where its statistical properties (mean, variance, autocorrelation) do not change over time. Non-stationary series can lead to spurious regression results.
-    -   **Role in the document:** It is a critical precondition for applying Panel VAR. The study performs unit root tests to ensure all variables are stationary in levels before proceeding with the VAR estimation.
+- **Term:** Granger Causality Test
+  - **Page(s):** 9, 11
+  - **Explanation:** A statistical hypothesis test to determine if one time series is useful in forecasting another. If past values of variable X help predict future values of variable Y, then X is said to Granger-cause Y. It detects predictive relationships, not necessarily direct causal mechanisms.
+  - **Role in the document:** Used to establish the direction of causal relationships between GDP growth, inflation, FDI, and unemployment, providing foundational insights before dynamic analysis.
 
--   **Term:** Granger Causality
-    -   **Page(s):** 9, 11, 14
-    -   **Explanation:** A statistical hypothesis test that determines if one time series is useful in forecasting another. If past values of variable X help predict future values of variable Y, then X Granger-causes Y.
-    -   **Role in the document:** Used to determine the causal direction of relationships between GDP growth, FDI, inflation, and the unemployment rate.
+- **Term:** Stationarity
+  - **Page(s):** 5, 10
+  - **Explanation:** A property of a time series where its statistical properties (mean, variance, and autocorrelation) do not change over time. Non-stationary series can lead to spurious regression results.
+  - **Role in the document:** A necessary precondition for applying the PVAR model. Unit root tests (Levin, Lin & Chu; Im, Pesaran and Shin) were conducted to ensure all variables were stationary in levels before proceeding with the analysis.
 
--   **Term:** CEE Countries (Central and Eastern European countries)
-    -   **Page(s):** 1, 2, 4, 5, 6, 7, 8, 9, 11, 12, 13
-    -   **Explanation:** A group of 11 specific European Union member countries (Poland, Romania, Bulgaria, Hungary, Latvia, Lithuania, Estonia, Croatia, Czech Republic, Slovenia, and Slovakia) that underwent a transition from centralized to market economies after the 1990s.
-    -   **Role in the document:** This is the specific geographical and economic region that is the focus of the entire study.
-
--   **Term:** FDI (Foreign Direct Investment)
-    -   **Page(s):** 1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 14
-    -   **Explanation:** Investment made by a firm or individual in one country into business interests located in another country, often expressed as a percentage of GDP in this study. It is considered an important driver of economic stimulus, technology transfer, and job creation.
-    -   **Role in the document:** It is one of the key macroeconomic variables whose impact on unemployment is being analyzed.
-
--   **Term:** Unemployment rate
-    -   **Page(s):** 1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14
-    -   **Explanation:** The percentage of the total labor force that is unemployed but actively seeking employment and willing to work.
-    -   **Role in the document:** It is the primary dependent variable or the main focus of the analysis regarding how other macroeconomic factors affect it.
-
--   **Term:** GDP growth rate
-    -   **Page(s):** 1, 2, 3, 4, 5, 7, 10, 11, 12, 13, 14
-    -   **Explanation:** The annual percentage change in a country's Gross Domestic Product (GDP), indicating economic expansion or contraction. Measured in constant 2010 prices in this study.
-    -   **Role in the document:** It is a key independent variable whose impact on unemployment and interaction with other variables is being analyzed.
-
--   **Term:** CPI growth rate (Inflation)
-    -   **Page(s):** 1, 2, 5, 8, 10, 11, 12, 13, 14
-    -   **Explanation:** The annual percentage change in the Consumer Price Index, which measures the average change over time in the prices paid by urban consumers for a market basket of consumer goods and services. Measured in constant 2010 prices in this study.
-    -   **Role in the document:** It is another key independent variable whose impact on unemployment and interaction with other variables is being analyzed.
+- **Term:** Cholesky decomposition
+  - **Page(s):** 5, 11
+  - **Explanation:** A method used in VAR models to orthogonalize the shocks, meaning to ensure that the shocks to different variables are uncorrelated. This allows for clear interpretation of how a shock to one specific variable affects others, as it isolates the impact of that specific shock.
+  - **Role in the document:** Applied to compute the impulse response functions, ensuring that the estimated responses are attributable to distinct shocks.
 
 ## 7. Constraints, Limitations, and Open Questions
 
--   **Stated Limitations:**
-    -   **Statistically Insignificant FDI Impact (Page 11, Section 4.2.3; Page 12, Section 4.2.4; Page 14, Section 5. Conclusions):** The document explicitly states that the decrease in unemployment due to an FDI shock is "statistically insignificant" and that FDI "does not have a statistically significant impact on unemployment." This is a key finding but also a limitation in terms of identifying a strong policy lever through FDI for unemployment.
--   **Assumptions or Conditions:**
-    -   **Stationarity of variables (Page 10, Section 4.2.1):** The validity of the Panel VAR model relies on the assumption that all variables are stationary in levels, which was tested and confirmed using LLC and IPS tests.
-    -   **Optimal Lag Length (Page 10, Section 4.2.1):** The choice of VAR(3) model based on Hannan-Quinn criterion is an assumption of the model specification, acknowledging that other criteria suggested different lag lengths.
-    -   **Model Stability (Page 12-13, Section 4.2.6):** The results are conditional on the estimated model being stable (inverse roots within the unit circle) and errors being independent (LM test).
-    -   **Cholesky Decomposition (Page 5, Section 3):** The ordering of variables in the Cholesky decomposition for impulse response functions can sometimes influence the results, though the document doesn't explicitly discuss this as a limitation, it is an implicit methodological assumption.
--   **Open Problems or Future Work:**
-    -   The document does not explicitly state "future work" or "open problems." However, given the statistically insignificant impact of FDI on unemployment, future research could explore conditional effects of FDI (e.g., interacting with institutional quality, specific sectors, or types of FDI) or using alternative methodologies that might uncover more nuanced relationships.
+- **Stated Limitations/Caveats:**
+  - **Statistical insignificance of FDI impact**: The document explicitly states that the decrease in unemployment due to an FDI shock is "statistically insignificant" (Page 12, Section 4.2.3). Similarly, Granger causality from FDI to unemployment is not found (Page 11, Table 3).
+  - **Mixed results in literature**: The literature review (Page 3-4, Section 2) highlights that previous studies on the impact of FDI on economic growth and employment have yielded "mixed results," suggesting complexity and potential context-dependency of these relationships.
 
 ## 8. Notes for the Storytelling / Presentation Agent
 
--   **Which Key Ideas should be emphasized for:**
-    -   **A technical audience:** Emphasize **Key Idea 1** (unidirectional causality) with specific Chi-sq and Prob. values from Table 3. Detail **Key Idea 2** and **Key Idea 3** with quantitative responses and timings (e.g., "maximum decrease of 0.2% in 2 years" for GDP shock, "0.8% increase after 3 years" for inflation shock) referencing Figure 5 and Table 4. Stress **Key Idea 4** with the robust evidence of insignificance from both Granger causality (Table 3) and variance decomposition (Table 4, 1.63% after 10 years). Also, highlight the methodological rigor (stationarity tests, lag selection, model stability from Figures 6, Tables 1 & 2).
-    -   **A non-technical audience:** Focus on the practical implications of **Key Idea 2** (economic growth helps reduce unemployment) and **Key Idea 3** (inflation worsens unemployment). Keep the explanation of **Key Idea 4** simple: FDI doesn't seem to be a direct lever for reducing unemployment in CEE countries. Use **Key Idea 5** to set the scene: the unique challenges and transitions of CEE economies. Simplify the technical details of the Panel VAR and stability tests, perhaps just stating that the model is robust.
+- **Which Key Ideas (from section 3) should be emphasized for:**
+  - **A technical audience:** Emphasize **Key Idea 5 (Panel VAR Methodology)**, detailing the steps (stationarity, lag selection, orthogonalization of shocks via Cholesky, IRFs, variance decomposition) and the stability test (Figure 6). Also, dive deeper into the specific magnitudes and durations of responses found in **Key Idea 3 (Negative Response of Unemployment to GDP Growth)** and **Key Idea 4 (Positive Response of Unemployment to Inflation)**.
+  - **A non-technical audience:** Focus on the main findings and their implications. Emphasize **Key Idea 1 (Unidirectional Causality to Unemployment)** to highlight that economic growth and inflation *drive* unemployment, not vice-versa. Stress **Key Idea 2 (Insignificant Impact of FDI on Unemployment)** as a surprising or counter-intuitive finding, and then explain **Key Idea 3** and **Key Idea 4** in simpler terms: "Good economic growth helps reduce joblessness," and "Rising prices (inflation) seem to lead to more joblessness."
 
--   **Which tables and figures are the BEST candidates to embed in a story or slide deck:**
-    -   **Figures 1-4 (Pages 6-9):** Excellent for setting the scene and providing context. Use them to illustrate the economic journey of CEE countries (crisis, recovery, COVID-19 impact) for unemployment, GDP, inflation, and FDI trends.
-    -   **Figure 5 (Page 11):** Absolutely essential. This directly shows the main results of the impulse response functions. It visually communicates the core findings about how unemployment reacts to shocks in GDP, inflation, and FDI. It can be used to explain **Key Idea 2, 3, and 4**.
-    -   **Table 3 (Page 11):** Good for visually showing the "Prob." values for Granger causality, which is very clear evidence for **Key Idea 1** and **Key Idea 4**. For a non-technical audience, this could be simplified into bullet points rather than showing the full table.
-    -   **Table 4 (Page 12):** Useful for a deeper dive, especially for a technical audience, to quantify the contribution of each shock to unemployment variance. It reinforces **Key Idea 2, 3, and 4**.
+- **Which tables and figures are the BEST candidates to embed in a story or slide deck:**
+  - **Table 3 (Page 11): Granger causality test**: Excellent for showing the core causal relationships (or lack thereof). Can be simplified for non-technical audiences by just highlighting the "Prob." values for key hypotheses. Use it to support **Key Idea 1** and **Key Idea 2**.
+  - **Figure 5 (Page 11): Impulse response functions**: Essential for visualizing the dynamic effects. The three plots are very clear. Use to support **Key Idea 3**, **Key Idea 4**, and **Key Idea 2**. For a non-technical audience, simplify by focusing on the direction (up/down) and the general duration of the response.
+  - **Table 4 (Page 12): Variance decomposition analysis of unemployment**: Good for technical audiences to quantify the relative importance of shocks. Can be used to reinforce **Key Idea 2** by showing the very small percentage attributed to FDI.
+  - **Figures 1-4 (Pages 6-9): Evolution of variables**: These are great for context and setting the scene, especially for a non-technical audience. Pick 1-2 examples of countries from each to illustrate the trends of unemployment, GDP, inflation, and FDI, particularly showing the impact of the 2008 and 2020 crises.
 
--   **Any natural narrative arcs:**
-    -   **Problem & Context:** CEE countries' transition and crisis impact on macro variables (Section 1 & 4.1, Figures 1-4).
-    -   **Literature Gap/Contribution:** How previous research is mixed, justifying a new Panel VAR approach (Section 2 & 1).
-    -   **Methodology:** Explaining the Panel VAR and its steps (Section 3 & 4.2).
-    -   **Key Findings:** Presenting the causality, impulse responses, and variance decomposition for unemployment (Section 4.2.2, 4.2.3, 4.2.4, Table 3, 4, Figure 5).
-    -   **Conclusions & Implications:** Summarizing what was learned and its policy relevance (Section 5).
+- **Any natural narrative arcs:**
+  - **Problem -> Context -> Method -> Key Findings -> Implications:**
+    1.  **Problem:** CEE countries faced high unemployment and inflation during transition and crises, seeking drivers for growth and employment (Introduction).
+    2.  **Context:** Historical trends of unemployment, GDP, inflation, and FDI in CEE countries (Figures 1-4, Dataset Description).
+    3.  **Method:** Panel VAR model to understand dynamic relationships (Data and Methodology).
+    4.  **Key Findings:**
+        *   Causality: GDP growth and inflation *cause* unemployment, but FDI does not (Table 3, Key Idea 1, 2).
+        *   Dynamics: GDP growth *decreases* unemployment, inflation *increases* unemployment, FDI has *insignificant* impact (Figure 5, Key Idea 2, 3, 4).
+        *   Contribution: Inflation and GDP growth explain significant unemployment variation, FDI explains little (Table 4).
+    5.  **Implications:** Policy focus on macroeconomic stability (growth, inflation control) is crucial for unemployment, while FDI's direct job impact is less significant (Conclusions).
 
--   **Any sections that can probably be downplayed or skipped in a high-level story:**
-    -   For a very high-level non-technical story, the detailed discussion of unit root tests (Table 1) and lag length criteria (Table 2) could be summarized as "The model was rigorously tested and found to be robust and stable" without showing the tables themselves.
-    -   The specific country-by-country details within Section 4.1. Dataset Description, especially if the focus is on regional trends, could be condensed into aggregate observations or a few striking examples.
+- **Any sections that can probably be downplayed or skipped in a high-level story:**
+  - Details of the unit root tests (Table 1) and lag length criteria (Table 2) can be summarized briefly as "ensured data suitability" for a non-technical audience. The "Literature review" can be condensed to a few key insights about previous mixed findings. The exact formula for the PVAR model (Xit = ai + B(L)Xit + Eit) can be omitted or simplified.

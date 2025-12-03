@@ -7,6 +7,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from deepagents import create_deep_agent
 from langchain_core.messages import AIMessage
 from unused_deep_researcher.utils import format_messages
+from core.process_context import get_reports_dir
 from unused_deep_researcher.research.prompts import (
     RESEARCHER_INSTRUCTIONS,
     RESEARCH_WORKFLOW_INSTRUCTIONS,
@@ -76,8 +77,12 @@ async def deep_researcher_run(request:str):
 
     report_text = extract_text(final_msg)
 
+    report_dir = get_reports_dir()
+    report_dir.mkdir(parents=True, exist_ok=True)
+    report_path = report_dir / REPORT_PATH.name
+
     return {
-        "report_path": str(REPORT_PATH),  
+        "report_path": str(report_path),
         "report_text": report_text,
     }
 

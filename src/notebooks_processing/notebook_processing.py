@@ -153,7 +153,18 @@ def extract_notebook_content(nb_path, image_output_dir="notebook_images"):
     return full_markdown, assets
 
 
-def convert_notebook(nb_file: str, base_output_dir: str = "data/notebook"):
+from core.process_context import (
+    ProcessContext,
+    get_data_dir,
+    get_notebook_dir,
+)
+
+
+def convert_notebook(
+    nb_file: str,
+    base_output_dir: str = "data/notebook",
+    process_context: ProcessContext | None = None,
+):
     """
     Notebook → Markdown + Assets + Mini-Presentation
 
@@ -167,11 +178,12 @@ def convert_notebook(nb_file: str, base_output_dir: str = "data/notebook"):
         data/<notebook_name>_mini_presentation.md
 
     Returns:
-        (markdown_path: Path, assets: list[str], mini_presentation_path: Path)
+        (mini_presentation_path: Path, assets: list[str])
     """
 
+    ctx = process_context or ProcessContext.get_current()
     nb_file = Path(nb_file)
-    base_output_dir = Path(base_output_dir)
+    base_output_dir = get_notebook_dir() if ctx else Path(base_output_dir)
 
     notebook_name = nb_file.stem
 
@@ -180,18 +192,16 @@ def convert_notebook(nb_file: str, base_output_dir: str = "data/notebook"):
     markdown_path = notebook_dir / f"{notebook_name}_extracted.md"
     result_json_path = notebook_dir / "result.json"
 
-    mini_presentation_path = Path("data") / f"{notebook_name}_mini_presentation.md"
+    mini_presentation_path = get_data_dir() / f"{notebook_name}_mini_presentation.md"
 
     if result_json_path.exists():
         print(f"Using cached notebook: {notebook_name}")
         with open(result_json_path, "r", encoding="utf-8") as f:
             cached = json.load(f)
 
-        md_path = Path(cached["markdown_path"])
         assets = cached.get("assets", [])
 
-
-        return str(mini_presentation_path)
+        return mini_presentation_path, assets
 
     print(f"Converting notebook: {notebook_name}")
 
@@ -228,4 +238,4 @@ def convert_notebook(nb_file: str, base_output_dir: str = "data/notebook"):
     with open(result_json_path, "w", encoding="utf-8") as f:
         json.dump(result, f, indent=4)
 
-    return str(mini_presentation_path)
+    return mini_presentation_path, assets

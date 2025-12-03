@@ -7,6 +7,7 @@ import asyncio
 from pathlib import Path
 import json
 from dotenv import load_dotenv
+from core.process_context import get_data_dir, get_documents_dir
 
 load_dotenv()
 
@@ -24,7 +25,8 @@ async def process_pdf_pipeline(file_path: str):
     """
     file_path = str(file_path)
     document_name = Path(file_path).stem
-    directory_path = Path("data/documents") / document_name
+    documents_dir = get_documents_dir()
+    directory_path = documents_dir / document_name
     result_json_path = directory_path / "result.json"
 
     if os.path.isfile(result_json_path):
@@ -61,7 +63,7 @@ async def process_pdf_pipeline(file_path: str):
         
 
         presentation_filename = f"mini_presentation_{document_name}.md"
-        base_dir = Path("data").expanduser().resolve()
+        base_dir = get_data_dir().expanduser().resolve()
         base_dir.mkdir(parents=True, exist_ok=True)
         
         file_path = base_dir / presentation_filename

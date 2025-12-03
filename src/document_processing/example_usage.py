@@ -3,12 +3,13 @@ from document_processing.document_processing import DocumentProcessor
 from document_processing.save_content import ContentSaver
 from document_processing.structure_vizualizor import DocumentStructureVisualizer
 from document_processing.csv_to_md import convert_table_to_md
+from core.process_context import get_documents_dir
 
 
 async def process_and_save_document(file_path: str, output_dir: str = "data/documents"):
 
     processor = DocumentProcessor()
-    saver = ContentSaver(output_dir=output_dir)
+    saver = ContentSaver(output_dir=str(get_documents_dir()) if output_dir == "data/documents" else output_dir)
 
     print(f"Processing document: {file_path}")
     result = processor.process_file(file_path)

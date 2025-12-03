@@ -7,6 +7,8 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler
 import threading
 import time
 from PIL import Image
+import tempfile
+import shutil
 from core.convert_image_base64 import embed_images_as_base64
 def images_to_pdf(image_paths: list, output_filename: str):
     """Convert a list of images to a single PDF."""
@@ -15,7 +17,11 @@ def images_to_pdf(image_paths: list, output_filename: str):
     # Open all images
     images = []
     for img_path in image_paths:
-        img = Image.open(img_path)
+        try:
+            img = Image.open(img_path)
+        except FileNotFoundError:
+            print(f"⚠️ Missing screenshot: {img_path}")
+            continue
         # Convert to RGB if necessary (PDF doesn't support RGBA)
         if img.mode == 'RGBA':
             rgb_img = Image.new('RGB', img.size, (255, 255, 255))
@@ -114,8 +120,7 @@ async def html_to_pdf(html_source: str, output_filename: str):
         print(f"\n📊 Found {slide_count} slides")
         print("📸 Taking screenshots of each slide...")
 
-        temp_dir = "temp_screenshots"
-        os.makedirs(temp_dir, exist_ok=True)
+        temp_dir = Path(tempfile.mkdtemp(prefix="temp_screenshots_"))
         screenshot_paths = []
 
         for i in range(slide_count):
@@ -130,9 +135,9 @@ async def html_to_pdf(html_source: str, output_filename: str):
             slide = await page.query_selector(f'.slide:nth-of-type({i+1})')
 
             if slide:
-                screenshot_path = os.path.join(temp_dir, f"slide_{i+1:03d}.png")
+                screenshot_path = temp_dir / f"slide_{i+1:03d}.png"
                 await slide.screenshot(path=screenshot_path, type='png')
-                screenshot_paths.append(screenshot_path)
+                screenshot_paths.append(str(screenshot_path))
                 print("✅")
             else:
                 print("❌ Failed")
@@ -141,13 +146,10 @@ async def html_to_pdf(html_source: str, output_filename: str):
 
         if screenshot_paths:
             images_to_pdf(screenshot_paths, output_filename)
-
-            try:
-                os.rmdir(temp_dir)
-            except:
-                pass
         else:
             print(" No screenshots were taken!")
+        # Clean up temp directory
+        shutil.rmtree(temp_dir, ignore_errors=True)
 
 
 async def pass_html_get_pdf(

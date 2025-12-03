@@ -2,12 +2,13 @@ import asyncio
 import os
 import sys
 from pathlib import Path
-from typing import List, Set
+from typing import List, Optional, Set
 from dotenv import load_dotenv
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import create_agent
 from typing import Dict ,Any
+from core.process_context import ProcessContext, get_analysis_dir
 SRC_ROOT = Path(__file__).resolve().parents[1]
 if str(SRC_ROOT) not in sys.path:
     sys.path.insert(0, str(SRC_ROOT))
@@ -18,7 +19,7 @@ from notebooks_processing.notebook_processing import convert_notebook
 load_dotenv()
 
 
-async def data_analyst_agent(Query: str):
+async def data_analyst_agent(Query: str, analysis_dir: Path):
     client = MultiServerMCPClient(
         {
             "jupyter": {
@@ -29,7 +30,7 @@ async def data_analyst_agent(Query: str):
     )
 
     all_tools = await client.get_tools()
-    os.makedirs("data/analysis", exist_ok=True)
+    os.makedirs(analysis_dir, exist_ok=True)
 
     allowed_names = {
         "insert_cell",
@@ -52,10 +53,12 @@ async def data_analyst_agent(Query: str):
 
     llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.4)
 
+    prompt = DAta_Analyst_promt.replace("data/analysis", str(analysis_dir))
+
     agent = create_agent(
         model=llm,
         tools=mcp_tools,
-        system_prompt=DAta_Analyst_promt,
+        system_prompt=prompt,
     )
 
     result = await agent.ainvoke(
@@ -89,7 +92,7 @@ async def data_analyst_agent(Query: str):
 
 
 
-def convert_new_notebooks(before: Set[Path], after: Set[Path]):
+def convert_new_notebooks(before: Set[Path], after: Set[Path], analysis_dir: Path):
     """
     Convert only notebooks created during the agent run.
     Returns the string path of the generated markdown presentation (or None).
@@ -97,7 +100,7 @@ def convert_new_notebooks(before: Set[Path], after: Set[Path]):
     new_nbs = after - before
 
     if not new_nbs:
-        print("[POST] No new notebooks detected in data/analysis")
+        print(f"[POST] No new notebooks detected in {analysis_dir}")
         return None 
 
     print(f"[POST] Found {len(new_nbs)} new notebook(s) to convert:")
@@ -106,22 +109,23 @@ def convert_new_notebooks(before: Set[Path], after: Set[Path]):
     
     for nb in sorted(new_nbs):
         print(f"  - Converting {nb}")
-        presentation_path = convert_notebook(str(nb))
+        presentation_path, _ = convert_notebook(str(nb))
         last_presentation = str(presentation_path)
 
     return last_presentation
 
-async def data_analyst(query: str) -> Dict[str, Any]:
-    analysis_dir = Path("data/analysis")
+async def data_analyst(query: str, process_context: Optional[ProcessContext] = None) -> Dict[str, Any]:
+    ctx = process_context or ProcessContext.get_current()
+    analysis_dir = get_analysis_dir()
     analysis_dir.mkdir(parents=True, exist_ok=True)
 
     before_notebooks = set(analysis_dir.glob("*.ipynb"))
 
-    answer_text = await data_analyst_agent(query)
+    answer_text = await data_analyst_agent(query, analysis_dir)
 
     after_notebooks = set(analysis_dir.glob("*.ipynb"))
 
-    markdown_presentation_path = convert_new_notebooks(before_notebooks, after_notebooks)
+    markdown_presentation_path = convert_new_notebooks(before_notebooks, after_notebooks, analysis_dir)
 
     return {
         "answer": answer_text,

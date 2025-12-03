@@ -10,14 +10,19 @@ from data_analyst.data_analyst_agent import data_analyst
 from notebooks_processing.notebook_processing import convert_notebook
 from unused_deep_researcher.agents import deep_researcher_run
 from document_processing.document_understanding import process_pdf_pipeline
+from core.process_context import (
+    get_analysis_dir,
+    get_data_dir,
+    get_uploaded_dir,
+)
 import os
+
 current_file_path = Path(__file__).resolve()
 project_root = current_file_path.parents[2]
 target_directory = project_root / "data"
-DATA_DIR = Path("data")
-UPLOAD_DIR = DATA_DIR / "uploaded"
-NOTEBOOK_CWD = DATA_DIR / "analysis" 
 
+# Toolkit root stays at project/data for backwards compatibility with the file
+# management tools. Actual reads/writes are resolved via ProcessContext.
 if not target_directory.exists():
     target_directory.mkdir(parents=True, exist_ok=True)
 
@@ -63,25 +68,26 @@ async def data_analyst_tool(file_path: str, query: str) -> Dict[str, Any]:
 
     """
 
-    filename = Path(file_path).name
+    uploaded_dir = get_uploaded_dir()
+    analysis_dir = get_analysis_dir()
 
-    repo_rel = UPLOAD_DIR / filename            
+    filename = Path(file_path).name
+    repo_rel = uploaded_dir / filename
 
     if not repo_rel.exists():
         raise FileNotFoundError(
-            f"Dataset '{filename}' not found under data/uploaded/. "
+            f"Dataset '{filename}' not found under {uploaded_dir}/. "
             f"Expected at '{repo_rel.as_posix()}'."
         )
 
- 
-    nb_rel = os.path.relpath(repo_rel, start=NOTEBOOK_CWD)
-    nb_rel = nb_rel.replace("\\", "/")  
+    nb_rel = os.path.relpath(repo_rel, start=analysis_dir)
+    nb_rel = nb_rel.replace("\\", "/")
 
     query_with_path = (
         query
         + "\n\nUse the dataset file with name "
         f"`{filename}`.\n"
-        "From your current working directory (`data/analysis`), "
+        f"From your current working directory (`{analysis_dir}`), "
         "load it with:\n"
         f"    pd.read_csv('{nb_rel}')\n"
         "Do NOT try to guess any other path."
@@ -126,11 +132,12 @@ async def process_pdf_document_tool(file_path: str) -> dict:
         "tables": [...]
       }
     """
+    uploaded_dir = get_uploaded_dir()
     filename = Path(file_path).name
-    repo_rel = UPLOAD_DIR / filename
+    repo_rel = uploaded_dir / filename
     if not repo_rel.exists():
       raise FileNotFoundError(
-          f"File '{filename}' not found under data/uploaded/. "
+          f"File '{filename}' not found under {uploaded_dir}/. "
           f"Expected at '{repo_rel.as_posix()}'."
         )
 
@@ -141,15 +148,16 @@ async def process_notebook_tool(file_path: str) -> dict:
     """
     Convert a Jupyter Notebook (.ipynb) into Markdown + extracted assets.
     """
+    uploaded_dir = get_uploaded_dir()
     filename = Path(file_path).name
-    repo_rel = UPLOAD_DIR / filename
+    repo_rel = uploaded_dir / filename
     if not repo_rel.exists():
       raise FileNotFoundError(
-          f"Dataset '{filename}' not found under data/uploaded/. "
+          f"Dataset '{filename}' not found under {uploaded_dir}/. "
           f"Expected at '{repo_rel.as_posix()}'."
         )
     
-    presentation_path = convert_notebook(str(repo_rel))
+    presentation_path, _ = convert_notebook(str(repo_rel))
     
     return {
         "markdown_presentation_path": str(presentation_path)
@@ -171,5 +179,3 @@ async def main():
 
 if __name__=="__main__":
     asyncio.run(process_pdf_document_tool.ainvoke("data/uploaded/avip.pdf"))
-
-
