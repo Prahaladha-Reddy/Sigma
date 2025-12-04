@@ -3,6 +3,8 @@ from google.genai import types
 import pathlib
 from dotenv import load_dotenv
 import asyncio
+from core.process_context import get_documents_dir
+
 load_dotenv()
 client = genai.Client()
 
@@ -199,7 +201,7 @@ async def understand_document(path:str):
         system_prompt])
   summary_text=response.text
   pdf_stem = filepath.stem  
-  output_dir = pathlib.Path("data/documents") / pdf_stem
+  output_dir = get_documents_dir() / pdf_stem
   output_dir.mkdir(parents=True, exist_ok=True)
 
   md_path = output_dir / "summary.md"

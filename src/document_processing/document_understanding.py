@@ -32,7 +32,12 @@ async def process_pdf_pipeline(file_path: str):
     if os.path.isfile(result_json_path):
         with open(result_json_path,"r", encoding="utf-8") as f:
             cached=json.load(f)
-        return cached
+
+        mini_path = cached.get("mini_presentation_path")
+        if mini_path and Path(mini_path).exists():
+            return cached
+
+        print("Cached result is missing mini presentation; rebuilding...")
 
     else:
         print(f"The directory '{directory_path}' does not exist.")
@@ -61,13 +66,12 @@ async def process_pdf_pipeline(file_path: str):
             search_roots=[doc_output_dir, "data"]
         )
         
-
         presentation_filename = f"mini_presentation_{document_name}.md"
-        base_dir = get_data_dir().expanduser().resolve()
-        base_dir.mkdir(parents=True, exist_ok=True)
-        
-        file_path = base_dir / presentation_filename
-        
+        data_dir = get_data_dir().expanduser().resolve()
+        data_dir.mkdir(parents=True, exist_ok=True)
+
+        file_path = data_dir / presentation_filename
+
         file_path.write_text(final_presentation, encoding="utf-8")
 
         json_to_return={
@@ -75,7 +79,9 @@ async def process_pdf_pipeline(file_path: str):
             "summary_text": summary_text,
             "output_dir": saved_content["output_dir"],
             "images": resolved.get("figures", []), 
-            "tables": resolved.get("tables", [])}
+            "tables": resolved.get("tables", []),
+            "mini_presentation_path": str(file_path),
+        }
 
         directory_path.mkdir(parents=True, exist_ok=True)
         with open(result_json_path, "w", encoding="utf-8") as f:

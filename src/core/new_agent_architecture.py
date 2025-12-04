@@ -20,6 +20,7 @@ from core.new_architecture_prompt import (
 from core.process_context import (
     ProcessContext,
     get_data_dir,
+    get_documents_dir,
     get_uploaded_dir,
     reset_current,
 )
@@ -30,11 +31,17 @@ load_dotenv()
 
 def mini_presentations_reader(data_dir: Optional[str | Path] = None) -> str:
     data_path = Path(data_dir) if data_dir else get_data_dir()
-    if not data_path.exists():
-        return ""
+    documents_path = get_documents_dir()
 
-    md_files = [f.name for f in data_path.glob("*.md") if f.name != "presentation.md"]
-    if not md_files:
+    paths: List[Path] = []
+
+    if data_path.exists():
+        paths.extend([p for p in data_path.glob("*.md") if p.name != "presentation.md"])
+
+    if documents_path.exists():
+        paths.extend(documents_path.glob("*/*_mini_presentation.md"))
+
+    if not paths:
         return ""
 
     parts: List[str] = []
@@ -44,16 +51,19 @@ def mini_presentations_reader(data_dir: Optional[str | Path] = None) -> str:
 
 """
 
-    for filename in sorted(md_files):
+    for path in sorted(paths, key=lambda p: p.as_posix()):
         try:
-            file_path = data_path / filename
-            with open(file_path, "r", encoding="utf-8") as f:
+            display_name = path.name
+            if documents_path in path.parents and path.parent.name:
+                display_name = f"{path.parent.name}/{path.name}"
+
+            with open(path, "r", encoding="utf-8") as f:
                 content = f.read()
 
-            separator = separator_template.format(filename=filename)
+            separator = separator_template.format(filename=display_name)
             parts.append(separator + content)
         except IOError as e:
-            print(f"Warning: Could not read '{filename}': {e}")
+            print(f"Warning: Could not read '{path}': {e}")
             continue
 
     return "\n\n\n\n".join(parts)

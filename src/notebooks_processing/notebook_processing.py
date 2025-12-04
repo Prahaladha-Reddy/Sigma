@@ -43,10 +43,6 @@ def decode_binary_array(node: NotebookNode):
 
 
 def normalize_plotly_spec(obj):
-    """
-    Recursively convert NotebookNode + binary-array objects
-    into plain dict/list/number structures that go.Figure understands.
-    """
     if isinstance(obj, NotebookNode):
         obj = dict(obj)
 
@@ -63,10 +59,6 @@ def normalize_plotly_spec(obj):
 
 
 def fig_from_plotly_json(plot_spec):
-    """
-    Take the raw 'application/vnd.plotly.v1+json' value
-    and return a usable go.Figure.
-    """
     spec_clean = normalize_plotly_spec(plot_spec)
 
     if isinstance(spec_clean, dict):
