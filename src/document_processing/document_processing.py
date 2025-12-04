@@ -70,7 +70,7 @@ class DocumentProcessor:
             }
 
         except Exception as e:
-            print(f"❌ Error processing {file_path.name}: {str(e)}")
+            print(f" Error processing {file_path.name}: {str(e)}")
             raise
 
     def process_uploaded_files(self, uploaded_files) -> List[Dict[str, Any]]:

@@ -426,6 +426,7 @@ async def the_runner(
                 output_dir=data_dir,
             )
             markdown = mini_presentations_reader(data_dir)
+            print(markdown)
             await agent_1(content=f"{user_query} \n\n\n" + markdown, output_dir=data_dir)
 
         await agent_2_with_search(
@@ -433,6 +434,7 @@ async def the_runner(
         )
 
         markdown = mini_presentations_reader(data_dir)
+        print(markdown)
         presentation_path = data_dir / "presentation.md"
         if presentation_path.exists():
             with open(presentation_path, encoding="utf-8") as f:

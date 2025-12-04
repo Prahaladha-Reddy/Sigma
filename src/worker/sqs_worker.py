@@ -1,20 +1,3 @@
-"""
-SQS worker for concurrent presentation generation with process isolation.
-
-Responsibilities:
-1) Poll SQS for messages containing:
-   {
-     "process_id": "...",          # optional, will be generated if missing
-     "user_query": "...",          # required
-     "num_slides": 12,             # optional, defaults to 12
-     "file_ids": ["uuid", ...]     # optional, Supabase file IDs to download
-   }
-2) Look up the S3 keys for the provided file IDs in Supabase.
-3) Download those files into the per-process uploaded/ directory.
-4) Run the main runner in that isolated process directory.
-5) Upload the resulting PDF to S3 and update Supabase with the status + URL.
-"""
-
 from __future__ import annotations
 import asyncio
 import json
@@ -24,7 +7,6 @@ import time
 import uuid
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
-from config import Config
 import boto3
 
 from core.new_agent_architecture import the_runner
@@ -93,7 +75,7 @@ def update_supabase_status(
     process_id: str,
     status: str,
     pdf_url: Optional[str] = None,
-    table: str = Config.Process_table_name,  
+    table: str = "Process",  
 ):
 
     payload: Dict[str, str] = {"status": status}
