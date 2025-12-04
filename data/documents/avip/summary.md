@@ -1,234 +1,331 @@
 ## 1. Document Overview
 
--   **Document type:** Research report/policy note.
--   **Main purpose or goal of the document:** To explore the predicted impacts of autonomous vehicles (AVs) on future travel and transportation planning, evaluate their benefits and costs, and discuss policy implications, offering a more skeptical view than common optimistic forecasts.
--   **Approximate scope:**
-    -   **Number of pages:** 49 pages (excluding front cover).
-    -   **High-level topics covered:** Autonomous vehicle operational models, benefits and costs, travel impacts, development and deployment predictions (including an S-curve model), planning objectives and implications (roadway design, pricing, parking, public transit, curb management), potential conflicts, solutions, and a comprehensive list of references.
--   **One paragraph high-level summary:** This report provides a critical analysis of the implementation of autonomous vehicles (AVs), forecasting a slower deployment timeline and more nuanced impacts than often optimistically predicted. It details the various benefits (e.g., reduced driver stress, independent mobility) and costs (e.g., increased vehicle costs, infrastructure needs, potential for increased congestion and sprawl), highlighting that most significant benefits require Level 5 autonomy and widespread adoption, likely taking decades. The document emphasizes the crucial role of public policies, such as efficient road pricing and support for shared AV services, in maximizing net benefits and achieving community goals.
+- **Document type**: Policy report / Technical report.
+- **Main purpose or goal of the document**: To explore the likely impacts of autonomous (self-driving, driverless, robotic) vehicles on future travel and transportation planning, predict their development and deployment timelines, critically evaluate their benefits and costs, and discuss policy implications for maximizing benefits and minimizing problems.
+- **Approximate scope**:
+  - Number of pages: 49 (excluding cover, including references).
+  - High-level topics covered: Autonomous vehicle (AV) definitions and operational models, benefits and costs (including internal and external impacts, social equity), travel impacts (increase/decrease in vehicle travel), development and deployment predictions (S-curve, historical precedents, market penetration timelines), planning objectives and implications (roadway design, pricing, parking, transit), potential conflicts, and solutions.
+- **One paragraph high-level summary**: This report from the Victoria Transport Policy Institute provides a grounded analysis of autonomous vehicle implementation, contrasting optimistic industry predictions with a more skeptical view based on historical technology adoption and complex real-world challenges. It forecasts that Level 5 AVs will become commercially available in the late 2020s but will be expensive and limited initially, with significant impacts on travel, congestion, and social equity only becoming widespread in the 2040s-2060s. The document emphasizes that AVs are not a guaranteed "game changer" and their net benefits will largely depend on public policies, efficient pricing, and whether they facilitate shared mobility rather than increased private vehicle use and sprawl.
 
 ## 2. Detailed Section-by-Section Summary
 
--   **Executive Summary** (Page 3-6)
-    The executive summary introduces the report's purpose: to explore how autonomous vehicles (AVs) will affect future travel and the need for transportation infrastructure and services. It critiques optimistic predictions often made by industry insiders, citing significant obstacles to AV development and deployment, such as the complexity of operating in mixed urban traffic, heavy weather, and unmapped roads, as well as high initial costs and limited performance. It predicts that Level 5 AVs may be commercially available by the late 2020s but will be expensive and have limited performance initially. Most significant benefits, like reduced congestion or widespread independent mobility, are projected for the 2040s to 2060s, requiring common and affordable AVs, and sometimes dedicated lanes. The summary notes AVs will likely cost more than human-operated private vehicles and public transit but less than human-driven taxis and ridehailing. It also discusses the potential for AVs to increase total vehicle travel (VMT) by 10-30% under current policies, leading to more congestion and sprawl, but suggests that policies favoring shared vehicles and efficient pricing can mitigate these issues.
+- **Executive Summary** (Pages 3-6)
+  - Summarizes the report's core findings regarding AVs. It notes that while optimists predict rapid displacement of human driving by 2030, the report offers skepticism due to significant obstacles (technical, regulatory, cost, and consumer demand) and potential overestimates of benefits.
+  - Highlights that AVs will likely be more expensive than human-driven private vehicles and public transit but cheaper than ride-hailing/taxis. Shared AVs will be cheaper but less convenient than private AVs.
+  - Introduces a table (Exhibit ES-2, Page 4) outlining potential benefits (reduced stress, mobility for non-drivers, increased safety, reduced parking costs) and costs/problems (increased vehicle/infrastructure costs, user risks, privacy concerns, increased traffic problems, social equity issues).
+  - Emphasizes that vehicle technology penetration is slow, taking decades to dominate markets. Level 5 autonomy is predicted for late 2020s commercial availability, but widespread affordability and significant impact (e.g., congestion reduction, mobility for moderate-income non-drivers) are projected for 2040s-2060s. Some benefits may require dedicated AV lanes, raising equity concerns.
+  - Discusses the uncertainty of AVs increasing or decreasing total vehicle travel, depending on policies. Current policies might increase travel and sprawl by 10-30%, while efficient pricing and roadway management favoring shared vehicles could reduce problems.
+  - Stresses that many benefits (like congestion reduction) require AVs to operate autonomously in dedicated lanes.
+  - Concludes that AVs are one of many trends, not necessarily a "game changer" for most of our lives, and their impact depends on shifts towards shared vehicles and multi-modal communities. Transportation professionals have a crucial role in planning and regulation.
 
--   **Introduction** (Page 7)
-    This section sets the stage by acknowledging the uncertainty surrounding AVs' future impacts on travel demands and infrastructure. It highlights the disparity between optimistic predictions (often from those with financial interests in the industry, comparing AVs to fast-penetrating electronic technologies) and more skeptical views. The report identifies significant obstacles, including unsolved technical problems for reliable operation in all conditions, years of testing and regulatory approval, the high cost and durability of motor vehicles (slowing fleet penetration), and potential new problems like system failures. It emphasizes the importance of policy implications, such as dedicated lanes for platooning, pricing strategies, and regulations, to maximize total benefits and manage external costs.
+- **Introduction** (Page 7)
+  - States the report's purpose: to predict how AVs will affect future travel demands, infrastructure needs (roads, parking, transit), and to identify public policies to minimize risks and maximize benefits.
+  - Acknowledges uncertainty, with optimists (often those with financial interests) predicting rapid, huge benefits based on experiences with digital technologies, while the report maintains skepticism due to significant technical, regulatory, and cost obstacles unique to motor vehicles.
+  - Notes that motor vehicles are costly, durable, and highly regulated, making technology penetration slow. AVs introduce new safety problems (e.g., system failures being fatal) that differ from typical computer errors.
+  - Highlights policy implications: AVs rely on public infrastructure and impose external costs, requiring planning and regulation. Policymakers must decide on dedicated AV lanes, pricing, and programming to balance user and community benefits.
 
--   **Autonomous Vehicle Operational Models** (Page 8)
-    This section defines the six levels of driving automation according to SAE J3016 (Exhibit 1), noting that many predicted benefits depend on Level 5 autonomy, which allows vehicles to operate without a driver and transport non-drivers. It then compares four operational models for AVs (Exhibit 2): Private Human-Driven Vehicles, Private Autonomous Vehicles, Shared Autonomous Vehicles (self-driving taxis for individuals), and Shared Autonomous Rides (micro-transit for multiple passengers). Each model's advantages, disadvantages, and appropriate users are outlined, highlighting trade-offs between cost, convenience, comfort, and social equity impacts.
+- **Autonomous Vehicle Operational Models** (Page 8)
+  - Defines the six levels of driving automation (SAE J3016) in Exhibit 1, emphasizing that many predicted benefits require Level 5 autonomy (operating without a driver in all normal conditions).
+  - Presents Exhibit 2, comparing four vehicle operating models: Private Human-Driven, Private Autonomous, Shared Autonomous Vehicles (taxis), and Shared Autonomous Rides (micro-transit), detailing their advantages, disadvantages, and appropriate users.
 
--   **Benefits and Costs** (Page 9-19)
-    This extensive section details various benefits and costs of autonomous vehicles.
-    *   **Reduced Driver Stress, Improved Productivity and Mobility (Page 9):** AVs can reduce driver stress, improve productivity (mobile offices/bedrooms), and offer independent mobility for non-drivers. However, new stresses like "access anxiety" (AVs unable to reach destinations due to weather/maps) and lower service quality for shared AVs (no driver assistance, cleanliness issues) are noted. Dedicated AV lanes could reduce human-operated traffic capacity.
-    *   **Ownership and Operating Costs (Page 10-12):** AVs require significant additional equipment and services (sensors, controls, software, data networks, maintenance), increasing costs. Redundant systems for safety mean higher maintenance. Upgrading to advanced self-driving services is costly. Electric AVs' operating costs, while low for fuel, increase significantly when battery replacement and efficient road user fees are considered, making them similar to fossil-fuel vehicles. Optimists' low cost estimates are deemed underestimates due to ignored costs like cleaning, vandalism, profits, empty travel, insurance, and road user fees. Commercial AVs (trucks, buses) could see large savings due to reduced labor costs, though onboard workers may still be needed. Exhibits 5 and 6 compare total and variable user costs, showing AVs are generally more expensive than human-driven private cars and public transit but cheaper than human-driven taxis/ridehailing.
-    *   **Traffic Safety and Public Health (Page 13-14):** While optimists predict significant crash reductions, the report highlights additional risks: hardware/software failures, malicious hacking, increased risk-taking (offsetting behavior/risk compensation), platooning risks, increased total vehicle travel (more exposure), and difficulties detecting non-auto travelers. Studies suggest AVs might prevent only about 34% of crashes, not 90%. The "Trolley Problem" is introduced as a public policy issue for AV programming ethics. Overall, AVs have identified 32 pathways affecting public health (17 negative, 8 positive), necessitating demand management policies.
-    *   **External Cost (Page 15):** AVs' impact on external costs (congestion, parking, crashes, pollution) is uncertain. They could increase vehicle travel, congestion, and sprawl if not managed. Platooning for congestion/pollution benefits requires dedicated lanes, which are costly. Electric AVs reduce but don't eliminate pollution (from power generation, non-exhaust particulates). Programming choices (caution vs. speed) will affect traffic speeds and risks.
-    *   **Social Equity Impacts (Page 16-17):** AVs have mixed social equity impacts. Without new pricing, electric AVs may receive inequitable subsidies. External traffic costs are inequitable. Road space allocation should prioritize space-efficient modes. Private AVs are likely to be expensive, making them unaffordable for lower-income households. Policies favoring private AVs (e.g., dedicated lanes) would be regressive. Shared AVs can increase affordability for those with low annual mileage but may not suit sprawled areas. The report concludes AVs may support some equity goals but contradict others, potentially harming non-drivers if they increase automobile dependency.
-    *   **Benefit and Cost Summary (Page 18-19):** Exhibit 8 (Page 18) compares financial costs, convenience, comfort, external costs, social equity impacts, and appropriate uses for different vehicle types (private human-driven, private autonomous, shared autonomous vehicles, shared autonomous rides). Exhibit 9 (Page 19) provides a consolidated table of internal and external benefits and costs. The degree of benefits depends heavily on Level 5 automation and how AVs affect total vehicle travel.
+- **Benefits and Costs** (Pages 9-19)
+  - **Reduced Driver Stress, Improved Productivity and Mobility** (Page 9)
+    - AVs can reduce stress, allow work/rest while traveling, lowering travel time unit costs. However, vehicle interiors may become cluttered and dirty.
+    - Self-driving vehicles can introduce new stresses like "access anxiety" if unable to reach destinations due to weather or unmapped roads.
+    - Self-driving taxis offer cheaper service than human-driven ones but lower quality (no driver assistance, security, cleaning issues). Shared rides are cheapest but least convenient.
+    - AVs provide independent mobility for non-drivers, increasing productivity and reducing chauffeuring burdens. Potential for communities to reduce support for public transit if overly optimistic about AVs. Dedicated AV lanes might reduce human-operated traffic capacity.
 
--   **Travel Impacts** (Page 20-24)
-    This section discusses how AVs will affect total vehicle travel. Exhibit 10 (Page 20) outlines factors that could increase (e.g., non-driver travel, empty travel, reduced operating costs, increased convenience, sprawl) or reduce (e.g., shared services, improved transit, reduced parking needs) vehicle travel. The report suggests AVs will likely increase vehicle travel by 10-30%, especially in suburban/rural areas, due to increased comfort, productivity, and the incentive for owners to maximize use of their fixed investment. Surveys show many expect AVs to increase travel. Shared AVs are predicted to be cheaper than taxis but less convenient than private cars. Exhibit 11 (Page 21) identifies suitable travelers for different vehicle types. Exhibit 12 (Page 22) illustrates the relationship between generalized cost and annual vehicle miles per traveler, showing that lower costs (e.g., for autonomous electric cars) increase travel. Scenario examples (Jake, Bonnie, Melisa & Johnny, Garry) illustrate diverse impacts. Exhibit 14 (Page 24) summarizes these scenarios, showing that most cases predict increased vehicle travel and external costs, especially under current policies. Public policies, particularly efficient road user fees and HOV lanes, are critical to influence these impacts. The "rule of half" is mentioned for valuing marginal benefits of additional travel, indicating that much induced AV travel may be economically inefficient due to external costs.
+  - **Ownership and Operating Costs** (Pages 10-12)
+    - AVs require robust, redundant components, increasing maintenance costs. Optional AV features already cost thousands, and subscriptions add hundreds annually. Tesla's FSD costs $15,000.
+    - Repair costs for minor collisions are increased by advanced sensor systems (AAA 2018).
+    - Optimists' low operating cost estimates (e.g., <5¢/mile) are deemed underestimates, as they often ignore battery replacement, efficient road user fees, cleaning, vandalism, profits, and insurance. The report estimates electric AV operating costs at 10-25¢/mile, similar to fossil fuel vehicles.
+    - Experiences with previous vehicle innovations (automatic transmissions, airbags) suggest AV capability will initially be high-priced and take decades to become standard.
+    - Estimates private AV costs at $0.80-$1.20/mile initially, declining to $0.60-$1.00/mile. Shared AVs $0.50-$1.00/mile, shared autonomous rides $0.20-0.40/passenger-mile (cheaper than taxis, more expensive than personal vehicles or public transit).
+    - Public policies (e.g., road user fees) can affect these costs and make shared vehicles more attractive.
 
--   **Development and Deployment Predictions** (Page 25-31)
-    This section predicts the timeline for AV development and deployment.
-    *   **Innovation S-Curve (Page 25):** New technologies typically follow an S-curve development pattern (Exhibit 15), with slow initial growth followed by rapid expansion and eventual saturation.
-    *   **Complexity and Testing (Page 25-26):** AV software is vastly more complex than aircraft software (Exhibit 16) due to dynamic roadway interactions. Current AVs (Level 2-4) have limitations (weather, unmapped roads, complex maneuvers) and high failure rates, requiring extensive testing and regulatory approval (TRL scale). Reliability for Level 5 in all conditions is years away. The challenge of anticipating unpredictable real-world scenarios (e.g., "zombie kangaroo costumes") is noted. Consumer willingness to pay and concerns about safety/access anxiety also affect deployment speed.
-    *   **Skepticism of Optimistic Forecasts (Page 27):** The report explicitly critiques optimistic predictions by industry-affiliated sources, which often extrapolate from faster-penetrating electronic technologies, ignore motor vehicle specific challenges (cost, durability, regulation), and downplay costs. Objective experts predict Level 5 automation will take many more years.
-    *   **Experience with Previous Vehicle Technology Deployment (Page 28-29):** Historical examples like automatic transmissions, airbags, hybrid vehicles, and navigation systems show that new vehicle technologies typically take decades to achieve market saturation (Exhibit 17 & 18). AVs are more complex and costly, suggesting an even slower penetration.
-    *   **Deployment Predictions (Page 29-31):** Exhibits 19 and 20 (Page 30) forecast AV market penetration. Level 5 AVs are predicted to be commercially available in the late 2020s, but only a minority of new vehicles will be autonomous during the first decade. It will likely be at least 2045 before half of new vehicles are autonomous, and 2060 before half the vehicle fleet is autonomous, and even longer for travel. Faster deployment would require premature scrapping of functional human-driven vehicles. Commercial AVs (trucks, buses, taxis) are expected to automate first due to high labor costs. Factors affecting deployment speed include technological development, testing/regulatory approval, incremental costs, consumer preferences, service quality, and public policies (e.g., road pricing, dedicated lanes, infill development, mandates, scrapping incentives). Shared mobility services could accelerate trends but are less suitable for suburban/rural areas.
+  - **Traffic Safety and Public Health** (Pages 13-14)
+    - Optimists' claims of 90% crash reduction are questioned, as AVs introduce new risks: hardware/software failures, malicious hacking, increased risk-taking (offsetting behavior, over-trusting), platooning risks, increased total vehicle travel (due to convenience), and difficulties detecting non-auto travelers (pedestrians, cyclists).
+    - Tesla's self-driving software has high failure rates, not ready for broad implementation.
+    - Shared AVs could reduce crashes by providing alternatives for high-risk drivers.
+    - Discusses the "Autonomous Vehicle Trolley Problem" – the ethical dilemma of programming AVs to prioritize certain lives in unavoidable crash scenarios, raising public policy issues about who decides these trade-offs.
+    - Sohrabi, Khreis, and Lord (2020) identified 32 pathways for AVs affecting public health (17 negative, 8 positive), recommending TDM policies to favor shared, electric AVs and prevent increased VMT.
 
--   **Planning Objectives** (Page 32)
-    This section evaluates how AVs are likely to impact ten community planning objectives (Exhibit 21): congestion reduction, roadway cost savings, parking cost savings, consumer savings and affordability, traffic safety, improved mobility options, energy conservation, pollution reduction, physical fitness and health, and strategic development objectives (sprawl). It notes that impacts depend on user costs and deployment. Personal AVs can improve mobility for non-drivers and reduce parking but may increase congestion, roadway costs, energy consumption, and sprawl. Shared AV services, particularly with TDM incentives, are more likely to achieve community goals. Exhibit 22 (Page 32) provides a comparative matrix of how different AV types (Costly Personal, Inexpensive Personal, Shared, Shared with TDM) align with these objectives, showing shared AVs with TDM incentives are most beneficial.
+  - **External Cost** (Page 15)
+    - Optimists claim AVs reduce external costs (congestion, parking, crashes, pollution), but the report states these impacts are uncertain and could increase external costs (e.g., if AVs maximize comfort/safety, reducing traffic speeds; if they increase total vehicle travel and sprawl).
+    - Many benefits (congestion, pollution reduction) require costly dedicated lanes for platooning, which are only feasible on some highways. Shared AVs need docking/loading stations.
+    - Even electric AVs don't eliminate pollution entirely (due to fossil-fuel electricity generation and non-exhaust particulate emissions from brakes/tires).
+    - Overall impacts depend on design and regulation: cautious programming reduces speed/causes delays, while speed-maximizing programming increases risks and encourages shortcuts.
 
--   **Planning Implications** (Page 33-34)
-    This section discusses specific planning issues raised by AVs.
-    *   **Roadway Design (Page 33):** AVs may require new roadway features (markings, electronic signs, wireless access in tunnels). While they could allow narrower lanes, platooning benefits need dedicated lanes. Governments may need to establish more HOV lanes to favor high-occupancy vehicles.
-    *   **Transportation Pricing (Page 33):** Under current policies, electric AVs will likely increase vehicle travel by 10-30%, stimulating sprawl and deadheading, and pay no road user fees. Governments will need to impose new fees (road user charges, decongestion pricing) to internalize costs.
-    *   **Curb Management (Page 33):** Cities will need to manage curbs for convenient passenger loading/unloading for shared AVs, potentially by providing loading areas or managing on-street parking for turnover.
-    *   **Parking Planning (Page 33):** AVs will impact parking demand. Electric AVs need charging. Shared AVs could reduce overall parking demand, and private AVs might "self-park" by circling or returning home (increasing traffic). Travelers will still want AVs available within minutes, implying continued need for nearby parking, though more off-site or shared parking might be possible.
-    *   **Public Transit Needs (Page 34):** AVs could reduce transit operating costs (e.g., autonomous buses/micro-transit), making services more frequent or flexible. Cheaper taxi services could provide mobility for non-drivers. However, AVs could also reduce conventional transit demand and political support, potentially leading to more congestion and pollution if people shift from transit to less space-efficient AVs. High-capacity transit will still be needed, and policies like efficient road pricing and HOV lanes are recommended.
-    *   **Other Trends Affecting Travel Demands (Page 34):** AV development is one of many trends (demographics, consumer preferences, prices, IT, mobility options) affecting transport demand. Exhibit 23 (Page 34) illustrates these factors, suggesting other trends might have greater impacts than AVs in the near future.
-    *   **Benefits by AV Type and Planning Timeline (Page 35):** Exhibit 24 (Page 35) shows that many benefits, especially external ones, require Level 5 and shared AVs, or dedicated lanes. Exhibit 25 (Page 35) provides a timeline for autonomous vehicle planning issues, from regulatory frameworks (2020-30) to potential mandates restricting human driving (2060-80s).
-    *   **Optimistic vs. Pessimistic Outcomes (Page 36):** Exhibit 26 (Page 36) compares optimistic outcomes (policies encourage sharing, social inclusion, environmental sustainability, public transport support, AVs minimize risks to others, data networks maximize efficiency, data managed in public interest, parking converted to greenspace, curb access managed, urban areas attractive, multi-modal planning) with pessimistic outcomes (AVs as luxury goods, only for affluent, little environmental consideration, public transport unsupported, AVs favor occupants, data sold for profit, parking policies unchanged, congested curbs, land managed for AV travel, planning favors AVs with low fees).
-    *   **Autonomous Taxi Service Impacts (Page 37):** Discusses early testing experiences (Waymo/Uber in Phoenix), noting slow speeds and limitations. Commercial autonomous taxi services require further development, testing, and profitability. To significantly reduce vehicle travel, autonomous taxis need to be inexpensive, ubiquitous, and integrated with other mobility options, supported by public policies discouraging private vehicle ownership and encouraging sharing.
-    *   **Autonomous Vehicle Planning Requirement Time-Line (Page 37):** Exhibit 27 (Page 37) shows a timeline for planning requirements, from developing performance/data collection standards (2020) to considering restricting human driving (2070s+).
+  - **Social Equity Impacts** (Pages 16-17)
+    - Discusses horizontal equity (subsidies, road space) and vertical equity (abilities/needs, income/affordability).
+    - **Subsidies**: Without new cost-recovery pricing, electric AVs may receive inequitable subsidies (no fuel taxes, dedicated lanes).
+    - **External Traffic Costs**: AVs' impact on congestion, pedestrian delay, crash risk, pollution is uncertain and depends on policies and induced travel. Dedicated lanes could increase throughput but mix impacts under most circumstances.
+    - **Road Space**: Road space is scarce; equity requires prioritizing space-efficient modes (buses, vanpools). Private AVs likely have low occupancy and might "circle the block" to avoid parking fees, worsening congestion. Roads should be managed to favor shared modes.
+    - **Abilities and Needs**: AVs can provide independent mobility for people with disabilities or non-drivers, and autonomous taxis could be affordable options.
+    - **Income – Affordability**: AVs will be costly for decades ($10,000/vehicle-year increment), making private AVs unaffordable for lower-income households. Policies favoring private AVs (e.g., dedicated lanes) would be regressive. Shared taxis could increase affordability for low-mileage users.
+    - Summary: AVs support some equity goals but contradict others; private AVs are costly, subsidies for them are unfair. Net impact depends on policies preventing induced travel, sprawl, and automobile dependency.
 
--   **Potential Conflicts and Solutions** (Page 38)
-    This section addresses conflicts between user comfort/speed and community goals (safety, congestion, equity). Dedicated AV lanes (for platooning) pose fairness and pricing issues. AVs could exacerbate congestion, sprawl, and inequity if not managed. Shared Mobility Principles for Livable Cities (www.sharedmobilityprinciples.org) are presented as guidelines to optimize AV benefits, emphasizing planning for people over vehicles, shared use, equity, clean energy, fair user fees, open data, integration, and shared fleets in dense urban areas. Specific strategies are listed, including emphasizing social goals, regulating new technologies, ensuring responsible data collection, programming AVs ethically, implementing efficient pricing, ensuring shared AVs are affordable, integrating shared AVs into multimodal systems, using universal design, redesigning streets, reducing parking minimums, and efficient development pricing.
+  - **Benefit and Cost Summary** (Pages 18-19)
+    - Exhibit 8 (Page 18) compares financial costs, convenience, comfort, external costs, social equity impacts, and appropriate uses for Private Human-driven, Private Autonomous, Shared Autonomous Vehicles, and Shared Autonomous Rides.
+    - Reiterates that impacts depend on specific vehicle features, with financial costs being high initially for AVs and declining over time.
+    - Exhibit 9 (Page 19) provides a consolidated table of internal (user) and external (others) benefits and costs, emphasizing that total impacts depend on how AVs affect total vehicle travel. Most benefits require Level 5 automation, which allows vehicles to transport non-drivers and drive empty.
 
--   **Conclusions** (Page 39-41)
-    The conclusions reiterate the report's main arguments: skepticism towards overly optimistic AV predictions, given the complexity, costs, and regulatory hurdles. Level 5 AVs are expected to be available by 2030 but will remain expensive and limited for decades, becoming affordable for middle/lower-income households only by the 2050s. Shared AVs will be cheaper but less convenient than private AVs and less likely to dominate suburban/rural travel. The analysis projects that it will take until at least 2045 for half of new vehicles to be autonomous, and 2060 for half the fleet. Many benefits require Level 5 autonomy, affordability, commonality, and sometimes dedicated lanes. AVs are likely to increase total vehicle travel by 10-30% under current policies, leading to increased congestion and sprawl, but policies favoring shared, efficient, and multi-modal transport can mitigate these issues. The report emphasizes that AVs are not a "game changer" for most of our lives unless they significantly shift towards shared vehicles and multi-modal communities. Transportation professionals have a key role in anticipating impacts, defining standards, and developing policies to maximize net benefits and support community goals.
+- **Travel Impacts** (Pages 20-24)
+  - Key factor is how AVs affect total vehicle travel (VMT).
+  - **Increases VMT**: Non-drivers' travel, empty vehicle travel (drop-off/pickup, maintenance), reduced operating costs, increased convenience/productivity, encouragement of sprawl. Studies predict 10-30% VMT increase.
+  - **Reduces VMT**: More convenient shared vehicle services, self-driving buses/improved last-mile access, reduced traffic risk/parking needs making urban living attractive.
+  - The net impact depends on households' choice between urban/suburban living and private ownership vs. sharing.
+  - Many travelers prefer owning vehicles for convenience (keeping items), speed/reliability, lower costs for high-mileage drivers, and status. Shared rides have lower costs but less convenience/comfort.
+  - Exhibit 12 (Page 22) shows a "Generalized Cost (Money and Time) Travel Demand Curve," illustrating that as costs decline, vehicle travel increases. Private AV owners are likely to travel more due to lower operating and increased convenience costs, while shared AV users might travel less due to higher financial costs and reduced convenience compared to personal vehicles.
+  - Surveys show more predictions of increased VMT than declines.
+  - Exhibit 13 (Page 23) details AV impacts on various travel demands: freight trucks, small commercial, public transport, longer-distance personal trips, local suburban/rural, local urban, and non-drivers.
+  - Scenarios for Jake (affluent/visually impaired), Bonnie (multi-modal), Melisa & Johnny (suburban family), and Garry (high-risk driver) illustrate diverse impacts on vehicle ownership and travel, often leading to increased VMT.
+  - Exhibit 14 (Page 24) summarizes these scenarios, showing that most lead to increased vehicle travel and external costs, especially with current policies. Efficient road pricing and HOV lanes could make shared rides more attractive, reducing VMT.
+  - Additional VMT provides marginal benefits; much of it is economically inefficient due to external costs.
 
--   **References** (Page 42-49)
-    A comprehensive list of academic papers, reports, and articles cited throughout the document, supporting its claims and analyses.
+- **Development and Deployment Predictions** (Pages 25-31)
+  - New technologies typically follow an S-curve development pattern (Exhibit 15, Page 25): concept, development, testing, approval, commercial release, product improvement, market expansion, maturation, saturation, decline.
+  - Past optimistic predictions for AVs (e.g., Urmson's 2019 prediction) were overly ambitious.
+  - AVs are currently in development/testing (TRL 6 out of 10). They require more complex computer systems than aircraft (Exhibit 16, Page 25) due to diverse roadway interactions, leading to challenges and errors.
+  - Current Level 4 AVs have limited operability (80-90% of desired destinations) and struggle in heavy rain/snow, unmapped roads, or novel situations. Years of testing and regulatory approval are needed for widespread commercial availability.
+  - Historical examples (Exhibit 17, Page 28, and Exhibit 18, Page 29) show that vehicle technologies (automatic transmissions, airbags, hybrids, navigation systems, electric vehicles) take decades (25-100+ years) from initial commercial availability to market saturation.
+  - AVs are more complex and costly, so market acceptance and penetration will likely take longer. Fleet turnover is slow (3-5 decades for 90% penetration).
+  - **Deployment Predictions**: Based on this analysis, the report predicts (Exhibit 19, Page 30, and Exhibit 20, Page 30/28) that Level 5 AVs will be commercially available in the late 2020s, but only a minority of new vehicles will be fully autonomous initially. Half of new vehicle sales are autonomous by 2045, and half of the fleet by 2060. Faster deployment would require significant premature scrapping of functional vehicles.
+  - Commercial vehicles (trucks, buses, taxis) are likely to automate first due to high labor costs and predictable routes, though some human operators may still be needed.
+  - Factors affecting deployment speed: technological development (Level 5 reliability), testing/regulatory approval, incremental costs (initially high), consumer preferences (safety, privacy, ownership vs. sharing), service quality/affordability, and public policies (encouraging AV development, road pricing, HOV lanes, infill development, mandates).
+
+- **Planning Objectives** (Pages 32)
+  - Exhibit 21 (Page 32) describes how AVs impact ten community objectives: congestion reduction, roadway cost savings, parking cost savings, consumer savings/affordability, traffic safety, improved mobility options, energy conservation, pollution reduction, physical fitness/health, and strategic development (sprawl). Many impacts are contradictory.
+  - Exhibit 22 (Page 32) compares benefits for costly personal AVs, inexpensive personal AVs, shared AVs, and shared AVs with TDM incentives, showing that shared AVs with TDM incentives align best with community objectives.
+
+- **Planning Implications** (Pages 33-37)
+  - **Roadway Design**: AVs may require new features (lane markings, electronic signs, wireless access). Platooning benefits require dedicated lanes, which are only feasible on some highways. HOV priority lanes may be needed to encourage higher-occupancy AV travel.
+  - **Transportation Pricing**: Electric AVs currently increase VMT and traffic problems (10-30% increase) and pay no road user fees. Governments need new fees (4-8¢/vehicle-mile, plus 5-30¢/mile decongestion pricing in congested conditions).
+  - **Curb Management**: Cities need to manage curbs for convenient passenger loading/unloading for shared AVs, providing loading areas or increasing parking turnover.
+  - **Parking Planning**: AVs affect parking demand in various ways. Optimists predict significant reductions. Shift to shared vehicles reduces ownership and parking needs. Private AVs might "circle the block," increasing traffic. Travelers will likely want vehicles within minutes, reducing but not eliminating urban parking demand.
+  - **Public Transit Needs**: AVs can reduce transit operating costs, allowing more frequent service with smaller vehicles or flexible routes (paratransit). Cheaper taxi services can provide convenient mobility, especially in suburban/rural areas. However, AVs could reduce conventional transit demand, revenue, and political support. High capacity transit is still needed on major corridors. Efficient road pricing, HOV lanes, and transit improvements are recommended.
+  - **Other Trends Affecting Travel Demands** (Page 34): AVs are one of many trends (demographics, user preferences, price changes, ITS, improved travel options, planning innovations). Their ultimate impact depends on interaction with these trends.
+  - **Benefits by Autonomous Vehicle Type** (Exhibit 24, Page 35): A matrix showing that many benefits (mobility for non-drivers, user savings, external benefits) require Level 5 and shared vehicles, or dedicated AV lanes.
+  - **Autonomous Vehicle Planning Issues Timeline** (Exhibit 25, Page 35): A timeline (2020s-2080s) of issues from reliability/safety to AV mandates, outlining analysis required and policies needed.
+  - **Optimistic and Pessimistic Outcomes** (Exhibit 26, Page 36): Compares outcomes across issues like sharing, social inclusion, environmental sustainability, public transport, intermodal management, data management, parking, curb access, land use, and transport planning. Optimistic outcomes typically involve policies that encourage sharing, equity, and multi-modal integration. Pessimistic outcomes involve private luxury goods, favoring occupants over other road users, and increased sprawl.
+  - **Autonomous Taxi Service Impacts** (Page 37): Early testing of driverless taxis (Waymo, Uber) showed challenges (pedestrian death, slow operation, limited conditions). Commercial availability requires profitability, consumer confidence, and cost reductions, likely taking years. Taxis primarily serve local urban trips. Significant VMT reduction requires inexpensive, ubiquitous shared AVs integrated with other modes, supported by policies discouraging private ownership.
+
+- **Potential Conflicts and Solutions** (Page 38)
+  - Conflicts exist between user (comfort, safety) and community goals (traffic speeds, crash risk for other road users). Dedicated AV lanes raise fairness and pricing concerns.
+  - Planning conflicts: AVs could exacerbate congestion, sprawl, and inequity by increasing total vehicle travel and displacing public transit.
+  - Mentions "Shared Mobility Principles for Livable Cities" (www.sharedmobilityprinciples.org) as guidelines for optimizing AV benefits (e.g., plan cities/mobility together, prioritize people, support shared/efficient use, promote equity, transition to clean energy, fair user fees, public benefits, integration, shared fleets in dense urban areas).
+  - Strategies to maximize AV benefits and minimize social costs include emphasizing social goals, testing/regulating for safety/efficiency, responsible data management, programming AVs based on ethical/community goals, efficient pricing/vehicle priority, affordable shared services, multimodal integration, universal design, street redesign, reduced parking minimums, and efficient development pricing.
+
+- **Conclusions** (Pages 39-41)
+  - Reaffirms skepticism towards overly optimistic AV predictions, highlighting significant obstacles (reliability, affordability, performance, new risks, regulatory approval, slow market penetration, driver resistance).
+  - Level 5 AVs optimistically available by 2025-2030, but expensive and limited initially. Widespread affordability for middle/lower-income households is projected for the 2050s.
+  - Shared AVs (taxis, micro-transit) available by 2030s, cheaper than human-driven taxis but with lower service quality. Unlikely to dominate suburban/rural travel.
+  - Most vehicles autonomous by 2045, fleet by 2060. Faster deployment requires premature scrapping.
+  - Social equity impacts are mixed. Benefits occur if AVs are affordable and common; congestion/emission reductions require dedicated lanes and policies favoring shared travel.
+  - Most AVs assumed electric, but battery costs and lack of fuel taxes mean similar operating costs to fossil fuel vehicles with efficient road user fees. Self-driving buses/trucks may automate quickly.
+  - Reinforces that AVs may increase or reduce total vehicle travel, depending on policies. With current policies, VMT and sprawl likely increase 10-30%, which is economically inefficient. TDM incentives and shared vehicle lanes can reduce VMT and problems.
+  - Many benefits require AVs to operate autonomously in dedicated lanes. AVs are one of many trends and only a "paradigm shift" if they lead to large shifts to shared vehicles and multi-modal communities.
+  - Transportation professionals are crucial in planning, defining standards, evaluating benefits/costs, and developing policies to support community goals.
 
 ## 3. Key Ideas, Claims, and Takeaways
 
--   **Key Idea 1 – Skepticism Regarding Optimistic AV Predictions**
-    The document consistently argues against overly optimistic predictions about autonomous vehicle deployment and impact. It claims that many optimistic forecasts come from those with financial interests in the industry and rely on analogies to rapidly adopted electronic technologies, ignoring the unique complexities, costs, durability, and regulatory environment of motor vehicles. This skepticism is central to the report's more conservative deployment timeline and nuanced benefit/cost analysis.
-    Page(s): 3, 7, 27, 39
-    Evidence: The report cites experiences with previous vehicle technologies (Exhibits 17, 18 on Pages 28-29) and the high complexity of AV software compared to aircraft (Exhibit 16, Page 25) as evidence that widespread adoption and full functionality will take decades, not years. It also references opinions from objective experts predicting longer development times.
+-   **Key Idea 1 – Skepticism Towards Optimistic AV Timelines and Benefits**
+    -   **What the idea/claim is**: The report argues against overly optimistic predictions (often from industry players) that autonomous vehicles will be ubiquitous, affordable, and transformative by 2030. It suggests that these predictions overlook significant technical, regulatory, cost, and social obstacles.
+    -   **Why it matters in the context of the document**: This is a central premise, setting the tone for the report's more conservative and realistic forecasts. It informs the entire analysis of deployment timelines, benefits, costs, and policy implications.
+    -   **Where it appears**: Executive Summary (Page 3), Introduction (Page 7), Development and Deployment Predictions (Page 25), Conclusions (Page 39).
+    -   **Evidence**: The document references historical adoption rates of previous vehicle technologies (Exhibit 17, Page 28; Exhibit 18, Page 29), notes the complexity of AV software compared to aircraft (Exhibit 16, Page 25), current AV operational failures (Page 14, 26), and the slow pace of regulatory approval and market penetration for other automotive innovations.
 
--   **Key Idea 2 – High Costs and Slow Penetration of AVs**
-    Autonomous vehicles, especially Level 5, are predicted to be significantly more expensive than human-operated private vehicles and public transit initially. This high cost, coupled with the durability of existing vehicles and the slow turnover of vehicle fleets, means that AVs will take decades to achieve significant market penetration. Most benefits will only be realized once AVs are common and affordable.
-    Page(s): 3, 4, 10-12, 17, 29-30, 39-40
-    Evidence: Exhibits ES-1, 5, and 6 (Pages 3, 12) illustrate cost comparisons. Exhibits 19 and 20 (Page 30) provide projections for AV sales, fleet, and travel market penetration, showing decades for majority adoption. The discussion on ownership and operating costs (Page 10-12) details the additional equipment and service costs.
+-   **Key Idea 2 – Costs and Affordability are Significant Barriers to Rapid AV Adoption**
+    -   **What the idea/claim is**: Autonomous vehicles, especially Level 5, will be significantly more expensive to purchase, operate, and maintain than human-driven vehicles. These high costs, including additional equipment, software subscriptions, insurance, and battery replacement (for EVs), will limit their initial market penetration and affordability, particularly for lower-income households.
+    -   **Why it matters in the context of the document**: Cost is a primary driver of market adoption. If AVs are not affordable, their widespread use and the realization of many predicted benefits will be delayed. This impacts social equity, travel patterns, and public transit needs.
+    -   **Where it appears**: Executive Summary (Page 3), Benefits and Costs (Pages 10-12, 18), Social Equity Impacts (Page 17), Conclusions (Page 39).
+    -   **Evidence**: Exhibit ES-1 (Page 3) and Exhibit 5 (Page 12) illustrate AVs costing more than human-driven private vehicles. The text details additional costs for sensors, software, maintenance, and estimates electric AV operating costs (10-25¢/mile) higher than optimistic forecasts, incorporating battery replacement and road user fees.
 
--   **Key Idea 3 – Autonomous Vehicles are Likely to Increase Total Vehicle Travel (VMT)**
-    Under current policies and without specific demand management interventions, AVs are projected to increase total vehicle travel by 10-30%. This is driven by factors like increased mobility for non-drivers, empty vehicle travel (deadheading, repositioning, self-parking), reduced operating costs for electric AVs, and increased convenience encouraging more and longer trips, potentially leading to more sprawled development.
-    Page(s): 4, 6, 13, 15, 20, 24, 33, 41
-    Evidence: Exhibit 10 (Page 20) explicitly lists factors increasing vehicle travel. Exhibit 12 (Page 22) shows how declining generalized costs lead to increased travel. Exhibit 14 (Page 24) summarizes scenarios where AVs typically increase vehicle travel. The section "Travel Impacts" (Page 20-24) elaborates on these mechanisms.
+-   **Key Idea 3 – Autonomous Vehicles Will Not Inherently Reduce Traffic Problems; Policy is Key**
+    -   **What the idea/claim is**: Contrary to common optimistic views, AVs are not guaranteed to reduce congestion, pollution, or crashes. In fact, without careful policy interventions, they are likely to increase total vehicle travel (VMT) due to non-driver mobility, empty vehicle travel, reduced operating costs, and encouragement of sprawl, thereby exacerbating traffic problems.
+    -   **Why it matters in the context of the document**: This challenges a fundamental assumption about AVs and shifts the focus from technological determinism to the critical role of governance. It underscores that the ultimate impacts of AVs depend on how they are designed, programmed, and regulated.
+    -   **Where it appears**: Executive Summary (Page 4, 6), External Cost (Page 15), Travel Impacts (Pages 20-24), Planning Objectives (Page 32), Planning Implications (Page 33), Potential Conflicts and Solutions (Page 38), Conclusions (Page 41).
+    -   **Evidence**: Exhibit ES-2 (Page 4) and Exhibit 9 (Page 19) list "Increased traffic problems" as a cost. Exhibit 10 (Page 20) and Exhibit 13 (Page 23) detail factors increasing VMT. Exhibit 12 (Page 22) shows increased travel as costs decline. The report explicitly states that current policies would likely increase VMT by 10-30% and that many benefits require dedicated lanes and effective demand management.
 
--   **Key Idea 4 – Public Policy is Crucial for Maximizing AV Benefits and Mitigating Problems**
-    The document repeatedly stresses that the ultimate impacts of AVs (positive or negative) are not predetermined by technology but will depend heavily on public policies. Efficient road pricing, support for shared autonomous vehicles (SAVs), dedicated lanes for high-occupancy AVs, appropriate curb management, and integration into multi-modal transport systems are identified as essential to reduce congestion, mitigate sprawl, ensure equity, and maximize overall societal benefits.
-    Page(s): 6, 7, 16-17, 24, 32-34, 36, 38, 41
-    Evidence: Exhibit 22 (Page 32) compares benefits across AV types, showing shared AVs with TDM incentives align best with planning objectives. Exhibit 25 (Page 35) outlines a timeline for necessary planning issues and policies. Exhibit 26 (Page 36) contrasts optimistic and pessimistic outcomes based on policy choices. The "Potential Conflicts and Solutions" section (Page 38) dedicates significant attention to policy recommendations, including the "Shared Mobility Principles for Livable Cities."
+-   **Key Idea 4 – Shared Autonomous Vehicles (SAVs) Offer Greater Societal Benefits Than Private AVs**
+    -   **What the idea/claim is**: The report consistently argues that shared autonomous vehicles and rides (like self-driving taxis or micro-transit) are more aligned with community goals, social equity, and congestion reduction than privately owned autonomous vehicles. They offer lower costs, reduce vehicle ownership, parking demand, and can be integrated into multi-modal transport systems.
+    -   **Why it matters in the context of the document**: This provides a clear policy direction for maximizing the positive impacts of AV technology. It identifies the operational model that can best achieve strategic community objectives like sustainability and affordability.
+    -   **Where it appears**: Executive Summary (Page 3, 5), Operating Models Compared (Exhibit 2, Page 8), Benefit and Cost Summary (Exhibit 8, Page 18), Travel Impacts (Page 20), Most Suitable Travelers and Trips (Exhibit 11, Page 21), Planning Objectives (Exhibit 22, Page 32), Potential Conflicts and Solutions (Page 38), Conclusions (Page 40).
+    -   **Evidence**: Exhibit 2 (Page 8) and Exhibit 8 (Page 18) show SAVs having lower fixed costs and greater equity. Exhibit 11 (Page 21) identifies SAVs as suitable for urban residents and cost-conscious travelers. Exhibit 22 (Page 32) explicitly compares benefits, showing "Shared AVs with TDM Incentives" achieve most planning objectives.
 
--   **Key Idea 5 – Level 5 Autonomy is Required for Most Significant Benefits**
-    While some benefits like reduced driver stress can occur with lower levels of automation (Level 4), most transformative benefits, such as independent mobility for all non-drivers, affordable taxi/micro-transit services, reduced congestion, and lower emissions, depend on Level 5 autonomy. This means the vehicle can operate fully autonomously in all normal conditions and can travel empty to pick up or drop off passengers, which is still decades away for widespread adoption.
-    Page(s): 4, 5, 8, 19, 35, 40
-    Evidence: Exhibit 1 (Page 8) defines SAE levels, emphasizing Level 5's capabilities. Exhibit ES-2/28 (Page 5, 40) explicitly links the timing of various benefits to the penetration rates of autonomous vehicles. Exhibit 24 (Page 35) shows that many user and external benefits are associated with Level 5 or shared AVs.
+-   **Key Idea 5 – Widespread Significant Impacts of AVs Are Decades Away (2040s-2060s)**
+    -   **What the idea/claim is**: Based on historical technology adoption patterns and the unique complexities of AVs, the report predicts that while Level 5 AVs may be commercially available in the late 2020s, it will take until at least 2045 for half of new vehicles to be autonomous, and 2060 for half of the total vehicle fleet to be autonomous. Consequently, most significant societal benefits and problems will not manifest until the 2040s to 2060s.
+    -   **Why it matters in the context of the document**: This provides a realistic timeline for policymakers and planners, suggesting that immediate, drastic changes based on AVs are not warranted. It allows for a more measured approach to planning and regulation, focusing on incremental development rather than a sudden "paradigm shift."
+    -   **Where it appears**: Executive Summary (Page 3, 5), Development and Deployment Predictions (Pages 29-30), Autonomous Vehicle Planning Requirement Time-Line (Exhibit 27, Page 37), Conclusions (Page 39, 40).
+    -   **Evidence**: Exhibit ES-2 (Page 5), Exhibit 19 (Page 30), and Exhibit 20 (Page 30) explicitly chart sales, fleet, and travel penetration over time, with significant penetration occurring well after 2040. The section on "Experience with Previous Vehicle Technology Deployment" (Pages 28-29) provides historical data for comparison.
 
 ## 4. Important Tables (with page numbers)
 
--   **Table ID:** Exhibit ES-1
--   **Page:** 3
--   **Title/Caption:** Cost Comparison
--   **What it shows (content):** This bar chart compares the "Dollars Per Mile" for various transportation modes and vehicle types. It differentiates between Autonomous Vehicles (AV) and Human Driven (HD) options. The categories include: HO car variable costs, Shared AV, Public transit, AV variable costs, HD car average costs, AV Taxi, AV average costs, Ride-hailing, and HO Taxi. The chart clearly indicates that human-operated taxis and ride-hailing are the most expensive, followed by AV taxis. Shared AVs and AV variable costs are positioned as less expensive than AV taxis but more than human-driven private vehicles (variable or average costs) and public transit.
--   **Why it is important:** This table is crucial as it grounds the discussion about the financial viability and market positioning of autonomous vehicles. It directly supports **Key Idea 2** by illustrating that AVs are not necessarily cheaper than private human-driven cars or public transit in all aspects, particularly ownership or average costs, but do offer cost savings compared to traditional for-hire services. It informs the discussion on consumer choices and the potential for shared AVs.
+-   **Table ID**: Exhibit ES-1
+-   **Page**: 3
+-   **Title/Caption**: Cost Comparison
+-   **What it shows (content)**: This bar chart compares the cost per mile (in dollars) for various transportation modes and vehicle types, differentiating between Autonomous Vehicles (AV) and Human Driven (HD) options. The categories include: HD car variable costs, Shared AV, Public transit, AV variable costs, HD car average costs, AV Taxi, AV average costs, Ride-hailing, and HO Taxi. It shows that HD car variable costs and AV variable costs are the lowest, followed by public transit. Shared AVs and AV taxis are in the middle, while Ride-hailing and HO Taxis are the most expensive per mile.
+-   **Why it is important**: This table provides a quick, visual summary of the economic argument that AVs are not necessarily cheaper than private human-driven vehicles or public transit, but they can be cheaper than traditional ride-hailing and taxis. It directly supports **Key Idea 2** about the cost barriers and **Key Idea 4** about the relative affordability of shared AVs compared to human-driven for-hire services. It also helps contextualize the potential shift in travel behavior based on cost.
 
--   **Table ID:** Exhibit 1
--   **Page:** 8
--   **Title/Caption:** Automated Driving Levels (SAE J3016)
--   **What it shows (content):** This table defines the six levels of driving automation (Level 0 to Level 5) as established by the Society of Automotive Engineers (SAE J3016). For each level, it describes "What the human in the driver's seat has to do" and "What these features do," along with "Example Features." Level 0 is no automation, Level 1 provides steering *or* brake/acceleration support, Level 2 provides both, Level 3 allows automated driving under limited conditions but requires human take-over when prompted, Level 4 operates autonomously under limited conditions without human intervention, and Level 5 operates autonomously under all normal conditions everywhere.
--   **Why it is important:** This table is fundamental to understanding the technical capabilities and limitations discussed throughout the report. It is directly linked to **Key Idea 5**, as it clearly shows that many of the transformative benefits of AVs depend on achieving higher levels of automation, particularly Level 5, which removes the need for a human driver entirely. This clarity helps in distinguishing between different stages of AV development and their associated impacts.
+-   **Table ID**: Exhibit ES-2 (also similar to Exhibit 20 on page 30 and Exhibit 28 on page 40)
+-   **Page**: 5
+-   **Title/Caption**: Autonomous Vehicle Sales, Fleet, Travel and Benefit Projections
+-   **What it shows (content)**: This line chart projects the market penetration of autonomous vehicles over time (2030-2080) for sales, fleet, and total travel, with higher and lower estimates for each. It also overlays lines indicating when different benefits (less driver stress/mobility for affluent non-drivers, cheaper taxi services, cheaper truck/bus services, increased safety, reduced congestion/emissions, less driver stress/mobility for middle/low-income non-drivers) are expected to become significant. The chart indicates that sales penetration precedes fleet and travel penetration, with higher rates generally taking until 2045-2060 to reach 50% or more. Benefits for affluent users appear earlier, while widespread benefits like congestion reduction or mobility for lower-income groups emerge much later.
+-   **Why it is important**: This is a crucial visual for **Key Idea 5**, illustrating the report's central argument about the slow, decades-long deployment timeline for AVs and the phased realization of their benefits. It visually represents the S-curve adoption model and differentiates when various social and economic impacts are likely to occur, directly supporting the skeptical view of rapid, universal transformation.
 
--   **Table ID:** Exhibit 10
--   **Page:** 20
--   **Title/Caption:** Potential Travel Impacts (Miller and Kang 2019; Rodier 2018)
--   **What it shows (content):** This table categorizes potential travel impacts of autonomous vehicles into two columns: "Increases Vehicle Travel" and "Reduces Vehicle Travel." Factors increasing travel include increased non-driver travel, empty vehicle travel (deadheading), reduced operating costs, increased passenger convenience, and encouragement of sprawled development. Factors reducing travel include more convenient shared vehicle services (leading to reduced ownership), self-driving buses improving transit, and reduced traffic/parking risk making urban living more attractive.
--   **Why it is important:** This table is central to understanding **Key Idea 3**, as it explicitly lays out the mechanisms through which AVs could either increase or decrease total vehicle travel. It provides a balanced view of the potential impacts, although the surrounding text and other exhibits suggest a net increase in VMT is more likely under current conditions. This helps in framing the debate on AVs' environmental and congestion effects.
+-   **Table ID**: Exhibit 1
+-   **Page**: 8
+-   **Title/Caption**: Automated Driving Levels (SAE J3016)
+-   **What it shows (content)**: This table defines the six levels of driving automation (Level 0 to Level 5) as established by the Society of Automotive Engineers (SAE J3016). For each level, it describes what the human in the driver's seat must do and what the automated driving features do. Level 0 offers warnings/momentary assistance, Level 1 provides steering *or* brake/acceleration support, Level 2 provides steering *and* brake/acceleration support. Levels 3-5 are automated driving features where the vehicle drives itself under certain conditions. Level 3 requires human intervention when requested. Level 4 drives itself under limited conditions without human intervention, and Level 5 drives everywhere in all conditions without human intervention.
+-   **Why it is important**: This table is foundational for understanding the technology discussed throughout the report. It clarifies the technical definitions of "autonomous vehicles" and highlights that many predicted benefits (especially transporting non-drivers or goods) only apply to Level 5. This definition is critical for the report's argument that achieving Level 5 is extremely challenging and will take a long time, thus supporting **Key Idea 1** and **Key Idea 5**.
 
--   **Table ID:** Exhibit 18
--   **Page:** 29
--   **Title/Caption:** Vehicle Technology Deployment Summary
--   **What it shows (content):** This table summarizes the deployment cycle (in years) and typical cost premium for several past vehicle technologies: Automatic transmissions, Air bags, Hybrid vehicles, Subscription services, Navigation systems, and Electric vehicles. It also includes their market saturation share. For example, automatic transmissions took 50 years to reach 90% U.S. saturation, while air bags took 25 years to reach 100% due to federal mandate.
--   **Why it is important:** This table provides crucial historical context for the report's skeptical deployment predictions, directly supporting **Key Idea 1** and **Key Idea 2**. It demonstrates that new vehicle technologies typically take multiple decades to achieve market saturation, reinforcing the argument that autonomous vehicles will also have a long penetration period due to their complexity, cost, and the slow turnover of vehicle fleets.
+-   **Table ID**: Exhibit 2
+-   **Page**: 8
+-   **Title/Caption**: Operating Models Compared
+-   **What it shows (content)**: This table compares four vehicle operating models: Private Human-Driven Vehicles, Private Autonomous Vehicles, Shared Autonomous Vehicles, and Shared Autonomous Rides. For each model, it lists advantages, disadvantages, and appropriate users. For example, Private HDVs have low costs and are always available, while Shared Autonomous Rides have the lowest total costs and minimize congestion but offer the least convenience.
+-   **Why it is important**: This table is critical for understanding the different ways AVs can be deployed and their implications. It directly supports **Key Idea 4** by detailing why shared models (Shared Autonomous Vehicles and Rides) offer greater societal benefits (lowest costs, minimized congestion/risk/pollution) compared to private AVs (high costs, likely increase travel). This comparison is central to the policy recommendations later in the report.
 
--   **Table ID:** Exhibit 22
--   **Page:** 32
--   **Title/Caption:** Comparing Benefits (Planning Objectives)
--   **What it shows (content):** This matrix compares how different types of autonomous vehicles (Costly Personal AVs, Inexpensive Personal AVs, Shared AVs, Shared AVs with TDM Incentives) align with ten community planning objectives: congestion reduction, roadway cost savings, parking cost savings, consumer savings and affordability, traffic safety, improved mobility options, energy conservation, pollution reduction, physical fitness and health, and strategic development objectives. A checkmark (✓) indicates achieving an objective, while an 'X' indicates contradicting it. It shows that "Shared AVs with TDM Incentives" achieve the most objectives, while "Costly Personal AVs" contradict most.
--   **Why it is important:** This table is highly important for **Key Idea 4**, illustrating how public policies (specifically TDM incentives for shared AVs) are critical in aligning AV deployment with broader community goals. It visually summarizes the complex trade-offs and reinforces the argument that not all AV implementations will be beneficial; the most positive outcomes require specific policy frameworks.
+-   **Table ID**: Exhibit 10
+-   **Page**: 20
+-   **Title/Caption**: Potential Travel Impacts (Miller and Kang 2019; Rodier 2018)
+-   **What it shows (content)**: This table is divided into two columns: "Increases Vehicle Travel" and "Reduces Vehicle Travel." It lists specific mechanisms through which autonomous vehicles could impact total vehicle miles traveled (VMT). Factors increasing VMT include increased non-driver travel, empty vehicle travel, reduced operating costs, increased convenience, and encouragement of sprawl. Factors reducing VMT include more convenient shared vehicle services, self-driving buses improving transit, and reduced traffic risk/parking making urban living more attractive.
+-   **Why it is important**: This table directly addresses **Key Idea 3** by presenting the nuanced and often contradictory potential impacts of AVs on VMT. It demonstrates that AVs are not inherently VMT-reducing and highlights the need for policy intervention to steer outcomes towards desired reductions. It's a foundational piece for the "Travel Impacts" section.
+
+-   **Table ID**: Exhibit 12
+-   **Page**: 22
+-   **Title/Caption**: Generalized Cost (Money and Time) Travel Demand Curve
+-   **What it shows (content)**: This line chart plots "Generalized Cost Per Vehicle-Mile" (y-axis) against "Annual Vehicle Miles Per Traveler" (x-axis) for different transportation modes: Taxi/Ridehailing, Carshare, Autonomous Taxi, Shared Autonomous Ride, Current Car, Electric Car, and Autonomous Electric Car. The curve demonstrates a general inverse relationship: as the generalized cost per vehicle-mile decreases, the annual vehicle miles traveled per traveler increases. Autonomous Electric Cars are shown to have the lowest generalized cost and thus the highest projected annual VMT.
+-   **Why it is important**: This figure visually supports the report's argument that reduced travel costs (both monetary and time-related) will likely *increase* total vehicle travel, not decrease it, directly linking to **Key Idea 3**. It shows that while shared AVs might reduce VMT compared to human-driven taxis, private autonomous vehicles (especially electric ones) could significantly increase individual VMT, thereby exacerbating congestion and other external costs.
+
+-   **Table ID**: Exhibit 18
+-   **Page**: 29
+-   **Title/Caption**: Vehicle Technology Deployment Summary
+-   **What it shows (content)**: This table summarizes the deployment cycle (in years), typical cost premium, and market saturation share for several past vehicle technologies: Automatic transmissions, Air bags, Hybrid vehicles, Subscription services (OnStar, TomTom), Navigation systems, and Electric vehicles. It shows deployment cycles ranging from 15 to 100+ years and varying saturation shares. For example, automatic transmissions took 50 years to reach 90% in the U.S., and electric vehicles have taken 100+ years to reach only 1% of total sales.
+-   **Why it is important**: This table provides crucial historical context and evidence for **Key Idea 5**, which predicts a slow adoption rate for autonomous vehicles. It directly refutes optimistic predictions by demonstrating that complex vehicle technologies typically require decades for market penetration, even with mandates (like airbags). This evidence underpins the report's cautious timeline for AV deployment.
+
+-   **Table ID**: Exhibit 22
+-   **Page**: 32
+-   **Title/Caption**: Comparing Benefits
+-   **What it shows (content)**: This matrix compares how different AV deployment models (Costly Personal AVs, Inexpensive Personal AVs, Shared AVs, Shared AVs with TDM Incentives) align with ten community planning objectives (e.g., congestion reduction, traffic safety, social equity). A checkmark (✓) indicates achieving the objective, while an 'X' indicates contradicting it. It clearly shows that "Shared AVs with TDM Incentives" achieve the most objectives, while "Costly Personal AVs" and "Inexpensive Personal AVs" contradict many, particularly those related to congestion, roadway costs, energy/pollution, and sprawl.
+-   **Why it is important**: This table is central to the report's policy recommendations and directly supports **Key Idea 4** (SAVs offer greater societal benefits) and **Key Idea 3** (policy is key). It provides a concise summary of which AV strategies are most beneficial from a community planning perspective, making a strong case for public policies that favor shared, efficiently managed autonomous mobility over private ownership.
+
+-   **Table ID**: Exhibit 25
+-   **Page**: 35
+-   **Title/Caption**: Autonomous Vehicle Planning Issues
+-   **What it shows (content)**: This table outlines a timeline (2020-2080s) for various autonomous vehicle planning issues, including reliability and safety, overall travel impacts, local vehicle traffic impacts, social equity, energy/emission impacts, parking/passenger loading, roadway design, mixed traffic planning, and potential AV mandates. For each issue, it specifies the "Analysis Required" and "Policies Required," and the approximate "Time" decade when these issues become prominent or policies are needed. For example, defining performance and data requirements for AV operation is needed in 2020-30, while considering AV lanes and their funding is 2050-70s.
+-   **Why it is important**: This table provides a strategic roadmap for planners and policymakers, offering a long-term perspective on the challenges and necessary actions related to AV deployment. It underpins **Key Idea 5** by demonstrating that planning for AVs is a multi-decade endeavor with evolving needs, and also supports **Key Idea 3** by highlighting the necessity of policies across a wide range of issues.
 
 ## 5. Important Images / Figures (with page numbers)
 
--   **Figure ID:** Exhibit ES-2 (Also Exhibit 28)
--   **Page:** 5 (Also 40)
--   **Title/Caption:** Autonomous Vehicle Sales, Fleet, Travel and Benefit Projections
--   **What the figure shows:** This line graph illustrates the projected market penetration of autonomous vehicles over time (2030-2080) for new vehicle sales, the total vehicle fleet, and total vehicle travel. It shows "Higher" and "Lower" estimates for each. The lines show a typical S-curve growth, with sales reaching 50% around 2045 and fleet/travel reaching 50% around 2060. The graph also overlays when various benefits are expected to become significant: "Less driver stress and more independent mobility for affluent non-drivers" starts earliest, followed by "Cheaper taxi services," "Cheaper truck and bus services," "Increased safety," "Less driver stress and more independent mobility for middle-income non-drivers," and finally "Reduced congestion and emissions" along with "Less driver stress and more independent mobility for low-income non-drivers" much later.
--   **Why it is important:** This figure is exceptionally important as it visually summarizes the core deployment predictions and benefit timelines discussed throughout the executive summary and "Development and Deployment Predictions" section. It directly supports **Key Idea 2** (slow penetration), **Key Idea 5** (timing of benefits linked to penetration), and **Key Idea 1** (by showing a longer timeline than typical optimistic forecasts).
+-   **Figure ID**: (No ID provided, image of Waymo car)
+-   **Page**: 1
+-   **Title/Caption**: Waymo's self-driving taxis are a well-publicized example of autonomous vehicles.
+-   **What the figure shows**: A photograph of a white Chrysler Pacifica minivan, clearly branded with "WAYMO" and its distinctive sensors (lidar dome on the roof, cameras, radar units). The vehicle appears to be on a suburban street.
+-   **Why it is important**: This is the first visual in the document and serves as a direct, concrete example of the technology being discussed. It immediately grounds the abstract concept of "autonomous vehicles" in a real-world, recognizable product, setting the context for the entire report.
 
--   **Figure ID:** Exhibit 7
--   **Page:** 15
--   **Title/Caption:** Driverless Car "Platooning" (Chuen, et al. 2013)
--   **What the figure shows:** The figure consists of two parts. The top part is an illustration showing a series of vehicles (a lead truck, a following truck, and three following cars) connected in a "platoon" with very close spacing. The bottom left graph, "Fuel consumption by vehicle spacing and platoon size," shows how fuel consumption decreases as vehicle spacing in vehicle lengths decreases for platoons of 2, 3, 4, and many vehicles. The bottom right graph, "% Fuel saving for a full platoon," shows the percentage of fuel savings over time for different vehicle types within a platoon.
--   **Why it is important:** This figure is important because it illustrates a key technological capability of autonomous vehicles, "platooning," that is necessary to achieve some of the most often-cited benefits, such as reduced congestion, fuel consumption, and emissions. It highlights that realizing these benefits requires specific roadway infrastructure (dedicated lanes) and advanced coordinated operation, which relates to the discussions in "External Cost" (Page 15) and "Planning Implications" (Page 33). This directly supports **Key Idea 5** by showing that certain advanced benefits require highly developed AV capabilities and infrastructure.
+-   **Figure ID**: Exhibit 3
+-   **Page**: 9
+-   **Title/Caption**: Productivity and Relaxation While Travelling
+-   **What the figure shows**: Two interior conceptual renderings of autonomous vehicles. The left image shows a car interior configured as a mobile office with a passenger working on a laptop. The right image (Volvo 360C concept) shows a car interior configured as a "REAL BED" with a passenger lying down, emphasizing relaxation.
+-   **Why it is important**: This figure illustrates one of the primary anticipated "internal user benefits" of autonomous vehicles: the ability to utilize travel time for work, rest, or leisure. It supports the section on "Reduced Driver Stress, Improved Productivity and Mobility" and highlights a key consumer appeal of AVs, which in turn influences potential travel behavior and VMT increases, linking to **Key Idea 3**.
 
--   **Figure ID:** Exhibit 16
--   **Page:** 25
--   **Title/Caption:** Aircraft and Automobile Software Code Compared (GAO 2016)
--   **What the figure shows:** This bar chart compares the estimated "Millions of lines of code" for different types of vehicles: an F-22 U.S. Air Force jet fighter (6.5 million lines), a Boeing 787 Dreamliner (8 million lines), and a Modern luxury vehicle (100 million lines). The text notes that "Vehicles need more complex computer systems than aircraft, due to the complexity of roadway interactions."
--   **Why it is important:** This figure is crucial for supporting **Key Idea 1** (skepticism about optimistic predictions) and the broader argument about the challenges of AV development. It graphically demonstrates the immense complexity of software required for modern vehicles, particularly autonomous ones, far exceeding even advanced aircraft. This complexity implies significant development hurdles, testing requirements, and potential for errors, justifying a slower and more cautious deployment timeline.
+-   **Figure ID**: Exhibit 7
+-   **Page**: 15
+-   **Title/Caption**: Driverless Car "Platooning" (Chuen, et al. 2013)
+-   **What the figure shows**: This exhibit contains two graphs and a diagram. The diagram shows multiple vehicles driving very closely together in a "platoon" led by a truck, illustrating the concept of platooning. The first graph shows "Fuel consumption by vehicle spacing and platoon size," indicating that as vehicle spacing decreases and platoon size increases, fuel consumption decreases significantly. The second graph shows "% Fuel saving for a full platoon" for different vehicle types (LV Truck, PV Truck, PV Car) over time, with savings reaching 10-12%.
+-   **Why it is important**: This figure is crucial for understanding the concept of platooning, which is presented as a necessary condition for achieving several key external benefits of AVs, such as reduced congestion, fuel consumption, and emissions. The caption explicitly states this. It also highlights a potential cost/problem mentioned earlier – the requirement for dedicated lanes and new risks associated with platooning, directly supporting aspects of **Key Idea 3** regarding policy and infrastructure needs.
+
+-   **Figure ID**: Exhibit 16
+-   **Page**: 25
+-   **Title/Caption**: Aircraft and Automobile Software Code Compared (GAO 2016)
+-   **What the figure shows**: A bar chart comparing the "Millions of lines of code" for an F-22 U.S. Air Force jet fighter (6.5 million), a Boeing 787 Dreamliner (14 million), and a Modern luxury vehicle (100 million). The bar for the luxury vehicle is significantly longer, showing it has vastly more lines of code.
+-   **Why it is important**: This figure provides strong visual evidence for the complexity of automotive software, particularly in modern vehicles that incorporate driver-assistance systems, which is a precursor to full autonomy. It underpins the report's argument that AV development is inherently difficult, prone to errors, and will require extensive testing and time, thus supporting **Key Idea 1** about skepticism towards rapid deployment and **Key Idea 5** about the long timelines.
+
+-   **Figure ID**: Exhibit 17
+-   **Page**: 28
+-   **Title/Caption**: U.S. Population and Automobile Ownership (FHWA 2016)
+-   **What the figure shows**: A line graph showing "Motor Vehicles Per Capita" in the U.S. from 1900 to 2010. The curve shows a gradual increase in vehicle ownership per capita, with a steeper rise from the 1920s to the 1960s, and then a leveling off, approaching saturation around the 1980s. The caption notes that it took decades for automobiles to become dominant travel modes.
+-   **Why it is important**: This figure serves as powerful historical evidence to support **Key Idea 5** – the slow pace of technology adoption in the automotive sector. It illustrates that even fundamental innovations like the automobile took many decades to reach market saturation, providing a basis for predicting a similar, if not longer, timeline for autonomous vehicles.
 
 ## 6. Concepts, Definitions, and Terminology
 
--   **Term:** Autonomous Vehicles (AVs) / Self-driving / Robotic Vehicles
--   **Page(s):** 1 (cover), 3 (Executive Summary), 7 (Introduction), throughout
--   **Explanation:** Vehicles equipped with technology that allows them to operate themselves without human input for some or all driving tasks, ranging from basic assistance to full automation.
--   **Role in the document:** This is the central subject of the entire document, defining the technology being analyzed for its implications in transport planning.
+-   **Term**: Autonomous Vehicles (AVs) / Self-driving / Driverless / Robotic Vehicles
+-   **Page(s)**: 1, 3, 7, and throughout the document
+-   **Explanation**: Vehicles capable of sensing their environment and operating without human input. They can navigate and perform all driving tasks under specific or all conditions.
+-   **Role in the document**: This is the central subject of the entire report, defining the technology being analyzed.
 
--   **Term:** SAE Levels (Level 0-5)
--   **Page(s):** 8 (Exhibit 1)
--   **Explanation:** A standardized classification system (SAE J3016) for driving automation, ranging from Level 0 (no automation) to Level 5 (full automation, capable of operating under all conditions without human intervention).
--   **Role in the document:** Provides a critical framework for understanding the capabilities and limitations of AVs at different stages of development, and links specific benefits to higher levels of automation, particularly Level 5.
+-   **Term**: Levels of Driving Automation (SAE J3016)
+-   **Page(s)**: 8, 19
+-   **Explanation**: A standard classification system from Level 0 (no automation) to Level 5 (full automation in all conditions). Level 5 vehicles can transport non-drivers and goods without any human intervention.
+-   **Role in the document**: Provides a critical framework for understanding the capabilities and limitations of AVs at different stages of development, and for assessing which benefits are achievable at which levels of automation.
 
--   **Term:** Shared Autonomous Vehicles (SAVs) / Self-driving taxis
--   **Page(s):** 3 (Executive Summary), 8 (Exhibit 2), 11, 12 (Exhibit 5, 6), 20 (Exhibit 10), 21 (Exhibit 11), 32 (Exhibit 22), 37 (Autonomous Taxi Service Impacts), 38
--   **Explanation:** Autonomous vehicles used as a service, typically on-demand, where individuals can request a ride without owning the vehicle. Self-driving taxis are an example.
--   **Role in the document:** Highlighted as a model with significant potential for reducing vehicle ownership, parking demand, and external costs, especially when combined with TDM incentives, aligning with more optimistic planning objectives (**Key Idea 4**).
+-   **Term**: Platooning
+-   **Page(s)**: 13, 15, 16, 19, 33
+-   **Explanation**: A driving mode where multiple vehicles travel close together at high speeds, electronically linked and synchronized. This is often led by a large truck.
+-   **Role in the document**: Described as a mechanism to achieve significant benefits like reduced congestion, fuel consumption, and emissions. However, it requires dedicated lanes and introduces new risks, highlighting a planning challenge.
 
--   **Term:** Platooning
--   **Page(s):** 4 (Exhibit ES-2), 7 (Introduction), 9, 13, 15 (Exhibit 7), 19 (Exhibit 9), 33 (Roadway Design), 38
--   **Explanation:** A driving strategy where multiple vehicles travel very close together in a convoy, electronically connected and often led by a single driver or autonomous lead vehicle, allowing for reduced aerodynamic drag and increased road capacity.
--   **Role in the document:** Presented as a mechanism necessary for achieving some key benefits of AVs (e.g., reduced congestion, fuel consumption, emissions), but also noted as requiring dedicated lanes and introducing new risks, underscoring the trade-offs and infrastructure requirements.
+-   **Term**: External Costs
+-   **Page(s)**: 4, 15, 16, 18, 19, 24, 41
+-   **Explanation**: Costs imposed on other people or society by vehicle travel (e.g., congestion, pollution, crash risks, road/parking infrastructure costs) that are not borne by the vehicle user.
+-   **Role in the document**: A central concept in the cost-benefit analysis. The report argues that AVs may increase these costs if they induce more vehicle travel, making them economically inefficient without proper pricing and policy.
 
--   **Term:** External Costs
--   **Page(s):** 4 (Exhibit ES-2), 6 (Executive Summary), 15 (External Cost), 16 (Social Equity Impacts), 18 (Exhibit 8), 19 (Exhibit 9), 24 (Exhibit 14), 39
--   **Explanation:** Costs imposed on other people or society as a whole by an activity, not directly borne by the user or producer. In transport, this includes congestion, pollution, crash risks to others, and infrastructure costs.
--   **Role in the document:** A central theme in the cost-benefit analysis, arguing that AVs can increase external costs (e.g., from increased VMT and sprawl) if not managed by policy, making the economic efficiency questionable.
+-   **Term**: Social Equity Impacts (Horizontal and Vertical Equity)
+-   **Page(s)**: 4, 16-17, 18, 19, 32, 35, 36, 40
+-   **Explanation**: Refers to the fairness of AV benefits and costs distribution. Horizontal equity concerns whether similar groups are treated similarly (e.g., subsidies). Vertical equity concerns favoring people with greater needs or lower incomes (e.g., affordable mobility options for non-drivers).
+-   **Role in the document**: An important dimension of the report's comprehensive evaluation, highlighting that AV deployment could exacerbate existing inequalities if not managed with policies promoting affordability and fair access.
 
--   **Term:** Technology Readiness Level (TRL)
--   **Page(s):** 7 (Introduction), 25 (Development and Deployment Predictions)
--   **Explanation:** A scale used to assess the maturity of a technology, typically from 1 (basic principles observed) to 9 (actual system proven in operational environment).
--   **Role in the document:** Used to describe the current developmental stage of AV technology, indicating that AVs are still several steps away from full commercial maturity and wide deployment.
+-   **Term**: Transportation Demand Management (TDM)
+-   **Page(s)**: 14, 32, 36, 41
+-   **Explanation**: Strategies aimed at influencing travel behavior to reduce vehicle use, shift to more efficient modes, or spread demand over time/space. Examples include road pricing, incentives for shared mobility, and public transit improvements.
+-   **Role in the document**: Presented as crucial policy tools to mitigate the negative impacts of AVs (like increased VMT and congestion) and maximize their potential benefits, especially when combined with shared AV services.
 
--   **Term:** Efficient Road User Fees
--   **Page(s):** 10 (What are Efficient Road User Fees?), 12, 16, 24, 33 (Transportation Pricing)
--   **Explanation:** Fees designed to recover roadway costs and internalize external costs such as congestion, crash damages, and pollution emissions, often charged per vehicle-mile and varying by location or time of day.
--   **Role in the document:** Proposed as a key public policy tool (**Key Idea 4**) to manage the travel impacts of AVs, especially electric ones, by ensuring users pay for their full costs and disincentivizing economically inefficient travel.
-
--   **Term:** Deadheading
--   **Page(s):** 6 (Executive Summary), 21, 33 (Transportation Pricing)
--   **Explanation:** The travel of an empty vehicle, without passengers or cargo. In the context of AVs, this can occur when a shared AV travels to pick up a passenger, repositions, or returns home after dropping off passengers.
--   **Role in the document:** Identified as a factor that could significantly increase total vehicle travel and associated external costs, contributing to potential congestion and inefficiency if AVs are not efficiently managed.
+-   **Term**: Innovation S-Curve
+-   **Page(s)**: 25
+-   **Explanation**: A model of technology deployment characterized by slow initial adoption (development, testing), followed by rapid growth (market expansion, product improvement, diffusion), and eventually leveling off (maturation, saturation) and decline.
+-   **Role in the document**: Used as a framework to predict the likely, slow adoption rate of autonomous vehicles, providing a more realistic timeline than overly optimistic industry projections.
 
 ## 7. Constraints, Limitations, and Open Questions
 
--   **Uncertainty of Predictions:**
-    -   **Page(s):** 3 (Executive Summary), 7 (Introduction), 39 (Conclusions)
-    -   **Explanation:** The document repeatedly states that there is considerable uncertainty concerning AV development, benefits, costs, travel impacts, and consumer demand. The future is "ultimately unknowable," and predictions are subject to many variables.
--   **Technical Obstacles for Reliable Operation:**
-    -   **Page(s):** 3 (Executive Summary), 7 (Introduction), 26 (Development and Deployment Predictions), 39 (Conclusions)
-    -   **Explanation:** Significant technical progress is needed for AVs to operate reliably in all conditions, including mixed urban traffic, heavy rain and snow, unpaved/unmapped roads, and with unreliable wireless access. The complexity of unpredictable real-world interactions (e.g., wild animals, playful children in costumes) poses a significant challenge.
--   **Regulatory Approval and Testing Time:**
-    -   **Page(s):** 3 (Executive Summary), 7 (Introduction), 26, 29, 31, 37 (Exhibit 27), 39 (Conclusions)
-    -   **Explanation:** Years of testing and regulatory approval will be required before AVs are commercially available and widely adopted, progressing through the Technology Readiness Level (TRL) scale. Different jurisdictions may impose varying requirements, leading to fragmented deployment.
--   **New Costs and Risks Introduced by AVs:**
-    -   **Page(s):** 3 (Executive Summary), 4 (Exhibit ES-2), 10 (Ownership and Operating Costs), 13 (Traffic Safety and Public Health), 15 (External Cost), 19 (Exhibit 9), 39 (Conclusions)
-    -   **Explanation:** AVs introduce new costs (equipment, services, maintenance) and risks (hardware/software failures, malicious hacking, increased risk-taking by users, platooning risks, increased crash exposure due to higher VMT, and difficulties detecting non-auto users).
--   **Ethical Programming Challenges (The Trolley Problem):**
-    -   **Page(s):** 14 (The Autonomous Vehicle Trolley Problem)
-    -   **Explanation:** AVs require explicit programming for making risk trade-offs in unavoidable accident scenarios. The ethical question of "who should decide how vehicles are programed" (e.g., prioritizing occupants vs. other road users) is an open public policy issue.
--   **Requirement for Dedicated Lanes for Some Benefits:**
-    -   **Page(s):** 5 (Exhibit ES-2), 6 (Executive Summary), 7 (Introduction), 15 (External Cost), 19 (Exhibit 9), 33 (Roadway Design), 35 (Exhibit 24), 38 (Potential Conflicts and Solutions), 40 (Exhibit 28)
-    -   **Explanation:** Many potential benefits, such as significant congestion reduction and pollution emissions from platooning, require AVs to operate in dedicated lanes, which are costly, raise social equity concerns, and are only feasible on some highways.
--   **Consumer Resistance and Preferences:**
-    -   **Page(s):** 3 (Executive Summary), 4, 21 (Exhibit 11), 26 (Development and Deployment Predictions), 31, 39
-    -   **Explanation:** Many motorists will be reluctant to pay high costs for AVs with limited performance or "access anxiety." Consumer acceptance will be influenced by safety fears, privacy concerns, preferences for private ownership (e.g., for convenience, status, carrying items), and resistance to shared vehicles.
--   **Dependence on Public Policies:**
-    -   **Page(s):** 6 (Executive Summary), 7 (Introduction), 16-17 (Social Equity Impacts), 24 (Travel Impacts), 31, 32 (Planning Objectives), 33 (Planning Implications), 36 (Exhibit 26), 38 (Potential Conflicts and Solutions), 41 (Conclusions)
-    -   **Explanation:** The net impacts and benefits of AVs are highly dependent on how public policies are developed and implemented. Without efficient pricing and management strategies, AVs are likely to increase problems (VMT, congestion, sprawl); with supportive policies (favoring shared, multi-modal transport, efficient pricing), they can maximize benefits.
+-   **Uncertainty about AV Development and Impacts** (Page 3, Executive Summary; Page 7, Introduction; Page 39, Conclusions)
+    -   **Explanation**: The document frequently states that there is "considerable uncertainty" concerning AV development, benefits, costs, travel impacts, and consumer demand. This is due to the complexity of the technology, the dynamic nature of future policies, and unpredictable consumer choices.
+    -   **Page and section**: Executive Summary (Page 3), Introduction (Page 7), Conclusions (Page 39).
+-   **Technical Obstacles and Performance Limitations** (Page 3, Executive Summary; Page 7, Introduction; Page 26, Development and Deployment Predictions)
+    -   **Explanation**: AVs face significant technical hurdles, such as operating reliably in mixed urban traffic, heavy rain/snow, unpaved/unmapped roads, or with unreliable wireless access. Level 5 autonomy, in particular, may be infeasible for decades. Current systems still struggle with unexpected situations and high failure rates.
+    -   **Page and section**: Executive Summary (Page 3), Introduction (Page 7), "Development and Deployment Predictions" (Page 26).
+-   **Ethical Dilemmas - The Trolley Problem** (Page 14, Traffic Safety and Public Health)
+    -   **Explanation**: Autonomous vehicles raise complex ethical questions about how they should be programmed to make life-or-death decisions in unavoidable accident scenarios (e.g., who to protect, how to prioritize risks to occupants vs. other road users). These decisions are explicit programming choices, unlike spontaneous human reactions.
+    -   **Page and section**: "Traffic Safety and Public Health" (Page 14).
+-   **Cost-Benefit Underestimation in Optimistic Reports** (Page 3, Executive Summary; Page 11, Ownership and Operating Costs)
+    -   **Explanation**: Optimistic predictions often ignore or underestimate significant costs like cleaning, vandalism repairs, profits, empty vehicle travel, insurance, and efficient roadway user fees, leading to an exaggeration of future benefits.
+    -   **Page and section**: Executive Summary (Page 3), "Ownership and Operating Costs" (Page 11).
+-   **Requirement for Dedicated Lanes for Full Benefits** (Page 5, Executive Summary; Page 15, External Cost; Page 19, Benefits and Costs; Page 33, Roadway Design)
+    -   **Explanation**: Many potential benefits, such as reduced congestion, increased road capacity, and optimal platooning, can only be achieved if AVs operate in dedicated lanes, which are costly, socially inequitable, and complex to implement.
+    -   **Page and section**: Executive Summary (Page 5), External Cost (Page 15), Benefits and Costs (Page 19), Roadway Design (Page 33).
+-   **Role of Public Policy is Crucial and Unpredictable** (Page 6, Executive Summary; Page 7, Introduction; Page 24, Travel Impacts; Page 31, Deployment Predictions; Page 36, Potential Conflicts and Solutions)
+    -   **Explanation**: The ultimate impacts of AVs (whether they increase or reduce VMT, congestion, or improve equity) will depend heavily on public policies regarding road pricing, dedicated lanes, encouragement of shared mobility, and land use planning. The specific policies adopted are an open question.
+    -   **Page and section**: Executive Summary (Page 6), Introduction (Page 7), "Travel Impacts" (Page 24), "Deployment Predictions" (Page 31), "Potential Conflicts and Solutions" (Page 36).
 
 ## 8. Notes for the Storytelling / Presentation Agent
 
--   **Key Ideas to Emphasize:**
-    -   **For a technical audience:** Focus on **Key Idea 1** (Skepticism, underlying technical challenges and complexity), **Key Idea 5** (SAE levels and what Level 5 enables), and the technical requirements for platooning.
-    -   **For a non-technical audience:** Emphasize **Key Idea 2** (Cost and slow adoption, impacting affordability for average users), **Key Idea 3** (AVs likely increase travel, leading to more congestion/sprawl), and most importantly, **Key Idea 4** (The critical role of public policy in shaping AV outcomes – AVs are not inherently good or bad, but how we deploy them makes the difference).
+-   **Key Ideas to emphasize**:
+    -   **For a technical audience**: Emphasize **Key Idea 1** (Skepticism Towards Optimistic AV Timelines and Benefits) and the evidence from Exhibit 16 (Page 25) on software complexity, and **Key Idea 5** (Widespread Significant Impacts of AVs Are Decades Away) with historical deployment data from Exhibit 18 (Page 29). Also, details on technical obstacles from Page 26.
+    -   **For a non-technical audience**: Focus on **Key Idea 3** (AVs Will Not Inherently Reduce Traffic Problems; Policy is Key) and **Key Idea 4** (Shared Autonomous Vehicles Offer Greater Societal Benefits), using Exhibit 22 (Page 32) as a compelling visual. The "Trolley Problem" (Page 14) is also highly engaging.
 
--   **Best Tables and Figures to Embed:**
-    -   **Exhibit ES-2 / Exhibit 28 (Page 5, 40) – Autonomous Vehicle Sales, Fleet, Travel and Benefit Projections:** Excellent for visually representing the slow adoption curve and when different benefits are expected to materialize. Good for showing improvement over time and summarizing key predictions.
-    -   **Exhibit ES-1 (Page 3) – Cost Comparison:** Great for illustrating the economic positioning of AVs relative to current transport modes, immediately addressing the "will it be cheaper?" question. Good for comparing costs and highlighting the value proposition of different AV models.
-    -   **Exhibit 1 (Page 8) – Automated Driving Levels (SAE J3016):** Essential for defining the terminology and technical stages of AVs. Good for providing foundational knowledge and clarifying what "autonomous" means at different levels.
-    -   **Exhibit 10 (Page 20) – Potential Travel Impacts:** Strong visual for presenting the core argument about increased VMT and the factors driving it, or conversely, factors that could reduce it. Good for outlining potential positive and negative impacts.
-    -   **Exhibit 22 (Page 32) – Comparing Benefits (Planning Objectives):** Very effective for demonstrating how policy choices (e.g., TDM incentives for shared AVs) can align AVs with broader community goals. Good for summarizing results and showing the "if-then" relationship between policy and outcomes.
+-   **Tables and figures for embedding**:
+    -   **Exhibit ES-1 (Page 3) - Cost Comparison**: Excellent for summarizing costs for any audience. Can be used early to set expectations about AV affordability.
+    -   **Exhibit ES-2 (Page 5) - Sales, Fleet, Travel and Benefit Projections**: This is the single most important visual to convey the report's timeline and the phased realization of benefits. Crucial for both technical and non-technical audiences to show "it's coming, but slowly and with caveats."
+    -   **Exhibit 1 (Page 8) - Automated Driving Levels (SAE J3016)**: Essential for a technical audience to define terms, and useful for non-technical audiences to understand the different levels of automation.
+    -   **Exhibit 2 (Page 8) - Operating Models Compared**: Great for illustrating the strategic choice between private and shared AVs and their respective pros/cons, supporting policy discussions.
+    -   **Exhibit 12 (Page 22) - Generalized Cost (Money and Time) Travel Demand Curve**: Powerful visual for explaining why AVs might *increase* VMT due to lower perceived costs. Very good for a policy-oriented story.
+    -   **Exhibit 16 (Page 25) - Aircraft and Automobile Software Code Compared**: A striking visual for a technical audience to emphasize the complexity challenges of AV development.
+    -   **Exhibit 17 (Page 28) - U.S. Population and Automobile Ownership**: Strong historical evidence to support the slow deployment timeline; good for grounding expectations.
+    -   **Exhibit 22 (Page 32) - Comparing Benefits**: A very effective summary table to guide policy decisions toward shared AVs with TDM. Ideal for a presentation on policy implications.
+    -   **Exhibit 25 (Page 35) - Autonomous Vehicle Planning Issues Timeline**: Useful for a technical or planning audience to show the long-term scope of planning.
 
--   **Natural Narrative Arcs:**
-    -   **Problem (Optimistic Misconceptions) → Reality (Complexity, Cost, Slow Deployment) → Implications (Travel Impacts, Policy Needs) → Solutions (Shared AVs, TDM, Pricing):** This follows the report's structure well, starting with debunking myths and moving to practical challenges and policy responses.
-    -   **What AVs Are → What They Cost → How They Impact Travel → How Policies Can Guide Them:** A straightforward flow that covers the essential questions about AVs.
+-   **Natural narrative arcs**:
+    -   **Problem (Optimistic Hype) → Realistic Assessment (Challenges & Slow Deployment) → Solutions (Policy & Shared Mobility) → Implications**: This arc naturally follows the document's structure, starting with challenging common perceptions and then building a case for a more measured, policy-driven approach.
+    -   **What AVs Are → What AVs Promise → What AVs Actually Entail (Costs, Risks, Timelines) → How We Can Steer Them for Good**: This focuses on education and guiding policy.
 
--   **Sections to Downplay or Skip in a high-level story:**
-    -   The "References" section (Pages 42-49) can be downplayed or skipped for a high-level overview, although it's crucial for a technical audience.
-    -   Highly detailed sub-sections on specific external costs or social equity impacts (unless it's the specific focus of the story) can be condensed, as their main conclusions are summarized in tables like Exhibit 22.
-    -   The very specific anecdotes in "Travel Impacts" (Jake, Bonnie, etc. on page 23) can be generalized or used as examples only if time allows, rather than being a core part of a concise story.
+-   **Sections to downplay or skip in a high-level story**:
+    -   The very detailed list of references might be too granular for a high-level overview, though specific references could be pulled out if needed to support a particular point.
+    -   Some of the very specific sub-bullets within the benefits/costs or travel impacts could be condensed for a high-level audience. The key is to capture the *essence* of the trade-offs, not every single example.

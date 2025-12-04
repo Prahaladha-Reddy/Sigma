@@ -15,7 +15,7 @@ class DocumentProcessor:
         """Initialize the Docling DocumentConverter."""
         # Configure pipeline options for PDF processing
         pipeline_options = PdfPipelineOptions()
-        pipeline_options.do_ocr = True
+        pipeline_options.do_ocr = False
         pipeline_options.do_table_structure = True
         pipeline_options.generate_picture_images = True  # Enable image extraction
         pipeline_options.images_scale = 2.0  # Higher resolution for better quality
@@ -92,24 +92,22 @@ class DocumentProcessor:
 
         try:
             for uploaded_file in uploaded_files:
-                # Handle both file paths and Streamlit UploadedFile objects
+
                 if hasattr(uploaded_file, 'getbuffer'):
-                    # Streamlit UploadedFile
                     temp_file_path = os.path.join(temp_dir, uploaded_file.name)
                     with open(temp_file_path, "wb") as f:
                         f.write(uploaded_file.getbuffer())
                     file_path = temp_file_path
                 else:
-                    # Regular file path
                     file_path = uploaded_file
 
                 try:
                     result = self.process_file(file_path)
                     documents.append(result)
-                    print(f"✅ Successfully processed {result['filename']}")
+                    print(f" Successfully processed {result['filename']}")
 
                 except Exception as e:
-                    print(f"❌ Error processing file: {str(e)}")
+                    print(f" Error processing file: {str(e)}")
                     continue
 
         finally:
@@ -117,7 +115,7 @@ class DocumentProcessor:
                 import shutil
                 shutil.rmtree(temp_dir)
             except Exception as e:
-                print(f"⚠️ Warning: Could not clean up temp directory: {str(e)}")
+                print(f" Warning: Could not clean up temp directory: {str(e)}")
 
-        print(f"✅ Processed {len(documents)} documents successfully")
+        print(f" Processed {len(documents)} documents successfully")
         return documents

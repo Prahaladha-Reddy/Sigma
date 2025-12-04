@@ -14,6 +14,8 @@ from core.new_architecture_prompt import (
     Agent_2_with_search,
     Agent_3_prompt,
     Agent_4_prompt,
+    Tailwind_coder,
+    Theme_Picker
 )
 from core.process_context import (
     ProcessContext,
@@ -152,7 +154,7 @@ async def agent_2_with_search(
                 HumanMessage(content=content),
             ],
         )
-        print(response)
+
         if isinstance(response.content, str):
             presentation = response.content
         elif isinstance(response.content, list):
@@ -210,6 +212,101 @@ async def agent_3(
     except Exception as e:
         print(f"Error in agent_3 {e}")
         return None
+
+
+async def agent_theme_picker(
+    content: str,
+    Theme_Picker=Theme_Picker,
+    model: str = "gemini-2.5-flash",
+    output_dir: Optional[str | Path] = None,
+    process_context: Optional[ProcessContext] = None,
+) -> Optional[str]:
+    print("agent Theme_Picker is in action")
+    llm = ChatGoogleGenerativeAI(model=model)
+
+    try:
+        response = await _invoke_llm(
+            llm,
+            [
+                SystemMessage(content=Theme_Picker),
+                HumanMessage(content=content),
+            ],
+        )
+
+        data_dir = Path(output_dir) if output_dir else get_data_dir()
+        output_path = data_dir / "Themes.md"
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        if isinstance(response.content, str):
+            presentation = response.content
+        elif isinstance(response.content, list):
+            presentation = "\n".join(
+                part if isinstance(part, str) else str(part)
+                for part in response.content
+            )
+        else:
+            presentation = str(response.content)
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(presentation)
+
+        print(f"Final Themes saved to {output_path}")
+        return presentation
+
+    except Exception as e:
+        print(f"Error in Theme_Picker {e}")
+        return None
+
+
+
+async def agent_tailwind_coder(
+    content: str,
+    model: str = "gemini-3-pro-preview",
+    output_dir: Optional[str | Path] = None,
+    process_context: Optional[ProcessContext] = None,
+) -> Optional[str]:
+    print("agent 4 is in action")
+    llm = ChatGoogleGenerativeAI(model=model)
+
+    try:
+        response = await _invoke_llm(
+            llm,
+            [
+                SystemMessage(content=Tailwind_coder),
+                HumanMessage(content=content),
+            ],
+        )
+
+        if hasattr(response, "text") and response.text:
+            presentation = response.text
+        else:
+            if isinstance(response.content, str):
+                presentation = response.content
+            elif isinstance(response.content, list):
+                parts = []
+                for block in response.content:
+                    if isinstance(block, dict) and "text" in block:
+                        parts.append(block["text"])
+                    elif isinstance(block, str):
+                        parts.append(block)
+                    else:
+                        parts.append(str(block))
+                presentation = "\n".join(parts)
+            else:
+                presentation = str(response.content)
+
+        data_dir = Path(output_dir) if output_dir else get_data_dir()
+        output_path = data_dir / "Final_slides.html"
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        presentation = embed_images_as_base64(presentation, image_dir=data_dir)
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(presentation)
+
+        print(f"Final html saved to {output_path}")
+        return presentation
+
+    except Exception as e:
+        print(f"Error in agent_4: {e}")
+        return None
+
 
 
 async def agent_4(
@@ -354,7 +451,14 @@ async def the_runner(
                 final_slides = f.read()
         else:
             final_slides = ""
-        await agent_4(f"{user_query} \n\n\n" + final_slides, output_dir=data_dir)
+        await agent_theme_picker(f"{user_query} \n\n\n" + final_slides, output_dir=data_dir)
+        final_themes=data_dir / "Themes.md"
+        final_themes_content=""
+        with open (final_themes) as f:
+            final_themes_content=f.read()
+        with open (final_story_path) as f:
+            final_story_content=f.read()
+        await agent_tailwind_coder(content=f"{user_query} use this theme for the given slides \n\n\n {final_themes_content} \n\n\n {final_story_content}" )
 
         final_html_path = data_dir / "Final_slides.html"
         final_pdf_path = data_dir / "final_presentation.pdf"
