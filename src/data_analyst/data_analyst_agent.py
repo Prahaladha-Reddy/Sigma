@@ -17,6 +17,7 @@ from data_analyst.prompt import DAta_Analyst_promt
 from notebooks_processing.notebook_processing import convert_notebook  
 
 load_dotenv()
+MCP_JUPYTER_URL = os.getenv("MCP_JUPYTER_URL", "http://127.0.0.1:4040/mcp")
 
 
 async def data_analyst_agent(Query: str, analysis_dir: Path):
@@ -24,7 +25,7 @@ async def data_analyst_agent(Query: str, analysis_dir: Path):
         {
             "jupyter": {
                 "transport": "streamable_http",
-                "url": "http://127.0.0.1:4040/mcp",
+                "url": MCP_JUPYTER_URL
             }
         }
     )

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual envs
+.venv/
+venv/
+
+# Git
+.git/
+.gitignore
+
+# Jupyter noise
+.ipynb_checkpoints/
+
+# Local data / outputs
+data/
+notebook/
+outputs/
+logs/
+tmp/
+*.log
+
+# OS / editor junk
+.DS_Store
+.idea/
+.vscode/
