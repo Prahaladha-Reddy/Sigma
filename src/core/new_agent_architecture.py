@@ -419,10 +419,14 @@ async def the_runner(
 
         if docs:
             tasks = [asyncio.create_task(run_tool(file)) for file in docs]
-            await asyncio.gather(*tasks, return_exceptions=True)
+            results = await asyncio.gather(*tasks, return_exceptions=True)
+            for r in results:
+                if isinstance(r, Exception):
+                    print(f"[PDF pipeline error] {r}")
+                    # Optionally: raise to stop the run
 
         markdown = mini_presentations_reader(data_dir)
-
+        print(markdown)
         await agent_1(content=f"{user_query} \n\n\n" + markdown, output_dir=data_dir)
 
         if datasets:

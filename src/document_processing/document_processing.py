@@ -50,7 +50,7 @@ class DocumentProcessor:
             NOTE: This does NOT save anything to disk. Use ContentSaver to save images/tables/text.
         """
         file_path = Path(file_path)
-        print(f"📄 Processing {file_path.name}...")
+        print(f" Processing {file_path.name}...")
 
         try:
             # Process the document with Docling
