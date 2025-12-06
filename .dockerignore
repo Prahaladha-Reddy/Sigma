@@ -27,3 +27,12 @@ tmp/
 .DS_Store
 .idea/
 .vscode/
+data
+.venv
+__pycache__
+*.pyc
+.git
+data
+processes
+temp_screenshots
+node_modules

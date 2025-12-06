@@ -43,9 +43,11 @@ async def process_pdf_pipeline(file_path: str):
         final_presentation = hydrate_markdown_content(
             raw_presentation, search_roots=[doc_output_dir, "data"]
         )
-    except Exception as e:
-        print(f"Error building/hydrating mini presentation: {e}")
-        final_presentation = raw_presentation or summary_text
+    except Exception:
+        print("Error building/hydrating mini presentation:")
+        import traceback
+        traceback.print_exc()
+        raise
 
     presentation_filename = f"mini_presentation_{document_name}.md"
     data_dir = get_data_dir().expanduser().resolve()
