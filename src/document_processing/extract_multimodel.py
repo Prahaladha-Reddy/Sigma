@@ -106,29 +106,25 @@ Important rules (CRITICAL):
 
 
 
-llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
-    temperature=0,
-)
-
-structured_llm = llm.with_structured_output(DocumentAssets)
 
 
 
 async def extract_assets_node(state: DocState) -> DocState:
-    summary = state["summary_text"]
+    structured_llm = ChatGoogleGenerativeAI(
+        model="gemini-2.5-flash",
+        temperature=0,
+    ).with_structured_output(DocumentAssets)
 
+    summary = state["summary_text"]
     messages = [
         SystemMessage(content=EXTRACT_SYSTEM_PROMPT),
         HumanMessage(content=f"Here is the full summary markdown:\n\n{summary}"),
     ]
-
     assets: DocumentAssets = await structured_llm.ainvoke(messages)
-
     state["figures"] = [f.model_dump() for f in assets.figures]
     state["tables"] = [t.model_dump() for t in assets.tables]
-
     return state
+
 
 
 
@@ -470,7 +466,10 @@ async def write_presentation_node(state: DocState) -> DocState:
             )
         ),
     ]
-
+    llm = ChatGoogleGenerativeAI(
+    model="gemini-2.5-flash",
+    temperature=0,
+    )
     resp = await llm.ainvoke(messages)
     state["presentation_markdown"] = resp.content
     return state
