@@ -1,9 +1,0 @@
-,Model,LLC.Stat. test,LLC.Prob.,IPS.Stat. test,IPS.Prob.
-Unemployment rate,Constant,-4.97,0.000***,-3.99,0.000***
-Unemployment rate,Constant and trend,-3.93,0.000***,-3.88,0.000***
-GDP,Constant,-3.66,0.000***,-3.87,0.000***
-GDP,Constant and trend,-3.09,0.001***,-2.77,0.003***
-,Constant,-5.00,0.000***,-4.29,0.000***
-,Constant and trend,-4.86,0.000***,-3.28,0.001***
-,Constant,-2.21,0.014**,-3.19,0.001***
-,Constant and trend,-1.63,0.051*,-2.30,0.011**

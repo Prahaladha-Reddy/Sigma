@@ -37,7 +37,6 @@ class ProcessContext:
         self.cleanup = cleanup
         self._token = None
 
-    # Directory helpers
     @property
     def presentation_md(self) -> Path:
         return self.data_dir / "presentation.md"
@@ -69,7 +68,6 @@ class ProcessContext:
         self.ensure_dirs()
         return _CURRENT_CONTEXT.set(self)
 
-    # Context manager hooks
     def __enter__(self):
         self.ensure_dirs()
         self._token = _CURRENT_CONTEXT.set(self)
@@ -82,7 +80,6 @@ class ProcessContext:
         if self.cleanup:
             shutil.rmtree(self.base_dir, ignore_errors=True)
 
-    # Static helpers
     @classmethod
     def get_current(cls) -> Optional["ProcessContext"]:
         return _CURRENT_CONTEXT.get()

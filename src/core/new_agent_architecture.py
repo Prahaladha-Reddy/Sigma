@@ -28,7 +28,6 @@ from core.tools import data_analyst_tool, process_notebook_tool, process_pdf_doc
 
 load_dotenv()
 
-
 def mini_presentations_reader(data_dir: Optional[str | Path] = None) -> str:
     data_path = Path(data_dir) if data_dir else get_data_dir()
     documents_path = get_documents_dir()
@@ -423,7 +422,6 @@ async def the_runner(
             for r in results:
                 if isinstance(r, Exception):
                     print(f"[PDF pipeline error] {r}")
-                    # Optionally: raise to stop the run
 
         markdown = mini_presentations_reader(data_dir)
         print(markdown)
