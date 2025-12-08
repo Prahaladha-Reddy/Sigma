@@ -1,4 +1,4 @@
-# Beat Gamma Jupyter
+# SigΣa
 
 AI-assisted pipeline that turns raw PDFs, Jupyter notebooks, and structured datasets into slide-ready presentations. It combines document parsing (Docling), Gemini LLMs, a Jupyter MCP server for executable analysis, and a LangGraph-powered presentation builder. An optional SQS worker can run the whole flow headlessly and publish PDFs to S3.
 
